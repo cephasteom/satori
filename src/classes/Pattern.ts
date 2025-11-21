@@ -74,8 +74,11 @@ const choose = (...values: any[]) => cycle((from, to) => {
 
 // base function for generating continuous waveform patterns
 const waveform = (callback: (i: number, ...args: number[]) => number) => 
-    (min: number = 0, max: number = 1, q: number = 48) => 
-        fast(q, cat(...Array.from({ length: q }, (_, i) => callback(i, min, max, q))));
+    (...args: number[]) =>
+        fast(
+            args[args.length - 1], 
+            cat(...Array.from({ length: args[args.length - 1] }, (_, i) => callback(i, ...args)))
+        );
 
 /**
  * Saw - generate a ramp of values from min to max, once per cycle
@@ -135,28 +138,25 @@ const tri = (min: number = 0, max: number = 1, q: number = 48) => waveform((i, m
 })(min, max, q);
 
 /**
+ * Pulse - same as square but you can set the duty cycle
+ * @param min - minimum value
+ * @param max - maximum value
+ * @param duty - duty cycle (0 to 1)
+ * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
+ */
+const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number = 48) => 
+    waveform((i, min, max, duty, q) => {
+        const v = (i / q);
+        const s = (v % 1) < duty ? 1 : 0;
+        return min + (max - min) * s;
+    })(min, max, duty, q);
+
+/**
  * Square - generate a square wave pattern from min to max over one cycle
  * @param min - minimum value
  * @param max - maximum value
  */
-const square = (min: number = 0, max: number = 1) => waveform((i, min, max) => {
-    const v = i % 2;
-    const s = v === 0 ? 1 : 0;
-    return min + (max - min) * s;
-})(min, max, 2);
-
-// /**
-//  * Pulse - same as square but you can set the duty cycle
-//  * @param min - minimum value
-//  * @param max - maximum value
-//  * @param duty - duty cycle (0 to 1)
-//  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
-//  */
-// const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number = 48) => waveform((i, min, max, q) => {
-//     const v = (i / q);
-//     const s = (v % 1) < duty ? 1 : 0;
-//     return min + (max - min) * s;
-// })(min, max, q);
+const square = (min: number = 0, max: number = 1, q: number = 48) => pulse(min, max, 0.5, q);
 
 export const methods = {
     fast,
@@ -167,7 +167,7 @@ export const methods = {
     saw, range, ramp,
     sine, cosine,
     tri,
-    // pulse, 
+    pulse, 
     square
 };
 
@@ -188,6 +188,6 @@ class Pattern<T> {
     }
 }
 
-const code = "saw(0,1,4)";
+const code = "square(0,1,8)";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 console.log(result.query(0, 1));
