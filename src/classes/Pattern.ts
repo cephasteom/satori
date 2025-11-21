@@ -145,6 +145,19 @@ const square = (min: number = 0, max: number = 1) => waveform((i, min, max) => {
     return min + (max - min) * s;
 })(min, max, 2);
 
+// /**
+//  * Pulse - same as square but you can set the duty cycle
+//  * @param min - minimum value
+//  * @param max - maximum value
+//  * @param duty - duty cycle (0 to 1)
+//  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
+//  */
+// const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number = 48) => waveform((i, min, max, q) => {
+//     const v = (i / q);
+//     const s = (v % 1) < duty ? 1 : 0;
+//     return min + (max - min) * s;
+// })(min, max, q);
+
 export const methods = {
     fast,
     slow,
@@ -154,6 +167,7 @@ export const methods = {
     saw, range, ramp,
     sine, cosine,
     tri,
+    // pulse, 
     square
 };
 
@@ -174,6 +188,6 @@ class Pattern<T> {
     }
 }
 
-const code = "cosine(0,1,4)";
+const code = "saw(0,1,4)";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 console.log(result.query(0, 1));
