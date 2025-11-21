@@ -301,7 +301,7 @@ export const methods = {
     sometimes, 
     often,
     and, or, xor,
-    // add all operators from the Math object
+    // insert all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,
         [name]: operate(name)
