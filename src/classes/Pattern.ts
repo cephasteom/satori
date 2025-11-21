@@ -76,23 +76,13 @@ const choose = (...values: any[]) => cycle((from, to) => {
  * Saw - generate a ramp of values from min to max, once per cycle
  * @param min - start value
  * @param max - end value
- * @param q - quantization steps per cycle, default 24.
+ * @param q - quantization: steps/cycle. Default 48. Increase for more fine-grained ramps.
  * @example saw(0, 1) // generates a ramp from 0 to 1 over the course of 1 cycle
  */
-const saw = (min: number = 0, max: number = 1, q: number = 24) => fast(q, cycle((from, to) => {
-    const stepFrom = Math.floor(from);
-    const stepTo = Math.floor(to);
-    let bag: Hap<number>[] = [];
-    for(let step = stepFrom; step < stepTo; step++) {
-        const value = min + (max - min) * (step % q) / (q - 1);
-        bag.push({
-            from: step,
-            to: step + 1,
-            value
-        });
-    }
-    return bag;
-}));
+const saw = (min: number = 0, max: number = 1, q: number = 48) => fast(q, cat(...Array.from({ length: q }, (_, i) => {
+    const v = i / (q - 1);
+    return min + (max - min) * v;
+})));
 
 /**
  * Alias for saw
@@ -107,7 +97,13 @@ const ramp = (...args: Parameters<typeof saw>) => saw(...args);
  * Sine - generate a sine wave pattern from min to max over one cycle
  * @param min - minimum value
  * @param max - maximum value
+ * @param q - quantization: steps/cycle. Default 48. Increase for more fine-grained curves.
  */
+const sine = (min: number = 0, max: number = 1, q: number = 48) => fast(q, cat(...Array.from({ length: q }, (_, i) => {
+    const v = i / q;
+    const s = Math.sin(v * (360 * (Math.PI / 180))) * 0.5 + 0.5;
+    return min + (max - min) * s;
+})));
 
 export const methods = {
     fast,
@@ -115,7 +111,8 @@ export const methods = {
     cat,
     seq,
     choose,
-    saw, range, ramp
+    saw, range, ramp,
+    sine
 };
 
 /**
@@ -135,6 +132,6 @@ class Pattern<T> {
     }
 }
 
-const code = "saw().fast(.5)";
+const code = "sine(0,1,4)";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 console.log(result.query(0, 1));
