@@ -209,7 +209,9 @@ const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math a
  */
 const interp = (value: number|Pattern<any>, pattern: Pattern<any>) => cycle((from, to) => {
     return pattern.query(from, to).map((hap) => {
-        let interpValue = value instanceof Pattern ? value.query(hap.from, hap.to)[0].value : value
+        const valueHaps = value instanceof Pattern ? value.query(hap.from, hap.to) : [{from, to, value}]
+        const interpValue = valueHaps[0].value
+
         return {
             from: hap.from,
             to: hap.to,
@@ -254,4 +256,4 @@ class Pattern<T> {
 
 const code = "saw(0,1,4).interp(saw(0,10,4))";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
-console.log(result.query(0, 1).map(h => h.value));
+console.log(result.query(0, 1));
