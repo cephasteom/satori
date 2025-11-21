@@ -210,6 +210,32 @@ const degrade = (probability: number = 0.5, pattern: Pattern<any>) => cycle((fro
     }));
 });
 
+// base function for probability based Patterns
+const weightedCoin = (probability: number = 0.5) => P((from, to) => ([{from, to, value: Math.random() < probability ? 1 : 0}]));
+
+/**
+ * Coin - return an equal distribution of 1s and 0s
+ * @example coin()
+ */
+const coin = () => weightedCoin(0.5);
+
+/**
+ * Sometimes - alias for coin
+ */
+const sometimes = coin
+
+/**
+ * Rarely - return mostly 0s, occasionally 1s
+ * @example rarely()
+ */
+const rarely = () => weightedCoin(0.25)
+
+/**
+ * Often - return mostly 1s, occasionally 0s
+ * @example often()
+ */
+const often = () => weightedCoin(0.75)
+
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
     // @ts-ignore
@@ -244,6 +270,10 @@ export const methods = {
     saw, range, ramp, sine, cosine, tri, pulse, square,
     interp,
     degrade,
+    coin, 
+    rarely, 
+    sometimes, 
+    often,
     // add all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,
@@ -268,6 +298,6 @@ class Pattern<T> {
     }
 }
 
-const code = "sine().degrade(.9)";
+const code = "often()";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
-console.log(result.query(0, 1));
+console.log(result.query(0, 1)[0].value);
