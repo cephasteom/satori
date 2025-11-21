@@ -72,7 +72,7 @@ const seq = (...values: any[]) => fast(values.length, cat(...values));
  * @param values - values to choose from. Can be patterns or raw values.
  * @example choose('A', 'B', 'C') // randomly chooses A, B, or C each cycle.
  */
-const choose = (...values: any[]) => 
+const choose = (...values: (any[])) => 
     cycle((from, to) => ([{ from, to, value: values[Math.floor(Math.random() * values.length)]}]))
 
 // base function for generating continuous waveform patterns
@@ -179,6 +179,37 @@ const square = (min: number = 0, max: number = 1, q: number = 48) => pulse(min, 
  */
 const stack = (...values: any[]) => cycle((from, to) => values.map((value) => ({ from, to, value })));
 
+/**
+ * Interp - interpolate values
+ * @param value - value to interpolate with. Can be pattern or raw value.
+ * @example sine().interp(saw()) // interpolates between sine and saw waveforms over time 
+ */
+const interp = (value: number|Pattern<any>, pattern: Pattern<any>) => cycle((from, to) => {
+    return pattern.query(from, to).map((hap) => {
+        const valueHaps = value instanceof Pattern ? value.query(hap.from, hap.to) : [{from, to, value}]
+        const interpValue = valueHaps[0].value
+
+        return {
+            from: hap.from,
+            to: hap.to,
+            value: hap.value + (interpValue - hap.value) * ((hap.from + hap.to) / 2 % 1)
+        }
+    });
+})
+
+/**
+ * Degrade - randomly replace values with 0 based on a given probability
+ * @param probability - number between 0 and 1
+ * @example sine().degrade(0.3) // randomly replaces 30% of sine wave values with 0
+ */
+const degrade = (probability: number = 0.5, pattern: Pattern<any>) => cycle((from, to) => {
+    return pattern.query(from, to).map(hap => ({
+        from: hap.from,
+        to: hap.to,
+        value: Math.random() < probability ? 0 : hap.value
+    }));
+});
+
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
     // @ts-ignore
@@ -202,24 +233,6 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
  */
 const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
 
-/**
- * Interp - interpolate values
- * @param value - value to interpolate with. Can be pattern or raw value.
- * @example sine().interp(saw()) // interpolates between sine and saw waveforms over time 
- */
-const interp = (value: number|Pattern<any>, pattern: Pattern<any>) => cycle((from, to) => {
-    return pattern.query(from, to).map((hap) => {
-        const valueHaps = value instanceof Pattern ? value.query(hap.from, hap.to) : [{from, to, value}]
-        const interpValue = valueHaps[0].value
-
-        return {
-            from: hap.from,
-            to: hap.to,
-            value: hap.value + (interpValue - hap.value) * ((hap.from + hap.to) / 2 % 1)
-        }
-    });
-})
-
 export const methods = {
     fast,
     slow,
@@ -230,6 +243,7 @@ export const methods = {
     stack,
     saw, range, ramp, sine, cosine, tri, pulse, square,
     interp,
+    degrade,
     // add all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,
@@ -254,6 +268,6 @@ class Pattern<T> {
     }
 }
 
-const code = "saw(0,1,4).interp(saw(0,10,4))";
+const code = "sine().degrade(.9)";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 console.log(result.query(0, 1));
