@@ -104,6 +104,11 @@ const mtr = withValue((outMin, outMax, ...rest) => {
 });
 
 /**
+ * Scale - alias for mtr
+ */
+const scale = (...args: Parameters<typeof mtr>) => mtr(...args);
+
+/**
  * Clamp - clamp pattern values to a given range
  * @param min - minimum value, default 0
  * @param max - maximum value, default 1
@@ -362,7 +367,7 @@ export const methods = {
     slow,
     stack,
     saw, range, ramp, sine, cosine, tri, pulse, square,
-    mtr, clamp,
+    mtr, scale, clamp,
     interp,
     degrade,
     choose, coin, rarely, sometimes, often,
@@ -378,9 +383,9 @@ export const methods = {
  * Pattern class.
  * Holds a query function and binds all methods to the instance.
  */
-class Pattern<T> {
+export class Pattern<T> {
     query: (from: number, to: number) => Hap<T>[];
-    constructor(query: (from: number, to: number) => Hap<T>[]) {
+    constructor(query: (from: number, to: number) => Hap<T>[] = (from, to) => [{ from, to, value: undefined as any }]) {
         this.query = query;
 
         // bind methods to this pattern instance
@@ -394,4 +399,5 @@ class Pattern<T> {
 const code = "random().mul(10).clamp()";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 // @ts-ignore
-console.log(result.query(0, 1).map(h=> h.value));
+// console.log(result.query(0, 1).map(h=> h.value));
+console.log(set(1).add(4).query(0,10).map(h=> h.value));
