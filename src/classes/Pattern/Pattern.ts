@@ -1,3 +1,5 @@
+// TODO: is it possible for fast and slow to accept a patern?
+
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -9,7 +11,7 @@ const P = <T>(q: (from: number, to: number) => Hap<T>[]) => new Pattern(q);
 
 // Util: unwrap function to handle raw values and nested patterns
 const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => 
-    (value instanceof Pattern ? value.query(from, to) : [{from, to, value}])[0].value
+    value instanceof Pattern ? value.query(from, to)[0].value : value
 
 // base cycle function, returning a Pattern instance
 const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to) => {
@@ -32,7 +34,7 @@ const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to
 
 /**
  * Edit the Hap values in a pattern using a callback function
- * @param callback - function to edit each Hap value
+ * @param callback - function to edit each Hap value @param v - current Hap value, w - value to edit with, from - start time, to - end time
  * @ignore - internal use only
  */
 const withValue = (callback: (v: any, w: any, from: number, to: number) => any) => 
@@ -273,34 +275,26 @@ const rarely = () => weightedCoin(0.25)
  * @example often()
  */
 const often = () => weightedCoin(0.75)
-
-// base function for using logical expressions on Patterns
-const compare = (callback: (a: any, b: any) => boolean) => (value: number|Pattern<any>, pattern: Pattern<any>) => cycle((from, to) => 
-    pattern.query(from, to).map(hap => ({
-        from: hap.from,
-        to: hap.to,
-        value: callback(hap.value, unwrap(value, hap.from, hap.to)) ? 1 : 0
-    })));
 /**
  * Compare with a value. If both are truthy, return 1, else 0.
  * @param value - can be a Pattern or a raw value
  * @example coin().and(coin()) // returns 1 when both coins() are truthy
  */
-const and = compare((a, b) => a && b)
+const and = withValue((v, w) => v && w);
 
 /**
  * Compare with a value. If one of them is truth, return 1, else 0.
  * @param value - can be a Pattern or a raw value
  * @example coin().or(coin()) // returns 1 when either coin() is truthy
  */
-const or = compare((a, b) => a || b)
+const or = withValue((v, w) => v || w);
 
 /**
  * Use XOR to compare values.
  * @param - can be a Pattern or a raw value
  * @example set(1).xor(1) // returns 0
  */
-const xor = compare((a, b) => a != b)
+const xor = withValue((v, w) => v != w ? 1 : 0);
 
 /**
  * Map to Range - map pattern values from one range to another
@@ -382,7 +376,7 @@ class Pattern<T> {
     }
 }
 
-const code = "sine().degrade(0.3)";
+const code = "seq(1,1,1,1).add(saw(0,10))";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 // @ts-ignore
 console.log(result.query(0, 1));
