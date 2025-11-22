@@ -262,13 +262,30 @@ const or = compare((a, b) => a || b)
  */
 const xor = compare((a, b) => a != b)
 
+/**
+ * Map to Range - map pattern values from one range to another
+ * @param outMin - output minimum
+ * @param outMax - output maximum
+ * @param inMin - input minimum, default 0
+ * @param inMax - input maximum, default 1
+ * @example random().mtr(50, 100) // maps random() values from 0-1 to 50-100
+ */
+const mtr = (...args: (number|Pattern<any>)[]) => {
+    const pattern = args[args.length - 1] as Pattern<any>;
+    const [outMin, outMax, inMin = 0, inMax = 1] = args.slice(0, -1) as number[];
+    return cycle((from, to) => pattern.query(from, to).map(hap => ({
+        from: hap.from,
+        to: hap.to,
+        value: outMin + (outMax - outMin) * ((hap.value - inMin) / (inMax - inMin))
+    })));
+}
+
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
     // @ts-ignore
     if(!args.length) return [{from, to, value: Math[operator]()}]
-    // otherwise, the last arg will always be the pattern
-    const p = args[args.length - 1]
-    // @ts-ignore - so we can ignore .ts
+
+    const p = args[args.length - 1] as Pattern<any>;
     return p.query(from, to).map(hap => ({
         from: hap.from,
         to: hap.to,
@@ -286,20 +303,17 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
 const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
 
 export const methods = {
-    fast,
-    slow,
     set,
     cat,
     seq,
-    choose,
+    fast,
+    slow,
     stack,
     saw, range, ramp, sine, cosine, tri, pulse, square,
+    mtr,
     interp,
     degrade,
-    coin, 
-    rarely, 
-    sometimes, 
-    often,
+    choose, coin, rarely, sometimes, often,
     and, or, xor,
     // insert all operators from the Math object
     ...operators.reduce((obj, name) => ({
@@ -325,7 +339,7 @@ class Pattern<T> {
     }
 }
 
-const code = "set(1).xor(1)";
+const code = "sine().mtr(0, 127).round()";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 // @ts-ignore
-console.log(result.query(0, 1).map(h=>h.value));
+console.log(result.query(0, 1/16));
