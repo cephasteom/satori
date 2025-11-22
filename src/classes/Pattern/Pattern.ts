@@ -4,8 +4,12 @@
 // Happening type, representing a value occurring over a time range.
 declare type Hap<T> = { from: number; to: number; value: T };
 
-// Pattern creation shortcut:
+// Util: Pattern creation shortcut
 const P = <T>(q: (from: number, to: number) => Hap<T>[]) => new Pattern(q);
+
+// Util: unwrap function to handle raw values and nested patterns
+const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => 
+    (value instanceof Pattern ? value.query(from, to) : [{from, to, value}])[0].value
 
 // base cycle function, returning a Pattern instance
 const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to) => {
@@ -26,9 +30,21 @@ const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to
     return bag;
 })
 
-// unwrap function to handle raw values and nested patterns
-const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => 
-    (value instanceof Pattern ? value.query(from, to) : [{from, to, value}])[0].value
+/**
+ * Edit the Haps in a pattern using a callback function
+ * @param callback - function to edit each Hap
+ * @ignore - internal use only
+ */
+const withHap = (callback: (hap: Hap<any>) => Hap<any>, pattern: Pattern<any>) =>
+    P((from, to) => pattern.query(from, to).map(callback));
+
+/**
+ * Edit the Hap values in a pattern using a callback function
+ * @param callback - function to edit each Hap value
+ * @ignore - internal use only
+ */
+const withValue = (callback: (value: any) => any, pattern: Pattern<any>) =>
+    withHap(hap => ({...hap, value: callback(hap.value)}), pattern);
 
 /**
  * Fast - speed up a pattern by a given factor
@@ -303,6 +319,7 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
 const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
 
 export const methods = {
+    withValue,
     set,
     cat,
     seq,
@@ -339,7 +356,7 @@ class Pattern<T> {
     }
 }
 
-const code = "sine().mtr(0, 127).round()";
+const code = "cat('cadet','powder','sky','cornflower').withValue(v=>v+'blue').fast(9)";
 const result = new Function(...Object.keys(methods), `return ${code}`)(...Object.values(methods));
 // @ts-ignore
-console.log(result.query(0, 1/16));
+console.log(result.query(0, 1));
