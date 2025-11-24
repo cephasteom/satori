@@ -1,0 +1,17 @@
+#help {
+    max-height: calc(100vh - 2rem);
+    overflow-y: scroll;
+}
+
+#help > h2 {
+    margin-top: 0;
+}
+
+#help code {
+    max-width: 100%;
+}
+
+.help__list {
+    padding: 0;
+    list-style: none;
+}

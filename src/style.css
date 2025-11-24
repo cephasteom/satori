@@ -14,8 +14,9 @@ body {
 main {
     display: flex;
     gap: 1rem;
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
 }
 
 main > section {
-    width: 100%;
+    width: 50%;
 }
