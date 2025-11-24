@@ -5,7 +5,6 @@ export interface Stream extends Record<string, any> {
     id: string;
 }
 
-
 /**
  * A Stream is a musical layer. You can think of it as a track in a DAW, or a channel in a mixer.
  * It can be used to control multiple instruments, effects, and routing.
@@ -49,7 +48,6 @@ export class Stream {
     query(from: number, to: number) {
         // gather the events from .e pattern
         const events = this.e?.query(from, to) || [];
-        console.log('events', events);  
         return events
             // only keep events with a value
             .filter((e: Hap<any>) => !!e.value)
@@ -72,25 +70,21 @@ export class Stream {
     }
 }
 
-const s0 = new Stream('s0');
-const s1 = new Stream('s1');
+// const s0 = new Stream('s0');
+// const s1 = new Stream('s1');
 
-
-s0.set({
-    inst: 0,
-    reverb: sine().mul(10),
-    e: seq(1,0,1).add(1) })
+// s0.set({
+//     // inst: 0,
+//     // reverb: sine().mul(10),
+//     e: seq(1,0,1,1).degrade(1) })
     
-    
-// nice! because everything is immutable, we can reference patterns from other streams
-s1.set({
-    e: s0.e
-})
+// // nice! because everything is immutable, we can reference patterns from other streams
+// s1.set({
+//     e: s0.e
+// })
 
-// TODO: check what happens when we call addition methods on top of it, such as degrade. I think we do need the get method...
-
-console.log(
-    s0.query(0,1).map(h => h.params), 
-    // s1.query(0,1)
-);
+// console.log(
+//     s0.query(0,1).map(h => h.params), 
+//     // s1.query(0,1)
+// );
 // We should be able to do something like this s0.e.coin().repeat(8), or repeat(8, coin()). Or even better, do(8, coin()) to create a pattern that repeats 8 times with coin flips each time.
