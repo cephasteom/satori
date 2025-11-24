@@ -1,3 +1,21 @@
-.prism-code-editor {
-  height: 100vh;
+:root {
+    --theme-blue: #011627;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: var(--theme-blue);
+    color: white;
+    padding: 1rem;
+    height: calc(100vh - 2rem);
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+}
+
+main > section {
+    width: 100%;
 }

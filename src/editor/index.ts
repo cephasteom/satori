@@ -26,6 +26,8 @@ import 'prism-code-editor/invisibles.css';
 import 'prism-code-editor/themes/night-owl.css';
 import 'prism-code-editor/search.css';
 
+import './style.css'
+
 /**
  * Initialize the code editor in an element with ID 'editor'
  */
