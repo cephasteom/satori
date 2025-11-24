@@ -1,7 +1,7 @@
 /**
  * Code editor setup.
  * If you want to make use of this, add a <div id="editor"></div> to your HTML.
- * Then, listen out for the 'executeCode' event to get the code the user has written.
+ * Then, listen out for the 'evaluateCode' event to get the code the user has written.
  */
 import "prism-code-editor/prism/languages/markup"
 import 'prism-code-editor/prism/languages/typescript';
@@ -49,12 +49,12 @@ export const editor = editorFromPlaceholder(
 );
 
 /**
- * If a user presses Shift+Enter, fire a custom 'executeCode' event
+ * If a user presses Shift+Enter, fire a custom 'evaluateCode' event
  */
 editor.textarea.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && e.ctrlKey) {
         e.preventDefault();
-        window.dispatchEvent(new CustomEvent("executeCode", { detail: { code: editor.value } }));
+        window.dispatchEvent(new CustomEvent("evaluateCode", { detail: { code: editor.value } }));
         return false;
     }
 });
