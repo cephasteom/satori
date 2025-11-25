@@ -1,6 +1,14 @@
 import { marked } from 'marked';
+import 'highlight.js/styles/github-dark.min.css';
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+import typescript from 'highlight.js/lib/languages/typescript';
+
 import Pattern from './Pattern.json'
 import './style.css';
+
+hljs.registerLanguage('typescript', typescript);
+hljs.registerLanguage('javascript', javascript);
 
 // extract all Pattern methods
 const patternMethods = (Pattern.children.find((item) => item.name === 'methods')?.type?.declaration?.children || [])
@@ -39,4 +47,4 @@ if (helpElement) {
     `;
 }
 
-                            
+hljs.highlightAll();
