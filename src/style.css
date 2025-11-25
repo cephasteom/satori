@@ -1,5 +1,11 @@
 :root {
     --theme-blue: #011627;
+    --theme-blue-dark: #0d1117;
+    --theme-blue-medium: #122d42;
+    --theme-blue-light: #75beff;
+    --theme-orange: #ef5350;
+    --theme-yellow: #ee9d28;
+    --theme-mauve: #b180d7;
 }
 
 body {
@@ -15,8 +21,21 @@ main {
     display: flex;
     gap: 1rem;
     font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    height: 100%;
 }
 
 main > section {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#console {
+    height: 30%;
+}
+
+#help {
+    height: 70%;
+
 }

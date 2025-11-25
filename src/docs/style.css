@@ -1,6 +1,9 @@
 #help {
-    max-height: calc(100vh - 2rem);
     overflow-y: scroll;
+    /* background-color: var(--theme-blue-dark); */
+    /* var(--theme-blue-dark); in rgba */
+    background-color: rgba(13, 17, 23, 0.4);
+    padding: 1rem;
 }
 
 #help > h2 {

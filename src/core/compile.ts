@@ -10,6 +10,8 @@ const streams = Array(16).fill(0).map((_, i) => new Stream('s' + i))
 // Util: reset all streams to initial state
 export const reset = () => streams.forEach(stream => stream.__reset());
 
+const channel = new BroadcastChannel('sartori');
+
 // everything the user should be able to access in their code
 const scope = {
     streams,
@@ -32,11 +34,11 @@ export function evaluate(code: string) {
         new Function(...Object.keys(scope), `${code}`)(...Object.values(scope));
         // Store the last successfully evaluated code
         lastCode = code;
-    } catch (e) {
-        // Log the compilation error
-        console.error('Compilation error:', e);
+    } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);
+        // and broadcast the error for anyone who wants to consume it
+        channel.postMessage({ type: 'error', message: e.message } );
     }
 }
 

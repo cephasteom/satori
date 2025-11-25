@@ -1,0 +1,14 @@
+#console {
+    background: var(--theme-blue-dark);
+    overflow-y: scroll;
+    padding: 1rem;
+}
+.console__message {
+    margin: 0 0 1rem 0;
+}
+.console__message--success {
+    color: var(--theme-yellow);
+}
+.console__message--info {
+    color: var(--theme-mauve);
+}
