@@ -1,5 +1,6 @@
 import { evaluate } from './core/compile';
 import { Scheduler } from './core/Scheduler';
+import { handler } from './oto';
 import './editor';
 import './docs';
 import './console';
@@ -15,7 +16,7 @@ window.addEventListener("evaluateCode", (e) => {
 // Init Scheduler
 const scheduler = new Scheduler(
     new AudioContext(), // requires an AudioContext
-    (event: any, time: number) => console.log(event, time) // handle scheduled events here. For now, we just log them.
+    (event: any, time: number) => handler(event, time) // handle scheduled events here. For now, we just log them.
 );
 
 // Play / Stop controls

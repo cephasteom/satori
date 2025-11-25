@@ -4,7 +4,7 @@ let channels: Record<string, Channel> = {};
 
 // TODO: typing of event
 // TODO: cut
-export function handle(event: any, time: number) {
+export function handler(event: any, time: number) {
     const { id, params } = event;
     const { out = 0 } = params;
     
