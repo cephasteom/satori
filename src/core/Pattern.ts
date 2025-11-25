@@ -51,52 +51,52 @@ const withValue = (callback: (...args: any[]) => any) =>
     })
 
 /**
- * Add - add a value or pattern to the current pattern
- * @param value - value or pattern to add
- * @example seq(1,2,3).add(2) // results in 3,4,5 over successive cycles
- * @example seq(1,2,3).add(saw(0,3,3)) // results in 1+0, 2+1, 3+2 over successive cycles
+ * Add a value or pattern.
+ * @param value - value or pattern to add.
+ * @example seq(1,2,3).add(2) // 3,4,5
+ * @example seq(1,2,3).add(saw(0,3,3)) // 1, 3, 5
  */ 
 const add = withValue((next, prev) => next + prev);
 
 /** 
- * Sub - subtract a value or pattern from the current pattern
- * @param value - value or pattern to subtract
- * @example seq(5,6,7).sub(2) // results in 3,4,5 over successive cycles
- * @example seq(5,6,7).sub(saw(0,3,3)) // results in 5-0, 6-1, 7-2 over successive cycles
+ * Subtract a value or pattern from the current pattern.
+ * @param value - value or pattern to subtract.
+ * @example seq(5,6,7).sub(2) // 3,4,5
+ * @example seq(5,6,7).sub(saw(0,3,3)) // 5, 5, 5
  */
 const sub = withValue((next, prev) => prev - next);
 
 /** 
- * Mul - multiply the current pattern by a value or pattern
- * @param value - value or pattern to multiply by
- * @example seq(1,2,3).mul(2) // results in 2,4,6 over successive cycles
- * @example seq(1,2,3).mul(saw(1,3,3)) // results in 1*1, 2*2, 3*3 over successive cycles
+ * Multiply the current pattern by a value or pattern.
+ * @param value - value or pattern to multiply by.
+ * @example seq(1,2,3).mul(2) // 2,4,6
+ * @example seq(1,2,3).mul(saw(1,3,3)) // 1, 4, 9
  */
 const mul = withValue((next, prev) => next * prev);
    
 /** 
- * Div - divide the current pattern by a value or pattern
- * @param value - value or pattern to divide by
- * @example seq(2,4,6).div(2) // results in 1,2,3 over successive cycles
- * @example seq(2,4,6).div(saw(1,3,3)) // results in 2/1, 4/2, 6/3 over successive cycles
+ * Divide the current pattern by a value or pattern.
+ * @param value - value or pattern to divide by.
+ * @example seq(2,4,6).div(2) // 1,2,3
+ * @example seq(2,4,6).div(saw(1,3,3)) // 2, 2, 2
  */
 const div = withValue((next, prev) => prev / next);
 
 /**
- * Mod - modulo the current pattern by a value or pattern
- * @param value - value or pattern to modulo by
- * @example seq(5,6,7).mod(4) // results in 1,2,3 over successive cycles
- * @example seq(5,6,7).mod(saw(1,4,3)) // results in 5%1, 6%2, 7%3 over successive cycles
+ * Modulo the current pattern by a value or pattern.
+ * @param value - value or pattern to modulo by.
+ * @example seq(5,6,7).mod(4) // 1,2,3
+ * @example seq(5,6,7).mod(saw(1,4,3)) // 5%1, 6%2, 7%3
  */
 const mod = withValue((next, prev) => prev % next);
 
 /**
- * Map to Range - map pattern values from one range to another
+ * Map to Range. Map pattern values from one range to another.
  * @param outMin - output minimum
  * @param outMax - output maximum
  * @param inMin - input minimum, default 0
  * @param inMax - input maximum, default 1
- * @example random().mtr(50, 100) // maps random() values from 0-1 to 50-100
+ * @example random().mtr(50, 100) // from 0-1 to 50-100
  */
 const mtr = withValue((outMin, outMax, ...rest) => {
     rest = rest.slice(0, -2); // remove from and to
@@ -107,12 +107,12 @@ const mtr = withValue((outMin, outMax, ...rest) => {
 });
 
 /**
- * Scale - alias for mtr
+ * Alias for mtr.
  */
 const scale = (...args: Parameters<typeof mtr>) => mtr(...args);
 
 /**
- * Clamp - clamp pattern values to a given range
+ * Clamp pattern values to a given range.
  * @param min - minimum value, default 0
  * @param max - maximum value, default 1
  * @example random().mul(10).clamp(2, 4) // clamps random()*10 values to between 2 and 4
@@ -126,8 +126,8 @@ const clamp = withValue((...args) => {
 });
 
 /**
- * Fast - speed up a pattern by a given factor
- * @param factor - the factor by which to speed up the pattern
+ * Speed up a pattern by a given factor.
+ * @param factor
  * @example seq('A', 'B', 'C').fast(3) // A for 1/3 cycle, B for 1/3 cycle, C for 1/3 cycle.
  */
 const fast = (factor: number, pattern: Pattern<any>) => 
@@ -138,35 +138,35 @@ const fast = (factor: number, pattern: Pattern<any>) =>
     })));
 
 /**
- * Slow - slow down a pattern by a given factor
+ * Slow down a pattern by a given factor
  * @param factor 
  * @example seq('A', 'B', 'C').slow(2) // A for 2 cycles, B for 2 cycles, C for 2 cycles.
  */
 const slow = (factor: number, pattern: Pattern<any>) => fast(1 / factor, pattern);
 
 /**
- * Cat - concatenate values into a pattern, one per cycle
- * @param values - values to concatenate, Can be patterns or raw values.
+ * Concatenate values, one per cycle.
+ * @param values
  * @example cat('A', 'B', 'C') // A for 1 cycle, B for 1 cycle, C for 1 cycle.
  */
 const cat = (...values: any[]) => 
     cycle((from, to) => [{ from, to, value: values[from % values.length] }]);
 
 /**
- * Set - just an alias for cat, as it reads better when you're setting a single value
+ * Alias for cat.
  */
 const set = (...args: Parameters<typeof cat>) => cat(...args);
 
 /**
- * Seq - sequence values into a single cycle
- * @param values - values to sequence. Can be patterns or raw values.
+ * Sequence values into a single cycle.
+ * @param values
  * @example seq('A', 'B', 'C', 'D') // A for .25 cycle, B for .25 cycle ... D for .25 cycle
  */
 const seq = (...values: any[]) => fast(values.length, cat(...values));
 
 /**
- * Choose - randomly choose from a set of values
- * @param values - values to choose from. Can be patterns or raw values.
+ * Randomly choose from a set of values.
+ * @param values
  * @example choose('A', 'B', 'C') // randomly chooses A, B, or C each cycle.
  */
 const choose = (...values: (any[])) => 
@@ -181,12 +181,12 @@ const waveform = (callback: (i: number, ...args: number[]) => number) =>
         );
 
 /**
- * Saw - generate a ramp of values from min to max, once per cycle
+ * Generate a ramp of values from min to max, once per cycle.
  * @param min - start value
  * @param max - end value
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example saw(0, 4) // generates a ramp from 0 to 1 over the course of 1 cycle
- * @example saw(0,1,96).slow(2) // generates a ramp from 0 to 1 over the course of 2 cycles, with finer steps to mitigate the slow pattern
+ * @example saw(0, 4) // a ramp from 0 to 4 over the course of 1 cycle
+ * @example saw(0,1,96).slow(2) // a ramp from 0 to 1 over the course of 2 cycles, with finer steps to mitigate the slow pattern
  */
 const saw = (min: number = 0, max: number = 1, q: number = 48) => 
     waveform((i, min, max, q) => {
@@ -199,17 +199,17 @@ const saw = (min: number = 0, max: number = 1, q: number = 48) =>
  */
 const range = (...args: Parameters<typeof saw>) => saw(...args);
 
-/** Ramp - alias for saw
+/** Alias for saw
  */
 const ramp = (...args: Parameters<typeof saw>) => saw(...args);
 
 /**
- * Sine - generate a sine wave pattern from min to max over one cycle
+ * Generate a sine wave pattern from min to max over one cycle/
  * @param min - minimum value
  * @param max - maximum value
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example sine(0, 1) // generates a sine wave from 0 to 1 over the course of 1 cycle
- * @example sine(-1, 1, 96).slow(2) // generates a sine wave from -1 to 1 over the course of 2 cycles, with finer steps to mitigate the slow pattern
+ * @example sine(0, 1) // a sine wave from 0 to 1 over the course of 1 cycle
+ * @example sine(-1, 1, 96).slow(2) // a sine wave from -1 to 1 over the course of 2 cycles, with finer steps to mitigate the slow pattern
  */
 const sine = (min: number = 0, max: number = 1, q: number = 48) => 
     waveform((i, min, max, q) => {
@@ -219,11 +219,11 @@ const sine = (min: number = 0, max: number = 1, q: number = 48) =>
     })(min, max, q);
 
 /**
- * Cosine - generate a cosine wave pattern from min to max over one cycle
+ * Generate a cosine wave pattern from min to max over one cycle
  * @param min - minimum value
  * @param max - maximum value
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example cosine(0, 1) // generates a cosine wave from 0 to 1 over the course of 1 cycle
+ * @example cosine(0, 1) // a cosine wave from 0 to 1 over the course of 1 cycle
  */
 const cosine = (min: number = 0, max: number = 1, q: number = 48) => 
     waveform((i, min, max, q) => {
@@ -233,11 +233,11 @@ const cosine = (min: number = 0, max: number = 1, q: number = 48) =>
     })(min, max, q);
 
 /**
- * Tri - generate a triangle wave pattern from min to max over one cycle
+ * Generate a triangle wave pattern from min to max over one cycle
  * @param min - minimum value
  * @param max - maximum value
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example tri(0, 1) // generates a triangle wave from 0 to 1 over the course of 1 cycle
+ * @example tri(0, 1) // a triangle wave from 0 to 1 over the course of 1 cycle
  */
 const tri = (min: number = 0, max: number = 1, q: number = 48) => 
     waveform((i, min, max, q) => {
@@ -247,12 +247,12 @@ const tri = (min: number = 0, max: number = 1, q: number = 48) =>
     })(min, max, q);
 
 /**
- * Pulse - same as square but you can set the duty cycle
+ * Generate a pulse wave pattern from min to max over one cycle.
  * @param min - minimum value
  * @param max - maximum value
  * @param duty - duty cycle (0 to 1)
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example pulse(0, 1, 0.25) // generates a pulse wave from 0 to 1 with a duty cycle of 25% over the course of 1 cycle
+ * @example pulse(0, 1, 0.25) // a pulse wave from 0 to 1 with a duty cycle of 25% over the course of 1 cycle
  */
 const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number = 48) => 
     waveform((i, min, max, duty, q) => {
@@ -262,30 +262,30 @@ const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number =
     })(min, max, duty, q);
 
 /**
- * Square - generate a square wave pattern from min to max over one cycle
+ * Alias for pulse with a duty cycle of 0.5.
  * @param min - minimum value
  * @param max - maximum value
- * @example square(0, 4) // generates a square wave from 0 to 4 over the course of 1 cycle
+ * @example square(0, 4) // a square wave from 0 to 4 over the course of 1 cycle
  */
 const square = (min: number = 0, max: number = 1, q: number = 48) => pulse(min, max, 0.5, q);
 
 /**
- * Stack - layer given set of values over the same time range
- * @param values - values to layer. Can be patterns or raw values.
+ * Layer values over the same time range.
+ * @param values
  * @example stack(0, sine(), square()) // layers a sine wave and square wave over a constant 0 value.
  */
 const stack = (...values: any[]) => cycle((from, to) => values.map((value) => ({ from, to, value })));
 
 /**
- * Interp - interpolate values
- * @param value - value to interpolate with. Can be pattern or raw value.
+ * Interpolate values.
+ * @param value
  * @example sine().interp(saw()) // interpolates between sine and saw waveforms over time 
  */
 const interp = withValue((v, w, from, to) => v + (w - v) * ((from + to) / 2 % 1));
 
 /**
- * Degrade - randomly replace values with 0 based on a given probability
- * @param probability - number between 0 and 1
+ * Randomly replace values with 0 based on a given probability.
+ * @param probability
  * @example sine().degrade(0.3) // randomly replaces 30% of sine wave values with 0
  */
 const degrade = withValue((v, w) => Math.random() < w ? 0 : v);
@@ -295,44 +295,45 @@ const weightedCoin = (probability: number|Pattern<any> = 0.5) =>
     P((from, to) => ([{from, to, value: Math.random() < unwrap(probability, from, to) ? 1 : 0}]));
 
 /**
- * Coin - return an equal distribution of 1s and 0s
+ * Return an equal distribution of 1s and 0s.
  * @example coin()
  */
 const coin = () => weightedCoin(0.5);
 
 /**
- * Sometimes - alias for coin
+ * Alias for coin
  */
 const sometimes = coin
 
 /**
- * Rarely - return mostly 0s, occasionally 1s
+ * Return mostly 0s, occasionally 1s
  * @example rarely()
  */
 const rarely = () => weightedCoin(0.25)
 
 /**
- * Often - return mostly 1s, occasionally 0s
+ * Return mostly 1s, occasionally 0s.
  * @example often()
  */
 const often = () => weightedCoin(0.75)
+
 /**
- * Compare with a value. If both are truthy, return 1, else 0.
- * @param value - can be a Pattern or a raw value
+ * Compare values. If both are truthy, return 1, else 0.
+ * @param value
  * @example coin().and(coin()) // returns 1 when both coins() are truthy
  */
 const and = withValue((v, w) => v && w);
 
 /**
- * Compare with a value. If one of them is truth, return 1, else 0.
- * @param value - can be a Pattern or a raw value
+ * Compare values. If one of them is truthy, return 1, else 0.
+ * @param value
  * @example coin().or(coin()) // returns 1 when either coin() is truthy
  */
 const or = withValue((v, w) => v || w);
 
 /**
- * Use XOR to compare values.
- * @param - can be a Pattern or a raw value
+ * Compare values. If one is truthy and the other is falsy, return 1, else 0.
+ * @param value
  * @example set(1).xor(1) // returns 0
  */
 const xor = withValue((v, w) => v != w ? 1 : 0);

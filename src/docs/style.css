@@ -15,3 +15,7 @@
     padding: 0;
     list-style: none;
 }
+
+.help__list li {
+    margin-bottom: 3rem;
+}
