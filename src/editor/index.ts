@@ -38,8 +38,8 @@ export const editor = editorFromPlaceholder(
         lineNumbers: false,
         // content
         value: `s0({ 
-  inst: 'tone.synth', n: 48, cut: 's0', 
-  e:seq(1,1,1) })`,
+  inst: 'sampler', n: 60, cut: 's0', bank: '808bd',
+  e:seq(1,1,1).fast(2) })`,
     },
     indentGuides(),
     matchBrackets(),

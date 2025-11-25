@@ -1,4 +1,4 @@
-import { Channel } from './Channel'
+import { Channel } from './Channel';
 
 let channels: Record<string, Channel> = {};
 

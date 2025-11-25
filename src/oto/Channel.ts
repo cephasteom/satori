@@ -7,8 +7,9 @@ import TSynth from './ct-synths/tone/Synth'
 import TMono from './ct-synths/tone/MonoSynth'
 import TFM from './ct-synths/tone/FMSynth'
 import TAM from './ct-synths/tone/AMSynth'
+import { samples } from './samples';
 
-const console = new BroadcastChannel('sartori');
+const sartori = new BroadcastChannel('sartori');
 
 const destination = getDestination() // system audio output
 destination.channelCount = destination.maxChannelCount // set to max channels
@@ -63,7 +64,7 @@ export class Channel {
 
         // check that instrument is valid
         if(!Object.keys(instMap).includes(inst)) {
-            return console.postMessage({ 
+            return sartori.postMessage({ 
                 type: 'error', 
                 message: `Instrument type "${inst}" not recognised.` 
             });
@@ -73,6 +74,8 @@ export class Channel {
         if(!this.instruments[inst]) {
             this.instruments[inst] = new instMap[inst]();
             this.instruments[inst].connect(this.input);
+            this.instruments[inst].banks = samples; // provide samples if applicable
+            console.log(this.instruments[inst].banks)
         }
 
         // play instrument with given params
