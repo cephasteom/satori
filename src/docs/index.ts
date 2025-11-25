@@ -1,3 +1,5 @@
+// TODO: grab comments from the class - e.g. a Stream is x.
+
 import { marked } from 'marked';
 import 'highlight.js/styles/github-dark.min.css';
 import hljs from 'highlight.js/lib/core';
