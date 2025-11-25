@@ -1,6 +1,6 @@
 #help {
     overflow-y: scroll;
-    background-color: rgba(13, 17, 23, 0.4);
+    background: var(--theme-blue-dark);
     padding: 1rem;
 }
 
@@ -10,6 +10,8 @@
 
 #help code {
     max-width: 100%;
+    background: var(--theme-blue-medium);
+    border-radius: 5px;
 }
 
 .help__list {
