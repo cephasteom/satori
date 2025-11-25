@@ -1,5 +1,12 @@
 import { Gain, Split, Merge, getDestination } from 'tone'
-import Synth from './ct-synths/tone/Synth'
+import Synth from './ct-synths/rnbo/Synth'
+import Sampler from './ct-synths/rnbo/Sampler'
+import Granular from './ct-synths/rnbo/Granular';
+import AcidSynth from './ct-synths/rnbo/AcidSynth';
+import TSynth from './ct-synths/tone/Synth'
+import TMono from './ct-synths/tone/MonoSynth'
+import TFM from './ct-synths/tone/FMSynth'
+import TAM from './ct-synths/tone/AMSynth'
 
 const console = new BroadcastChannel('sartori');
 
@@ -9,8 +16,17 @@ destination.channelCount = destination.maxChannelCount // set to max channels
 const output = new Merge({channels: destination.maxChannelCount}) // create output merger
 output.connect(destination) // connect to system audio output
 
-const instMap: Record<string, typeof Synth> = {
-    'tone.synth': Synth,
+declare type Instrument = typeof Synth | typeof Sampler | typeof Granular | typeof AcidSynth | typeof TSynth | typeof TMono | typeof TFM | typeof TAM
+
+const instMap: Record<string, Instrument> = {
+    'synth': Synth,
+    'sampler': Sampler,
+    'granular': Granular,
+    'acid': AcidSynth,
+    'tone.synth': TSynth,
+    'tone.mono': TMono,
+    'tone.fm': TFM,
+    'tone.am': TAM,
 }
 
 /**
@@ -61,5 +77,14 @@ export class Channel {
 
         // play instrument with given params
         this.instruments[inst].play(params, time);
+    }
+
+    /** 
+     * Cut all instruments on this channel
+     */
+    cut(time: number) {
+        Object.values(this.instruments).forEach(inst => {
+            inst.cut(time);
+        });
     }
 }

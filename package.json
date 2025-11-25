@@ -16,6 +16,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
+    "@rnbo/js": "^1.4.2",
     "highlight.js": "^11.11.1",
     "marked": "^17.0.1",
     "prism-code-editor": "^4.1.0",

@@ -7,8 +7,8 @@ let errors: {type: string, message: string}[] = []
 
 const initialMessages = [
     {type: 'success', message: 'Welcome to Sartori!'},
-    {type: 'info', message: 'ctrl + return to play.'},
-    {type: 'info', message: 'esc to stop.'},
+    {type: 'info', message: '`ctrl + return` to play.'},
+    {type: 'info', message: '`ctrl + .` to stop.'},
     {type: 'credit', message: `© Cephas Teom ${new Date().getFullYear()}`},
 ];
 

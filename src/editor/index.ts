@@ -37,7 +37,9 @@ export const editor = editorFromPlaceholder(
         language: 'typescript',
         lineNumbers: false,
         // content
-        value: `s0.set({ e:seq(1) })`,
+        value: `s0.set({ 
+  inst: 'tone.synth', n: 48, cut: 's0', 
+  e:seq(1,1,1) })`,
     },
     indentGuides(),
     matchBrackets(),

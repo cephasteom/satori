@@ -16,11 +16,12 @@ window.addEventListener("evaluateCode", (e) => {
 // Init Scheduler
 const scheduler = new Scheduler(
     new AudioContext(), // requires an AudioContext
-    (event: any, time: number) => handler(event, time) // handle scheduled events here. For now, we just log them.
+    (event: any, time: number) => handler(event, time) // handle scheduled events here.
 );
 
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
-    if(e.key === 'Enter' && e.ctrlKey) scheduler.play();
-    if(e.key === 'Escape') scheduler.stop();
+    if(!e.ctrlKey) return;
+    if(e.key === 'Enter') scheduler.play();
+    if(e.code === 'Period') scheduler.stop();
 });
