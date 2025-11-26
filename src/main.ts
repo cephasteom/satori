@@ -1,4 +1,4 @@
-// TODO: more accurate scheduling
+// TODO: how to handle dynamic cps changes?
 // TODO: mutations
 // TODO: test language - are we getting back what we expect?
 // TODO: mini lang
@@ -30,6 +30,6 @@ const scheduler = new Scheduler(
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
     if(!e.ctrlKey) return;
-    if(e.key === 'Enter') scheduler.play(.25);
+    if(e.key === 'Enter') scheduler.play();
     if(e.code === 'Period') scheduler.stop();
 });

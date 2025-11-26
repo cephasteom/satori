@@ -1,5 +1,6 @@
 import { Stream } from './Stream';
 import { methods, type Hap } from './Pattern';
+import { tempo } from './Tempo';
 
 // keep track of the last successfully evaluated code
 let lastCode: string = '';
@@ -12,6 +13,8 @@ export const reset = () => streams.forEach(stream => stream.__reset());
 
 const channel = new BroadcastChannel('sartori');
 
+const cps = (cps: number) => tempo.setcps(cps);
+
 // everything the user should be able to access in their code
 const scope = {
     streams,
@@ -19,7 +22,8 @@ const scope = {
         ...obj,
         [stream.id]: (params: Record<string, any>) => stream.set(params)
     }), {}),
-    ...methods
+    ...methods,
+    cps
 }
 
 /**
@@ -34,6 +38,7 @@ export function evaluate(code: string) {
         new Function(...Object.keys(scope), `${code}`)(...Object.values(scope));
         // Store the last successfully evaluated code
         lastCode = code;
+        
     } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);

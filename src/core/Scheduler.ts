@@ -1,4 +1,5 @@
 import { compile } from "./compile";
+import { tempo } from "./Tempo";
 
 /**
  * A Clock class to drive the scheduler. Lifted from https://garten.salat.dev/webaudio/clock.html. Ta!
@@ -72,12 +73,16 @@ export class Scheduler {
             ));
             this.phase = to;
         });
+        tempo.onChange(cps => {
+            this.stop();
+            this.cps = cps;
+            this.play();
+        });
     }
-    play(cps: number = 0.5) {
+    play() {
         if (this.isPlaying) return;
         this.phase = 0;
         this.origin = this.ac.currentTime;
-        this.cps = cps;
         this.clock.start(undefined, (this.duration / this.cps));
         this.isPlaying = true;
     }
