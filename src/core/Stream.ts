@@ -9,10 +9,9 @@ export interface Stream extends Record<string, any> {
  * It can be used to control multiple instruments, effects, and routing.
  * Stream instances are stored as `s0`, `s1`, `s2`, `s3`, `s4`, `s5`, `s6`, `s7` etc.
  * @example
- * s0.set({
-    inst: 0, 
-    reverb: sine(),
-    e: seq(1,0,1) })
+ * s0.set({ ... })
+ * @example
+ * s0({ ... }) // shorthand for s0.set({ ... })
  */
 export class Stream {
     constructor(id: string) {
@@ -23,10 +22,9 @@ export class Stream {
      * Set parameters on the Stream.
      * @param params - A record of parameter names and their values (Patterns or static values).
      * @example
-     * s0.set({
-        inst: 0, 
-        reverb: sine(),
-        e: seq(1,0,1) })
+     * s0.set({ ... }) // pass an object to set parameters
+     * @example
+     * s0({ ... }) // use this shorthand in Sartori
      */
     set(params: Record<string, any>) {
         Object.entries(params)

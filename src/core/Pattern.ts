@@ -91,7 +91,7 @@ const div = withValue((next, prev) => prev / next);
 const mod = withValue((next, prev) => prev % next);
 
 /**
- * Map to Range. Map pattern values from one range to another.
+ * Map from one range to another.
  * @param outMin - output minimum
  * @param outMax - output maximum
  * @param inMin - input minimum, default 0

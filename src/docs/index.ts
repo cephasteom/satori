@@ -57,24 +57,26 @@ const renderDocs = (streamMethods: Record<string, any>, patternMethods: Record<s
             <h2>Docs</h2>`
 
             + `<h3>Quick Start</h3>
-            <p>Streams are musical layers, represented by <code>s0()</code>, <code>s1()</code>, etc. Pass an object of parameters to control the stream.</p>
+            <p>Streams are musical layers, represented by <code>s0({...})</code>, <code>s1({...})</code>, ... <code>s15({...})</code>. Parameters are determined by the object passed.</p>
+            <p>Parameter values can be raw:</p>
             ${marked(`\`\`\`typescript
 s0({ inst: 'synth', note: 60, dur: 0.5 })
 \`\`\``)}
-            <p>Parameter values can be raw values, Patterns...</p>
+            <p>patterns:</p>
             ${marked(`\`\`\`typescript
-s1({ inst: 'synth', note: seq(60,62,64,65), dur: sine().add(.25) })
+s1({ note: seq(60,62,64,65), dur: sine().add(.25) })
 \`\`\``)}   
-            <p>...or mini-notation:</p>
+            <p>or mini-notation:</p>
             ${marked(`\`\`\`typescript
 s2({ note: 'Ddor%16..' })
 \`\`\``)}   
-            <p>Streams are triggered using the <code>e</code> parameter.</p>
+            <p>Trigger an event using <code>.e</code>:</p>
             ${marked(`\`\`\`typescript
 s3({ ..., e: seq(1,0,1) })
 \`\`\``)}`
             
             + `<h3>Stream</h3>
+            <p>A Stream represents a musical layer. In Sartori, you can create up to 16 streams (s0 to s15). </p>
             <ul class="help__list">
                 ${Object.entries(streamMethods).map(([name, info]) => `
                     <li>
