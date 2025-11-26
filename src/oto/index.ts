@@ -2,8 +2,9 @@ import { Channel } from './Channel';
 
 let channels: Record<string, Channel> = {};
 
-// TODO: typing of event
-export function handler(event: any, time: number) {
+declare type oEvent = {id: string, params: Record<string, any>, time: number};
+
+export function handler(event: oEvent, time: number) {
     const { id, params } = event;
     const { out = 0, cut = [], n } = params;
 

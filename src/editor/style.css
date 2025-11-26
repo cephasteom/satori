@@ -1,5 +1,6 @@
 .prism-code-editor {
     height: 100%;
+    background-color: var(--theme-blue-medium);
 }
 
 /* Reset padding and margin so that the editor is agnostic to surrounding styles */
