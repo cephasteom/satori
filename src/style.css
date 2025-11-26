@@ -58,11 +58,11 @@ main > section > div {
     }
     
     #console {
-        height: 30%;
+        height: 40%;
     }
     
     #help {
-        height: 70%;
+        height: 60%;
         display: block;
     }
 }

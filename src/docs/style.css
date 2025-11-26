@@ -4,6 +4,14 @@
     padding: 1rem;
 }
 
+#help article {
+    display: none;
+}
+
+#help article:first-of-type {
+    display: block;
+}
+
 #help > h2 {
     margin-top: 0;
 }

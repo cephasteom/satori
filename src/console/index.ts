@@ -5,9 +5,9 @@ channel.addEventListener('message', (e) => log(e.data.type, e.data.message));
 
 let messages: {type: string, message: string}[] = [
     {type: 'title', message: 'Sartori'},
+    {type: 'credit', message: `© Cephas Teom ${new Date().getFullYear()}`},
     {type: 'info', message: '`ctrl + return` to play.'},
     {type: 'info', message: '`ctrl + .` to stop.'},
-    {type: 'credit', message: `© Cephas Teom ${new Date().getFullYear()}`},
 ]
 
 function log(type: string, message: string) {

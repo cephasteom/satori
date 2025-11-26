@@ -49,12 +49,16 @@ const streamMethods: Record<string, any> = (Stream.children[0]?.children?.filter
 
 // get element with id 'help
 const helpElement = document.getElementById('help');
+let currentArticle = 'docs__quick-start';
 
-const renderDocs = (streamMethods: Record<string, any>, patternMethods: Record<string, any>) => {
+const renderDocs = (streamMethods: Record<string, any>, patternMethods: Record<string, any>, currentArticle: string) => {
     // fill with pattern methods
     if (helpElement) {
         helpElement.innerHTML = `
             <h2>Docs</h2>
+            <button>Quick Start</button>
+            <button>Stream</button>
+            <button>Pattern</button>
             `
 
             + `
@@ -117,4 +121,16 @@ s3({ ..., e: seq(1,0,1) })
     hljs.highlightAll();
 };
 
-renderDocs(streamMethods, patternMethods);
+renderDocs(streamMethods, patternMethods, currentArticle);
+
+// add event listeners to buttons
+document.querySelectorAll('#help button').forEach((button) => {
+    button.addEventListener('click', () => {
+        const articleId = `docs__${button.textContent?.toLowerCase().replace(' ', '-')}`;
+        const previousArticle = document.getElementById(currentArticle);
+        const nextArticle = document.getElementById(articleId);
+        if (previousArticle) previousArticle.style.display = 'none';
+        if (nextArticle) nextArticle.style.display = 'block';
+        currentArticle = articleId;
+    });
+});
