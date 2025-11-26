@@ -2,6 +2,10 @@
     background: var(--theme-blue-dark);
     overflow-y: scroll;
     padding: 1rem;
+    
+}
+.prism-code-editor {
+    --editor__bg-highlight: transparent;
 }
 .console__message {
     margin: 0 0 1rem 0;

@@ -21,7 +21,7 @@ function render() {
 
     console.innerHTML = `
         <div class="console__messages">
-            ${messages.map(err => `<p class="console__message console__message--${err.type}">${err.message}</p>`).join('')}
+            ${messages.map(message => `<${message.type === 'title' ? 'h1' : 'p'} class="console__message console__message--${message.type}">${message.message}</${message.type === 'title' ? 'h1' : 'p'}>`).join('')}
         </div>
     `;
 
