@@ -1,7 +1,5 @@
 import { compile } from "./compile";
 
-// TODO: typing of Haps
-
 /**
  * A Clock class to drive the scheduler. Lifted from https://garten.salat.dev/webaudio/clock.html. Ta!
  */
@@ -27,7 +25,7 @@ class Clock {
         constantNode.start(startTime);
         constantNode.stop(stopTime);
         constantNode.onended = () => {
-        onComplete();
+            onComplete();
             constantNode.disconnect();
         };
   }
@@ -35,9 +33,7 @@ class Clock {
         this.runs = false;
     }
     start(begin = this.ac.currentTime + 0.01, duration = 0.1) {
-        if (this.runs) {
-        return;
-        }
+        if (this.runs) return;
         this.runs = true;
         this.tick(begin, duration);
     }
@@ -59,31 +55,32 @@ class Clock {
  */
 export class Scheduler {
     duration = 0.125; // how many cycles / seconds we're querying per tick
+    cps = 0.5; // cycles per second
     origin: number = 0; // absolute time of first cycle (phase 0)
     phase = 0; // from origin to last tick
     ac: AudioContext; // audio context
     clock: Clock; // clock to drive the scheduler
-    handler: Function; // function to call for each hap
     isPlaying: boolean = false;
+    latency = 0.1; // latency compensation in seconds
     constructor(ac: AudioContext, handler: Function) {
         this.ac = ac; // audio context
-        this.handler = handler; // will be called for each hap
         this.clock = new Clock(ac, () => {
             const from = this.phase;
             const to = Math.round((this.phase + this.duration) * 1000) / 1000;
             compile(from, to)
                 .forEach((hap) => {
-                    const time = this.origin + hap.time;
-                    this.handler(hap, time)
+                    const time = this.origin + (hap.time / this.cps) + this.latency;
+                    handler(hap, time)
                 });
             this.phase = to;
         });
     }
-    play() {
+    play(cps: number = 0.5) {
         if (this.isPlaying) return;
         this.phase = 0;
         this.origin = this.ac.currentTime;
-        this.clock.start(undefined, this.duration);
+        this.cps = cps;
+        this.clock.start(undefined, (this.duration / this.cps));
         this.isPlaying = true;
     }
     stop() {

@@ -75,7 +75,6 @@ export class Channel {
             this.instruments[inst] = new instMap[inst]();
             this.instruments[inst].connect(this.input);
             this.instruments[inst].banks = samples; // provide samples if applicable
-            console.log(this.instruments[inst].banks)
         }
 
         // play instrument with given params

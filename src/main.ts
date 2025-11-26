@@ -30,6 +30,6 @@ const scheduler = new Scheduler(
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
     if(!e.ctrlKey) return;
-    if(e.key === 'Enter') scheduler.play();
+    if(e.key === 'Enter') scheduler.play(.25);
     if(e.code === 'Period') scheduler.stop();
 });
