@@ -43,7 +43,7 @@ class Clock {
         this.onTick(begin);
         const end = begin + (duration / tempo.cps);
         this.timeout(
-            () => this.runs && this.tick(end, (duration / tempo.cps)),
+            () => this.runs && this.tick(end, duration),
             begin,
             end
         );
@@ -55,7 +55,6 @@ class Clock {
  */
 export class Scheduler {
     duration = 0.125; // how many cycles / seconds we're querying per tick
-    cps = 0.5; // cycles per second
     origin: number = 0; // absolute time of first cycle (phase 0)
     phase = 0; // from origin to last tick
     ac: AudioContext; // audio context
@@ -73,22 +72,16 @@ export class Scheduler {
             } = compile(from, to);
 
             // update cps from global settings if present
-            this.cps = global.find((hap: any) => 
+            tempo.cps = global.find((hap: any) => 
                 Object.keys(hap.params).includes('cps'))?.params.cps 
-                || this.cps;
-            tempo.cps = this.cps;
+                || tempo.cps;
 
             // TODO: handle global settings
             streams.forEach((hap) => handler(
                 hap, 
-                this.origin + (hap.time / this.cps) + this.latency
+                this.origin + (hap.time / tempo.cps) + this.latency
             ));
             this.phase = to;
-        });
-        tempo.onChange(cps => {
-            this.stop();
-            this.cps = cps;
-            this.play();
         });
     }
     play() {

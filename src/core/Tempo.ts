@@ -20,4 +20,4 @@ class Tempo {
     }
 }
 
-export const tempo = new Tempo(0.5);
+export const tempo = new Tempo(1);

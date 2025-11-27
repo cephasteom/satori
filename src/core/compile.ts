@@ -1,6 +1,5 @@
 import { Stream } from './Stream';
 import { methods, type Hap } from './Pattern';
-// import { tempo } from './Tempo';
 
 // keep track of the last successfully evaluated code
 let lastCode: string = '';
