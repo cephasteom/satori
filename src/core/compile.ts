@@ -1,3 +1,5 @@
+// TODO: better typing of the events
+
 import { Stream } from './Stream';
 import { methods, type Hap } from './Pattern';
 
