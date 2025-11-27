@@ -1,4 +1,4 @@
-// TODO: how to handle dynamic cps changes?
+// TODO: fix dynamic cps - still requires a restart to prevent odd timing issues
 // TODO: mutations
 // TODO: test language - are we getting back what we expect?
 // TODO: mini lang

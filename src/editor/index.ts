@@ -18,6 +18,8 @@ import 'prism-code-editor/invisibles.css';
 import 'prism-code-editor/themes/night-owl.css';
 import 'prism-code-editor/search.css';
 
+import { preset } from "./preset";
+
 import './style.css'
 
 /**
@@ -28,11 +30,7 @@ export const editor = editorFromPlaceholder(
     {
         language: 'typescript',
         lineNumbers: false,
-        value: `global.set({cps:1})
-
-s0.set({ 
-  inst: 'sampler', n: 60, cut: 's0', bank: '808bd', 
-  e:seq(1,1,1).fast(2) })`,
+        value: preset,
     },
     matchBrackets(),
     defaultCommands(),

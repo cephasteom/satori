@@ -29,7 +29,7 @@ class Clock {
             onComplete();
             constantNode.disconnect();
         };
-  }
+    }
     stop() {
         this.runs = false;
     }
@@ -71,17 +71,16 @@ export class Scheduler {
                 streams 
             } = compile(from, to);
 
-            // update cps from global settings if present
-            tempo.cps = global.find((hap: any) => 
-                Object.keys(hap.params).includes('cps'))?.params.cps 
-                || tempo.cps;
-
-            // TODO: handle global settings
             streams.forEach((hap) => handler(
                 hap, 
                 this.origin + (hap.time / tempo.cps) + this.latency
             ));
             this.phase = to;
+
+            // update global cps on next tick if changed
+            const cps = global.find((hap: any) => 
+                Object.keys(hap.params).includes('cps'))?.params.cps 
+            cps && tempo.setcps(cps);
         });
     }
     play() {
