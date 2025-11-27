@@ -67,7 +67,12 @@ export class Scheduler {
         this.clock = new Clock(ac, () => {
             const from = this.phase;
             const to = Math.round((this.phase + this.duration) * 1000) / 1000;
-            compile(from, to).forEach((hap) => handler(
+            const { 
+                // global, 
+                streams 
+            } = compile(from, to);
+            // TODO: handle global settings
+            streams.forEach((hap) => handler(
                 hap, 
                 this.origin + (hap.time / this.cps) + this.latency
             ));

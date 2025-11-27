@@ -8,22 +8,21 @@ let lastCode: string = '';
 // create 16 streams: s0, s1, s2, ... s15
 const streams = Array(16).fill(0).map((_, i) => new Stream('s' + i))
 
+const global = new Stream('global');
+
 // Util: reset all streams to initial state
 export const reset = () => streams.forEach(stream => stream.__reset());
 
 const channel = new BroadcastChannel('sartori');
 
-const cps = (cps: number) => tempo.setcps(cps);
-
 // everything the user should be able to access in their code
 const scope = {
     streams,
-    ...streams.reduce((obj, stream) => ({
+    ...[...streams, global].reduce((obj, stream) => ({
         ...obj,
-        [stream.id]: (params: Record<string, any>) => stream.set(params)
+        [stream.id]: stream
     }), {}),
     ...methods,
-    cps
 }
 
 /**
@@ -47,13 +46,14 @@ export function evaluate(code: string) {
     }
 }
 
-export const compile = (from: number, to: number) => {
-    return streams.reduce((compiled, stream) => {
+export const compile = (from: number, to: number) => ({
+    global: global.query(from, to).map((event: Hap<any>) => ({...event, id: 'global'})),
+    streams: streams.reduce((compiled, stream) => {
         const events = stream.query(from, to);
         if (events.length === 0) return compiled;
         return [
             ...compiled,
             ...events.map((event: Hap<any>) => ({...event, id: stream.id }))
         ]
-    }, [] as Array<Hap<any> & { id: string }>);
-}
+    }, [] as Array<Hap<any> & { id: string }>),
+})

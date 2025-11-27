@@ -28,8 +28,10 @@ export const editor = editorFromPlaceholder(
     {
         language: 'typescript',
         lineNumbers: false,
-        value: `s0({ 
-  inst: 'sampler', n: 60, cut: 's0', bank: '808bd',
+        value: `global.set({cps:1})
+
+s0.set({ 
+  inst: 'sampler', n: 60, cut: 's0', bank: '808bd', 
   e:seq(1,1,1).fast(2) })`,
     },
     matchBrackets(),
