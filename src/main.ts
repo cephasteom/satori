@@ -1,6 +1,4 @@
-// TODO: test language - are we getting back what we expect? Particularly sine, saw etc.
 // TODO: refactor instruments so that they don't take bpm, but rather just time values
-// TODO: language to use seconds not ms
 // TODO: mini lang
 // TODO: more pattern functions
 // TODO: mutations

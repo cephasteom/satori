@@ -16,6 +16,45 @@ const P = <T>(q: (from: number, to: number) => Hap<T>[]) => new Pattern(q);
 const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => 
     value instanceof Pattern ? value.query(from, to)[0].value : value
 
+/**
+ * Speed up a pattern by a given factor.
+ * @param factor
+ * @example seq('A', 'B', 'C').fast(3) // A for 1/3 cycle, B for 1/3 cycle, C for 1/3 cycle.
+ */
+const fast = (factor: number, pattern: Pattern<any>) => 
+    P((from, to) => pattern.query(from * factor, to * factor).map(hap => ({
+        from: hap.from / factor,
+        to: hap.to / factor,
+        value: hap.value
+    })));
+
+/**
+ * Slow down a pattern by a given factor
+ * @param factor 
+ * @example seq('A', 'B', 'C').slow(2) // A for 2 cycles, B for 2 cycles, C for 2 cycles.
+ */
+const slow = (factor: number, pattern: Pattern<any>) => fast(1 / factor, pattern);
+
+/**
+ * Concatenate values, one per cycle.
+ * @param values
+ * @example cat('A', 'B', 'C') // A for 1 cycle, B for 1 cycle, C for 1 cycle.
+ */
+const cat = (...values: any[]) => 
+    cycle((from, to) => [{ from, to, value: values[from % values.length] }]);
+
+/**
+ * Alias for cat.
+ */
+const set = (...args: Parameters<typeof cat>) => cat(...args);
+
+/**
+ * Sequence values into a single cycle.
+ * @param values
+ * @example seq('A', 'B', 'C', 'D') // A for .25 cycle, B for .25 cycle ... D for .25 cycle
+ */
+const seq = (...values: any[]) => fast(values.length, cat(...values));
+
 // base cycle function, returning a Pattern instance
 const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to) => {
     from = Math.floor(from);
@@ -124,46 +163,7 @@ const clamp = withValue((...args) => {
     const min = args[0] ?? 0; // default 0
     const max = args[1] ?? 1; // default 1
     return Math.min(Math.max(value, min), max);
-});
-
-/**
- * Speed up a pattern by a given factor.
- * @param factor
- * @example seq('A', 'B', 'C').fast(3) // A for 1/3 cycle, B for 1/3 cycle, C for 1/3 cycle.
- */
-const fast = (factor: number, pattern: Pattern<any>) => 
-    P((from, to) => pattern.query(from * factor, to * factor).map(hap => ({
-        from: hap.from / factor,
-        to: hap.to / factor,
-        value: hap.value
-    })));
-
-/**
- * Slow down a pattern by a given factor
- * @param factor 
- * @example seq('A', 'B', 'C').slow(2) // A for 2 cycles, B for 2 cycles, C for 2 cycles.
- */
-const slow = (factor: number, pattern: Pattern<any>) => fast(1 / factor, pattern);
-
-/**
- * Concatenate values, one per cycle.
- * @param values
- * @example cat('A', 'B', 'C') // A for 1 cycle, B for 1 cycle, C for 1 cycle.
- */
-const cat = (...values: any[]) => 
-    cycle((from, to) => [{ from, to, value: values[from % values.length] }]);
-
-/**
- * Alias for cat.
- */
-const set = (...args: Parameters<typeof cat>) => cat(...args);
-
-/**
- * Sequence values into a single cycle.
- * @param values
- * @example seq('A', 'B', 'C', 'D') // A for .25 cycle, B for .25 cycle ... D for .25 cycle
- */
-const seq = (...values: any[]) => fast(values.length, cat(...values));    
+}); 
 
 /**
  * Randomly choose from a set of values.
