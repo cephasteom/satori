@@ -1,7 +1,6 @@
 // TODO: refactor instruments so that they don't take bpm, but rather just time values
-// TODO: mini lang
-// TODO: more pattern functions
 // TODO: mutations
+// TODO: more pattern functions
 // TODO: fx and fx busses
 // TODO: docs - instruments, fx
 // TODO: better typing throughout

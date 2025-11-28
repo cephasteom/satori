@@ -10,6 +10,8 @@ import Pattern from './Pattern.json'
 import Stream from './Stream.json'
 import './style.css';
 
+import miniNotation from './mini-notation';
+
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('javascript', javascript);
 
@@ -59,6 +61,7 @@ const renderDocs = (streamMethods: Record<string, any>, patternMethods: Record<s
             <button class="active"><h3>Quick Start</h3></button>
             <button><h3>Stream</h3></button>
             <button><h3>Pattern</h3></button>
+            <button><h3>Mini-Notation</h3></button>
             `
 
             + `
@@ -112,8 +115,12 @@ s3.set({ ..., e: seq(1,0,1) })
                         </li>
                     `).join('')}
                 </ul>
-            </article>
-        </div>`;
+            </article>`
+
+            + `<article id="docs__mini-notation">
+                ${marked(miniNotation)}
+                </article>`
+        + `</div>`;
     }
     hljs.highlightAll();
 };
