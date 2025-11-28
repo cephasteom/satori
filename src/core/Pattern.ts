@@ -33,18 +33,9 @@ const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to
         }
     }
 
-    return bag;
-
-    // this solves the issue, but breaks our e:seq(1,1)
-
-    // clip to from/to
-    return bag
-        .map(h => ({
-            from: Math.max(h.from, from),
-            to: Math.min(h.to, to),
-            value: h.value,
-        }))
-        .filter(h => h.to > h.from);
+    // filter the bag to only include haps that overlap with the original from-to range
+    // this is necessary because the callback may return haps outside the requested range
+    return bag.filter(h => h.to > from && h.from < to)
 })
 
 /**
@@ -440,5 +431,6 @@ export class Pattern<T> {
     }
 }
 
-console.log(seq(60,62).query(0.5,1)) // should return 62
-console.log(seq(seq(60,62),seq(72,74)).query(0.75,1)) // 74, but returns 72 and 74
+// console.log(seq(60,62).query(0.5,1)) // should return 62
+// console.log(seq(seq(60,62),seq(72,74)).query(0.75,1)) // 74, but returns 72 and 74
+console.log(seq(1,1,1,1).query(0.125,1))
