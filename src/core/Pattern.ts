@@ -38,8 +38,9 @@ const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to
 
 /**
  * Speed up a pattern by a given factor.
- * @param factor
+ * @param factor - speed-up factor. Can be a number or a Pattern.
  * @example seq('A', 'B', 'C').fast(3) // A for 1/3 cycle, B for 1/3 cycle, C for 1/3 cycle.
+ * @example set(1,1).fast(cat(1,2,4,8))
  */
 const fast = (factor: number|Pattern<number>, pattern: Pattern<any>) => 
     P((from, to) => {
@@ -56,7 +57,15 @@ const fast = (factor: number|Pattern<number>, pattern: Pattern<any>) =>
  * @param factor 
  * @example seq('A', 'B', 'C').slow(2) // A for 2 cycles, B for 2 cycles, C for 2 cycles.
  */
-const slow = (factor: number, pattern: Pattern<any>) => fast(1 / factor, pattern);
+const slow = (factor: number|Pattern<number>, pattern: Pattern<any>) => 
+    P((from, to) => {
+        const factorValue = unwrap(factor, from, to);
+        return pattern.query(from / factorValue, to / factorValue).map(hap => ({
+            from: hap.from * factorValue,
+            to: hap.to * factorValue,
+            value: hap.value
+        }))
+    });
 
 /**
  * Concatenate values, one per cycle.
@@ -87,7 +96,6 @@ const mini = (value: string) => {
     const parsed = parse(value);
     const result = typeof parsed === 'string'
         ? set(parsed)
-        // TODO: this doesn't work because cat can't handle nested patterns
         : cat(...parsed.map((sequence: any[]) => seq(...sequence)));
     return result;
 }
@@ -102,8 +110,11 @@ const withValue = (callback: (...args: any[]) => any) =>
         const pattern = args[args.length - 1] as Pattern<any>;
         return P((from, to) => pattern.query(from, to).map((hap) => ({
             ...hap,
-            // args to the callback are all args except the last (pattern), unwrapped, plus hap.value, hap.from, hap.to
-            value: callback(...args.slice(0, -1).map(v => unwrap(v, hap.from, hap.to)), hap.value, hap.from, hap.to)
+            value: callback(
+                // pass and unwrap all args except the last (which is the pattern itself)
+                ...args.slice(0, -1).map(v => unwrap(v, hap.from, hap.to)), 
+                hap.value, hap.from, hap.to
+            )
         })))
     }
 
@@ -190,17 +201,32 @@ const clamp = withValue((...args) => {
 const choose = (...values: (any[])) => 
     cycle((from, to) => ([{ from, to, value: values[Math.floor(Math.random() * values.length)]}]))
 
-// base function for generating continuous waveform patterns
-const waveform = (callback: (i: number, ...args: number[]) => number) => 
-    (...args: number[]) =>
-        seq(...Array.from({ length: args[args.length - 1] }, (_, i) => callback(i, ...args)));
+// Base function for generating waveform patterns with Pattern arguments
+const waveform = (callback: (i: number, ...args: number[]) => number) =>
+    (...args: (number | Pattern<number>)[]) =>
+        P((from, to) => {
+            // Evaluate q (the last arg) dynamically per requested time slice
+            const q = unwrap(args[args.length - 1], from, to);
+
+            // Build q evenly spaced steps
+            const values = Array.from({ length: q }, (_, i) => {
+                // then unwrap each argument at the appropriate fractional time
+                const frac = i / q;
+                const t = from + frac * (to - from);
+                return callback(
+                    i, 
+                    ...args.map(a => unwrap(a, t, t + 1e-9)) as number[]);
+            });
+
+            return seq(...values).query(from, to);
+        });
 
 /**
  * Generate a ramp of values from min to max, once per cycle.
  * @param min - start value
  * @param max - end value
  * @param q - quantization: steps/cycle. Default 48. Increase for a more fine-grained waveform.
- * @example saw(0, 4) // a ramp from 0 to 4 over the course of 1 cycle
+ * @example saw(0,4) // a ramp from 0 to 4 over the course of 1 cycle
  * @example saw(0,1,96).slow(2) // a ramp from 0 to 1 over the course of 2 cycles, with finer steps to mitigate the slow pattern
  */
 const saw = (min: number = 0, max: number = 1, q: number = 48) => 
@@ -431,7 +457,3 @@ export class Pattern<T> {
         } );
     }
 }
-
-// console.log(seq(60,62).query(0.5,1)) // should return 62
-// console.log(seq(seq(60,62),seq(72,74)).query(0.75,1)) // 74, but returns 72 and 74
-console.log(cat(1,2).query(1,2)) // should return 1 and 4
