@@ -12,8 +12,12 @@ export declare type Hap<T> = { from: number; to: number; value: T };
 const P = <T>(q: (from: number, to: number) => Hap<T>[]) => new Pattern(q);
 
 // Util: unwrap function to handle raw values and nested patterns
-const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => 
-    value instanceof Pattern ? value.query(from, to)[0].value : value
+const unwrap = <T>(value: Pattern<T>|any, from: number, to: number) => {
+    value = typeof value === 'string' ? mini(value as string) : value;
+    return value instanceof Pattern 
+        ? value.query(from, to)[0].value 
+        : value;
+}
 
 // base cycle function, returning a Pattern instance
 const cycle = (callback: (from: number, to: number) => Hap<any>[]) => P((from,to) => {
@@ -92,7 +96,7 @@ const seq = (...values: any[]) => fast(values.length, cat(...values));
  * @param value - mini pattern string
  * @example mini('Cmaj7..?*16') // parses the mini pattern string into a Pattern
  */
-const mini = (value: string) => {
+function mini(value: string) {
     const parsed = parse(value);
     const result = typeof parsed === 'string'
         ? set(parsed)
