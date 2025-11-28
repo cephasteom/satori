@@ -268,12 +268,21 @@ const parser = peg.generate(`
 
 let parse = memoize((pattern: string): string|number|[][] => parser.parse(pattern))
 
-export const mini = (pattern: string) => {
+export const mini = (pattern: string): any[][] => {
     try {
-        const parsed = parse(pattern)
-        return parsed
+        return parse(pattern)
     } catch (error) {
-        // if we can't parse the pattern, return the original string
-        return pattern
+        // if we can't parse the pattern, return the original string, so it can be handled elsewhere
+        return [[pattern]]
+    }
+}
+
+export const isMini = (pattern: any): boolean => {
+    if(typeof pattern !== 'string') return false
+    try {
+        parse(pattern)
+        return true
+    } catch (error) {
+        return false
     }
 }

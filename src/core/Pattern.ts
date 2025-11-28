@@ -1,4 +1,4 @@
-import { mini as parse } from './mini';
+import { mini as parse, isMini } from './mini';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -97,11 +97,10 @@ const seq = (...values: any[]) => fast(values.length, cat(...values));
  * @example mini('Cmaj7..?*16') // parses the mini pattern string into a Pattern
  */
 function mini(value: string) {
-    const parsed = parse(value);
-    const result = typeof parsed === 'string'
-        ? set(parsed)
-        : cat(...parsed.map((sequence: any[]) => seq(...sequence)));
-    return result;
+    return cat(
+        ...parse(value)
+            .map((values: any[]) => seq(...values))
+        );
 }
 
 /**
