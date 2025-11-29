@@ -1,4 +1,5 @@
 import { mini as parse, isMini } from './mini';
+import { getTransport } from 'tone';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -91,6 +92,14 @@ const set = (...args: Parameters<typeof cat>) => cat(...args);
  * @example seq('A', 'B', 'C', 'D') // A for .25 cycle, B for .25 cycle ... D for .25 cycle
  */
 const seq = (...values: any[]) => fast(values.length, cat(...values));
+
+/**
+ * Randomly choose from a set of values.
+ * @param values
+ * @example choose('A', 'B', 'C') // randomly chooses A, B, or C each cycle.
+ */
+const choose = (...values: (any[])) => 
+    cycle((from, to) => ([{ from, to, value: values[Math.floor(Math.random() * values.length)]}]))
 
 /**
  * Parse a mini pattern string into a Pattern instance.
@@ -198,12 +207,36 @@ const clamp = withValue((...args) => {
 }); 
 
 /**
- * Randomly choose from a set of values.
- * @param values
- * @example choose('A', 'B', 'C') // randomly chooses A, B, or C each cycle.
+ * Cycles to seconds conversion pattern.
+ * @param cycles - number of cycles
+ * @example set(4).cts() // converts 4 cycles to seconds based on the current Transport BPM
  */
-const choose = (...values: (any[])) => 
-    cycle((from, to) => ([{ from, to, value: values[Math.floor(Math.random() * values.length)]}]))
+const cts = withValue((...args) => {
+    const cycles = args[0] ?? 1; // default 1
+    
+    const transport = getTransport();
+    const bpm = transport.bpm.value;
+    
+    const beatsPerCycle = 4; // assume 4/4 time signature
+    const secondsPerBeat = 60 / bpm;
+    return cycles * beatsPerCycle * secondsPerBeat;
+});
+
+/**
+ * Cycles to milliseconds conversion pattern.
+ * @param cycles - number of cycles
+ * @example set(4).ctms() // converts 4 cycles to seconds based on the current Transport BPM
+ */
+const ctms = withValue((...args) => {
+    const cycles = args[0] ?? 1; // default 1
+    
+    const transport = getTransport();
+    const bpm = transport.bpm.value;
+    
+    const beatsPerCycle = 4; // assume 4/4 time signature
+    const secondsPerBeat = 60 / bpm;
+    return cycles * beatsPerCycle * secondsPerBeat * 1000;
+});
 
 // Base function for generating waveform patterns with Pattern arguments
 const waveform = (callback: (i: number, ...args: number[]) => number) =>
@@ -406,22 +439,18 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
 const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
 
 export const methods = {
-    withValue,
-    add, sub, mul, div,
-    mod,
-    set,
-    cat,
-    seq,
-    fast,
-    slow,
-    mini,
-    stack,
+    cat, set, seq,
+    fast, slow,
+    add, sub, mul, div, mod,
     saw, range, ramp, sine, cosine, tri, pulse, square,
     mtr, scale, clamp,
+    mini,
+    stack,
     interp,
     degrade,
     choose, coin, rarely, sometimes, often,
     and, or, xor,
+    cts, ctms,
     // insert all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,

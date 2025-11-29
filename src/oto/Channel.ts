@@ -1,6 +1,6 @@
 import { Gain, Split, Merge, getDestination } from 'tone'
 import Synth from './ct-synths/rnbo/Synth'
-import Sampler from './ct-synths/rnbo/Sampler'
+import Sampler from './ct-synths/rnbo/Sampler2'
 import Granular from './ct-synths/rnbo/Granular';
 import AcidSynth from './ct-synths/rnbo/AcidSynth';
 import TSynth from './ct-synths/tone/Synth'
