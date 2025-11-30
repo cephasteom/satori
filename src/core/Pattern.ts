@@ -449,7 +449,7 @@ function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
 /**
  * Parse a mini pattern string into a Pattern instance.
  * @param value - mini pattern string
- * @example mini('Cmaj7..?*16') // parses the mini pattern string into a Pattern
+ * @example mini('Cmaj7..?') // parses the mini pattern string into a Pattern
  */
 function mini(value: string) {
     return evalNode(parse(value), methods);

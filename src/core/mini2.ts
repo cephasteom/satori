@@ -50,6 +50,21 @@ const grammar = `
   const noteMap = ${JSON.stringify(noteMap)};
   function flat(xs) { return xs.filter(Boolean); }
 
+  function expandNotesLinear(notes, length) {
+    const originalLen = notes.length;
+    const result = [];
+
+    for (let i = 0; i < length; i++) {
+        // Determine which note in original
+        const note = notes[i % originalLen];
+        // Determine which octave increment
+        const octaveShift = Math.floor(i / originalLen) * 12;
+        result.push(note + octaveShift);
+    }
+
+    return result;
+  }
+
   function buildStack(root, type, ext) {
     const rootMidi = noteMap[root];
     if (rootMidi === undefined) throw new Error("Invalid root note: " + root);
@@ -142,9 +157,8 @@ StackMusic
       // Apply % length modifier
       if (mod) {
         const len = parseInt(mod, 10);
-        const repeated = [];
-        while (repeated.length < len) repeated.push(...notes);
-        notes = repeated.slice(0, len);
+        if (isNaN(len) || len <= 0) throw new Error("Invalid length modifier: " + mod);
+        notes = expandNotesLinear(notes, len);
       }
 
       // Apply spread (flatten)
