@@ -1,4 +1,4 @@
-import { parse, evalNode } from './mini2';
+import { parse, evalNode } from './mini';
 import { getTransport } from 'tone';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
