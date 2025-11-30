@@ -1,4 +1,5 @@
-// TODO: refactor instruments so that they don't take bpm, but rather just time values
+// TODO: refactor granular to match sampler
+// TODO: mini lang parser breakages see bank: '808bd'
 // TODO: mutations
 // TODO: more pattern functions
 // TODO: fx and fx busses
