@@ -1,3 +1,21 @@
+// '1 1 1 1' => seq(1,1,1,1)
+// '1 2*3 1' => seq(1, repeat(2,3), 1)
+// '1 . 1 2 3 . 1' => seq(1, seq(1,2,3), 1)
+// '1 1 1 | 1 2 3' => cat(seq(1,1,1), seq(1,2,3))
+// '1?2?3?4' => choose(1,2,3,4)
+// '1 1?2?3?4 1' => seq(1, choose(1,2,3,4), 1)
+// 'hello world' => seq('hello', 'world') // string valid
+// '808bd 808sd 808bd 808sd' => seq('808bd', '808sd', '808bd', '808sd') // string valid
+// '080.wav 090.wav' => seq('080.wav', '090.wav') // string with numbers valid
+// '[1,2,3] [4,5,6]' => seq([1,2,3], [4,5,6]) // array valid
+// 'C4 D4 E4 F4' => seq(60, 62, 64, 65) // notes to MIDI
+// 'Cma' => seq([60,64,67]) // chord to MIDI
+// 'Cma7' => seq([60,64,67,71]) // chord with extension to MIDI - extensions: 6,7,#7,b9,9,11,#11,13,#13
+// 'Clyd' => seq([60,62,64,66,67,69,71,73]) // scale to MIDI
+// 'Clyd%8' => seq([60,62,64,66,67,69,71,73]) // scale with length to MIDI
+// 'Clyd..' => seq(60,62,64,66,67,69,71,73) // spread out scale or chord over time
+
+
 import peg from 'pegjs';
 import { 
     memoize,

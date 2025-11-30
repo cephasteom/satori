@@ -15,6 +15,7 @@ import './docs';
 import './console';
 import './normalize.css'
 import './style.css'
+import './core/mini2.ts';
 
 // Listen for 'evaluateCode' events from the editor and evaluate the code
 window.addEventListener("evaluateCode", (e) => {
