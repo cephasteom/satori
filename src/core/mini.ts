@@ -24,22 +24,22 @@ const channel = new BroadcastChannel('sartori');
 
 // Extensions
 export const extensions: Record<string, number[]> = {
-  6: [9],
-  7: [10],
-  "#7": [11],
-  b9: [1],
-  9: [2],
-  11: [5],
-  "#11": [6],
-  13: [9],
-  "#13": [10]
+    6: [9],
+    7: [10],
+    "#7": [11],
+    b9: [1],
+    9: [2],
+    11: [5],
+    "#11": [6],
+    13: [9],
+    "#13": [10]
 };
 
 // MIDI numbers for root notes
 export const noteMap: Record<string, number> = {
-  C: 60, "C#":61, Db:61, D:62, "D#":63, Eb:63,
-  E:64, F:65, "F#":66, Gb:66, G:67, "G#":68, Ab:68,
-  A:69, "A#":70, Bb:70, B:71
+    C: 60, "C#":61, Db:61, D:62, "D#":63, Eb:63,
+    E:64, F:65, "F#":66, Gb:66, G:67, "G#":68, Ab:68,
+    A:69, "A#":70, Bb:70, B:71
 };
 
 const grammar = `
@@ -92,10 +92,44 @@ Start = _ expr:Expression _ { return expr; }
 Expression = Choice
 
 Choice
-  = first:Sequence rest:(_ "|" _ Sequence)* {
-      if (rest.length === 0) return first;
-      return { type: "cat", items: [first].concat(rest.map(r => r[3])) };
+  = first:Sequence rest:(_ "|" _ rep:Rep? _ next:Sequence?)*
+  {
+    var items = [first];
+
+    for (var i = 0; i < rest.length; i++) {
+      var group = rest[i];
+      var rep = group[3];        // may be undefined
+      var nextBar = group[5];    // may be undefined
+      var prevBar = items[items.length - 1];
+
+      if (rep !== undefined && rep !== null) {
+        var total = rep;
+        if (!Number.isInteger(total) || total <= 0) {
+          throw new Error("Invalid bar repeat count: " + total);
+        }
+
+        // Always repeat previous bar total-1 times
+        for (var k = 0; k < (total - 1); k++) {
+          items.push(JSON.parse(JSON.stringify(prevBar)));
+        }
+
+        // Append nextBar only if it exists
+        if (nextBar !== undefined && nextBar !== null) {
+          items.push(nextBar);
+        }
+      } else if (nextBar !== undefined && nextBar !== null) {
+        // plain | without *N
+        items.push(nextBar);
+      }
+      // else: trailing | with no number and no next bar → do nothing
     }
+
+    if (items.length === 1) return items[0];
+    return { type: "cat", items: items };
+  }
+
+Rep
+  = "*" _ n:Number { return n; }
 
 Sequence
   = first:Term rest:(_ Term)* {
