@@ -29,6 +29,10 @@ s0.set({ x: '1 2 3 4 | 5 6 7 8 |' }) // cat(seq(1,2,3,4), seq(5,6,7,8))
 s0.set({ x: '1 2 3 4 |*2 5 6 7 8 |' }) // cat(seq(1,2,3,4), seq(1,2,3,4), seq(5,6,7,8))
 \`\`\`
 
+\`\`\`js
+s0.set({ x: '1 2 3 4'.add('0?12') }) // dangerously chain patterns methods on the mini-notation string
+\`\`\`
+
 #### Euclidean rhythms
 
 \`\`\`js

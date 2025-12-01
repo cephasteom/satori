@@ -346,7 +346,7 @@ const interp = withValue((v, w, from, to) => v + (w - v) * ((from + to) / 2 % 1)
  * @param probability
  * @example sine().degrade(0.3) // randomly replaces 30% of sine wave values with 0
  */
-const degrade = withValue((v, w) => Math.random() < w ? 0 : v);
+const degrade = withValue((v, w) => Math.random() < v ? 0 : w);
 
 // base function for probability based Patterns
 const weightedCoin = (probability: number|Pattern<any> = 0.5) => 
@@ -487,3 +487,17 @@ export class Pattern<T> {
         } );
     }
 }
+
+// add all methods to the string prototype so that we can do '1 2 3'.add(2) for example
+declare global {
+    interface String {
+        [key: string]: any;
+    }
+}
+
+Object.entries(methods).forEach(([name, method]) => {
+    String.prototype[name] = function(...args: any[]) {
+        // @ts-ignore
+        return method(...args, mini(this.toString()));
+    }
+});
