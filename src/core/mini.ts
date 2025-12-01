@@ -154,6 +154,7 @@ Choose
 
 Primary
   = StackArray
+  / DotGroup
   / Spread
   / StackMusic
   / MidiNote
@@ -163,6 +164,11 @@ Primary
 
 Group
   = "(" _ e:Expression _ ")" { return e; }
+
+DotGroup
+  = "." _ seq:Sequence _ "." {
+      return { type: "seq", items: Array.isArray(seq.items) ? seq.items : [seq] };
+    }
 
 Spread
   = id:Identifier ".." { return { type: "spread", name: id }; }

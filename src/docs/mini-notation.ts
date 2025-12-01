@@ -11,6 +11,10 @@ s0.set({ e: '1 1*4 1 1' }) // seq(1,seq(1,1,1,1),1,1)
 \`\`\`
 
 \`\`\`js
+s0.set({ e: '1 . 1 2 3 4 . 1 1' }) // seq(1,seq(1,2,3,4),1,1)
+\`\`\`
+
+\`\`\`js
 s0.set({ 
     n: '60?72', // choose(60, 72)
     e: '1?0*8' // seq(choose(1,0), choose(1,0), choose(1,0), choose(1,0), choose(1,0), choose(1,0), choose(1,0), choose(1,0))

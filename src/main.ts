@@ -1,4 +1,3 @@
-// TODO: repeat bars not working: e: set('1*4 |*2 1*8')
 // TODO: e: set('1*3 1*4 1*5 1*6').degrade(0.1) not working as expected
 // TODO: euclidean e: '3:8'
 // TODO:  e: '1 1 1 1?0'
