@@ -39,10 +39,8 @@ export class Stream {
      * @returns An array of events with their associated parameters.
      */
     query(from: number, to: number) {
-        // gather the events from .e pattern
-        const events = this.e?.query(from, to) || [];
         
-        return events
+        return (this.e?.query(from, to) || [])
             // only keep events with a value, and where the from time falls within the range
             .filter((e: Hap<any>) => !!+e.value && e.from >= from && e.from < to)
             // iterate over events and build param sets
@@ -56,7 +54,15 @@ export class Stream {
                         .query(hap.from, hap.to)
                         // ...find the haps in which the event starts
                         .filter(hap => hap.from >= hap.from && hap.from < hap.to) 
-                        // ...and get its value
+                        // keep the closest one(s) to the event time. Keep more than one if the closest ones have the same value
+                        .reduce((acc: any[], curr) => {
+                            if (acc.length === 0) return [curr];
+                            const accDiff = Math.abs(acc[0].from - hap.from);
+                            const currDiff = Math.abs(curr.from - hap.from);
+                            if (currDiff < accDiff) return [curr];
+                            if (currDiff === accDiff) return [...acc, curr];
+                            return acc;
+                        }, [])
                         .map(hap => hap.value)
                     ])
                 )
