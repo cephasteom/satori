@@ -1,6 +1,5 @@
 // TODO: better typing of the events
-
-import { Stream } from './Stream';
+import { Stream, type Event } from './Stream';
 import { methods, type Hap } from './Pattern';
 
 // keep track of the last successfully evaluated code
@@ -48,13 +47,15 @@ export function evaluate(code: string) {
 }
 
 export const compile = (from: number, to: number) => ({
-    global: global.query(from, to).map((event: Hap<any>) => ({...event, id: 'global'})),
+    // at the global level, we are only interested in events (at least for now)
+    global: global.query(from, to).events,
+    // at the stream level, we want events and mutations
     streams: streams.reduce((compiled, stream) => {
-        const events = stream.query(from, to);
-        if (events.length === 0) return compiled;
+        const { events, mutations } = stream.query(from, to);
         return [
             ...compiled,
-            ...events.map((event: Hap<any>) => ({...event, id: stream.id }))
+            ...events,
+            ...mutations
         ]
-    }, [] as Array<Hap<any> & { id: string }>),
+    }, [] as Event[]),
 })

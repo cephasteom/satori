@@ -1,4 +1,5 @@
 import { Pattern, methods, type Hap } from './Pattern';
+export declare type Event = { time: number, params: Record<string, any>, id: string | null };
 
 export interface Stream extends Record<string, any> {
     id: string;
@@ -30,21 +31,19 @@ export class Stream {
                 ? value 
                 : methods.set(value)));
     }
-    
+
     /**
-     * Compile events and parameters in a given time range.
+     * Format event and mutation haps for output.
      * @ignore - internal use only
-     * @param from 
-     * @param to 
-     * @returns An array of events with their associated parameters.
+     * @returns 
      */
-    query(from: number, to: number) {
-        
-        return (this.e?.query(from, to) || [])
+    format(haps: Hap<any>[] = [], from: number, to: number): Event[] {
+        return haps
             // only keep events with a value, and where the from time falls within the range
             .filter((e: Hap<any>) => !!+e.value && e.from >= from && e.from < to)
             // iterate over events and build param sets
             .map((hap: Hap<any>) => ({
+                id: this.id,
                 time: hap.from,
                 params: Object.fromEntries(Object.entries(this)
                     // only keep Patterns
@@ -67,6 +66,20 @@ export class Stream {
                     ])
                 )
             }));
+    }
+    
+    /**
+     * Compile events and parameters in a given time range.
+     * @ignore - internal use only
+     * @param from 
+     * @param to 
+     * @returns An array of events + mutations with their associated parameters.
+     */
+    query(from: number, to: number) {
+        return {
+            events: this.format(this.e?.query(from, to), from, to),
+            mutations: this.format(this.m?.query(from, to), from, to)
+        }
     }
 
     /**
