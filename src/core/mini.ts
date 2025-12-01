@@ -158,8 +158,8 @@ Primary
   / Spread
   / StackMusic
   / MidiNote
-  / StringToken
   / Number
+  / StringToken
   / Group
 
 Group
@@ -226,7 +226,7 @@ StringToken
   = s:[a-zA-Z0-9_./-]+ { return s.join("") }
 
 Number
-  = n:[0-9]+ { return parseInt(n.join(""),10); }
+  = n:[0-9]+ ![a-zA-Z] { return parseInt(n.join(""), 10); }
 
 _ = [ \\t\\n\\r]*
 `;
