@@ -1,5 +1,6 @@
 import { triads } from './chords';
 import { modes } from './scales'
+import { memoize, euclidean } from './utils';
 import peg from 'pegjs';
 
 // '1 1 1 1' => seq(1,1,1,1)
@@ -48,6 +49,49 @@ const grammar = `
   const modes = ${JSON.stringify(modes)};
   const extensions = ${JSON.stringify(extensions)};
   const noteMap = ${JSON.stringify(noteMap)};
+
+  function euclidean(pulses, steps) {
+    if (pulses < 0 || steps < 0 || steps < pulses) {
+        return [];
+    }
+  
+    // Create the two arrays
+    let first = new Array(pulses).fill([1]);
+    let second = new Array(steps - pulses).fill([0]);
+  
+    let firstLength = first.length;
+    let minLength = Math.min(firstLength, second.length);
+  
+    let loopThreshold = 0;
+    // Loop until at least one array has length gt 2 (1 for first loop)
+    while (minLength > loopThreshold) {
+        // Allow only loopThreshold to be zero on the first loop
+        if (loopThreshold === 0) {
+            loopThreshold = 1;
+        }
+    
+        // For the minimum array loop and concat
+        for (let x = 0; x < minLength; x++) {
+            first[x] = [...first[x], ...second[x]];
+        }
+    
+        // if the second was the bigger array, slice the remaining elements/arrays and update
+        if (minLength === firstLength) {
+            second = second.slice(minLength);
+        }
+        // Otherwise update the second (smallest array) with the remainders of the first
+        // and update the first array to include only the extended sub-arrays
+        else {
+            second = first.slice(minLength);
+            first = first.slice(0, minLength);
+        }
+        firstLength = first.length;
+        minLength = Math.min(firstLength, second.length);
+    }
+  
+    // Build the final array
+    return [...first.flat(), ...second.flat()];
+  }
 
   function expandNotesLinear(notes, length) {
     const originalLen = notes.length;
@@ -153,7 +197,8 @@ Choose
     }
 
 Primary
-  = StackArray
+  = EuclidRhythm
+  / StackArray
   / DotGroup
   / Spread
   / StackMusic
@@ -161,6 +206,11 @@ Primary
   / Number
   / StringToken
   / Group
+
+EuclidRhythm
+  = pulses:Number ":" steps:Number {
+      return { type: "seq", items: euclidean(pulses, steps) };
+    }
 
 Group
   = "(" _ e:Expression _ ")" { return e; }
@@ -232,10 +282,11 @@ _ = [ \\t\\n\\r]*
 `;
 
 const parser = peg.generate(grammar);
+const memoizedParse = memoize((pattern: string, _: string): string|number|[][] => parser.parse(pattern))
 
 export const parse = (input: string) => {
     try {
-        return parser.parse(input);
+        return memoizedParse(input)
     } catch (e: any) {
         channel.postMessage({ type: 'error', message: e.message } );
     }
