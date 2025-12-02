@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "docs:pattern": "npx typedoc src/core/Pattern.ts --json src/docs/Pattern.json",
-    "docs:stream": "npx typedoc src/core/Stream.ts --json src/docs/Stream.json"
+    "docs:stream": "npx typedoc src/core/Stream.ts --json src/docs/Stream.json",
+    "docs:instruments": "npx typedoc src/oto/ct-synths/rnbo/Synth.ts src/oto/ct-synths/rnbo/Sampler.ts src/oto/ct-synths/rnbo/Granular.ts src/oto/ct-synths/rnbo/AcidSynth.ts --json src/docs/instruments.json"
   },
   "devDependencies": {
     "@types/pegjs": "^0.10.6",

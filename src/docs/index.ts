@@ -7,6 +7,8 @@ import quickStart from './quick-start';
 import streams from './streams';
 import patterns from './patterns';
 import miniNotation from './mini-notation';
+import instruments from './instruments';
+import effects from './effects';
 import './style.css';
 
 hljs.registerLanguage('typescript', typescript);
@@ -38,6 +40,15 @@ help && (help.innerHTML = `
     <article id="docs__mini-notation">
         ${marked(miniNotation)}
     </article>
+
+    <article id="docs__instruments">
+        ${instruments}
+    </article>
+
+    <article id="docs__effects">
+        ${marked(effects)}
+    </article>
+
 </div>`)
 hljs.highlightAll();
 
