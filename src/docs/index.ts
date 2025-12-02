@@ -12,12 +12,8 @@ import './style.css';
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('javascript', javascript);
 
-// get element with id 'help
-const helpElement = document.getElementById('help');
-let currentArticle = 'docs__quick-start';
-
-// fill with pattern methods
-helpElement && (helpElement.innerHTML = `
+const help = document.getElementById('help')
+help && (help.innerHTML = `
 <div>
     <h2>Docs</h2>
     <button class="active"><h3>Quick Start</h3></button>
@@ -39,19 +35,21 @@ helpElement && (helpElement.innerHTML = `
     
     <article id="docs__mini-notation">
         ${marked(miniNotation)}
-        </article>
+    </article>
 </div>`)
 hljs.highlightAll();
 
+// current active article
+let article = 'docs__quick-start';
 // add event listeners to buttons
 document.querySelectorAll('#help button').forEach((button) => {
     button.addEventListener('click', () => {
         const articleId = `docs__${button.textContent?.toLowerCase().replace(' ', '-')}`;
-        const previousArticle = document.getElementById(currentArticle);
+        const previousArticle = document.getElementById(article);
         const nextArticle = document.getElementById(articleId);
         if (previousArticle) previousArticle.style.display = 'none';
         if (nextArticle) nextArticle.style.display = 'block';
-        currentArticle = articleId;
+        article = articleId;
         // update button styles
         document.querySelectorAll('#help button').forEach((btn) => {
             btn.classList.remove('active');
