@@ -301,7 +301,7 @@ export const parse = (input: string) => {
 
 export function evalNode(node: {type: string, items: any[], value: any, count: number, name: string}, methods: Record<string, Function>): any {
     if (node == null) return null;
-    
+
     // If it's a primitive (number or string), return as-is
     if (['number', 'string'].includes(typeof node)) return node
 
@@ -320,9 +320,6 @@ export function evalNode(node: {type: string, items: any[], value: any, count: n
     } else if (node.value !== undefined && node.count !== undefined) {
         // has value and count (for seq with repetition)
         args = [evalNode(node.value, methods), node.count];
-    // } else if (node.name && node.items) {
-    //     // has name and items (for stack with name)
-    //     args = node.items.map(n => evalNode(n, methods));
     } else {
         args = [];
     }
