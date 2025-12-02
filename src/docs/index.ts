@@ -88,7 +88,7 @@ s3.set({ ..., e: seq(1,0,1) })
             
             + `
             <article id="docs__stream">
-                <p>A Stream represents a musical layer. In Sartori, you can create up to 16 streams (s0 to s15). </p>
+                <p>A Stream represents a musical layer. In Sartori, there are 16 instrument streams (s0 to s15) and 4 fx streams (fx0 to fx3).</p>
                 <ul class="help__list">
                     ${Object.entries(streamMethods).map(([name, info]) => `
                         <li>

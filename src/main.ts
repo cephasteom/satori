@@ -1,7 +1,6 @@
-// TODO: fx busses
 // TODO: Note values not working C4 D4 etc
 // TODO: more pattern functions
-// TODO: docs - instruments, fx
+// TODO: docs - instruments, fx, routing
 // TODO: better typing throughout
 // TODO: documentation on all modules
 // MIDI integration
