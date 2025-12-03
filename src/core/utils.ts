@@ -21,3 +21,9 @@ export function cyclesToSeconds(cycles: number): number {
 export function cyclesToMilliseconds(cycles: number): number {
     return cyclesToSeconds(cycles) * 1000;
 }
+
+export function cyclesPerSecond(): number {
+    const transport = getTransport();
+    const bpm = transport.bpm.value;
+    return bpm / 60 / 4;
+}

@@ -1,5 +1,5 @@
 import { parse, evalNode } from './mini';
-import { cyclesToSeconds } from './utils';
+import { cyclesPerSecond, cyclesToSeconds } from './utils';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -140,6 +140,11 @@ const ctms = (cycles: number|string|Pattern<number>) =>
         to: hap.to,
         value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to)) * 1000
     })));
+
+/**
+ * Return the current cycles per second.
+ */
+const cps = () => P((from, to) => ([{ from, to, value: cyclesPerSecond() }]));
 
 /**
  * Add a value or pattern.
@@ -428,7 +433,7 @@ export const methods = {
     degrade,
     choose, coin, rarely, sometimes, often,
     and, or, xor,
-    cts, ctms,
+    cts, ctms, cps,
     // insert all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,
