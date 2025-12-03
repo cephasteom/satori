@@ -1,4 +1,5 @@
 import instruments from './instruments.json'
+import { sharedKeys } from './utils';
 import { marked } from 'marked';
 
 const getMethods = (json: any[]): Record<string, any> => {
@@ -24,10 +25,10 @@ const getMethods = (json: any[]): Record<string, any> => {
             }
         }), {} as Record<string, any>);
 }
-console.log(instruments);
+
 const synthMethods = getMethods(instruments.children[0].children[0]?.children || [])
-const samplerMethods = getMethods(instruments.children[1].children[0]?.children || [])
-const granularMethods = getMethods(instruments.children[2].children[0]?.children || [])
+const samplerMethods = getMethods(instruments.children[2].children[0]?.children || [])
+const granularMethods = getMethods(instruments.children[1].children[0]?.children || [])
 const acidSynthMethods = getMethods(instruments.children[3].children[0]?.children || [])
 
 const sections = {
@@ -37,6 +38,11 @@ const sections = {
     AcidSynth: acidSynthMethods
 }
 
+const sharedMethods = sharedKeys(...Object.values(sections)).reduce((obj, key) => {
+    obj[key] = sections.Synth[key]; // Assuming all sections have the same keys, take from Synth
+    return obj;
+}, {} as Record<string, any>);
+
 export default `
 Sartori includes a default Synth, Sampler, Granular, and AcidSynth instrument. You can set the instrument on a stream using the <code>inst</code> parameter:
 ${marked(`\`\`\`typescript
@@ -45,11 +51,25 @@ s1.set({ inst: 'sampler' }) // set sampler instrument
 s2.set({ inst: 'granular' }) // set granular instrument
 s3.set({ inst: 'acid' }) // set acid synth instrument
 \`\`\``)}
-Each instrument has the following methods:
+All instruments share the following parameters:
+${Object.entries(sharedMethods).map(([name, info]) => `
+    <ul class="help__list">
+        <li>
+            <h4>${name}</h4>
+            <p>${info.description}</p>
+            ${info.examples.length > 0 ? `
+                ${marked(info.examples.join('\n'))}
+            ` : ''}
+        </li>
+    </ul>
+`).join('')}
+Each instrument has specific parameters as well:
 ${Object.entries(sections).map(([instrumentName, methods]) => `
     <h3>${instrumentName}</h3>
     <ul class="help__list">
-        ${Object.entries(methods).map(([name, info]) => `
+        ${Object.entries(methods)
+            .filter(([name]) => !(name in sharedMethods))
+            .map(([name, info]) => `
             <li>
                 <h4>${name}</h4>
                 <p>${info.description}</p>

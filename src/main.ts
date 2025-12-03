@@ -1,23 +1,22 @@
+// TODO: docs - fx
 // TODO: more pattern functions
-// TODO: docs - instruments, fx, routing
-// TODO: better typing throughout
-// TODO: documentation on all modules
+// check Granular2 looks like other params referenced bpm
 // MIDI integration
 // Utility functions scales etc
 // Tone synths aren't working well
 // customise display (sidebar)
 // solo and mute
-// check Granular2 looks like other params referenced bpm
 
 import { evaluate } from './core/compile';
 import { Scheduler } from './core/Scheduler';
 import { handler } from './oto';
+
+import './normalize.css'
+import './style.css'
+
 import './editor';
 import './docs';
 import './console';
-import './normalize.css'
-import './style.css'
-import './core/mini.ts';
 
 // Listen for 'evaluateCode' events from the editor and evaluate the code
 window.addEventListener("evaluateCode", (e) => {
