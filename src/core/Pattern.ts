@@ -119,17 +119,12 @@ const withValue = (callback: (...args: any[]) => any) =>
  * @example '1 2 3 4'.cts() // convert a mini pattern string
  * @example seq(1,2,3,4).cts() // convert a Pattern
  */
-const cts = (cyclesOrPattern: number|Pattern<number>) => {
-    const cycles = cyclesOrPattern instanceof Pattern
-        ? cyclesOrPattern
-        : set(cyclesOrPattern);
-    
-    return P((from, to) => cycles.query(from, to).map(hap => ({
+const cts = (cycles: number|string|Pattern<number>) => 
+    P((from, to) => wrap(cycles).query(from, to).map(hap => ({
         from: hap.from,
         to: hap.to,
         value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to))
     })));
-}
 
 /**
  * Cycles to milliseconds.
@@ -139,17 +134,12 @@ const cts = (cyclesOrPattern: number|Pattern<number>) => {
  * @example '1 2 3 4'.ctms() // convert a mini pattern string
  * @example seq(1,2,3,4).ctms() // convert a Pattern
  */
-const ctms = (cyclesOrPattern: number|Pattern<number>) => {
-    const cycles = cyclesOrPattern instanceof Pattern
-        ? cyclesOrPattern
-        : set(cyclesOrPattern);
-    
-    return P((from, to) => cycles.query(from, to).map(hap => ({
+const ctms = (cycles: number|string|Pattern<number>) => 
+    P((from, to) => wrap(cycles).query(from, to).map(hap => ({
         from: hap.from,
         to: hap.to,
         value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to)) * 1000
     })));
-}
 
 /**
  * Add a value or pattern.
@@ -446,12 +436,19 @@ export const methods = {
     }), {})
 };
 
-// Util: unwrap function to handle raw values and nested patterns
+// Util: unwrap ensures we get a raw value
 function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
     value = typeof value === "string" ? mini(value as string) : value;
     return value instanceof Pattern 
         ? value.query(from, to)[0].value 
         : value;
+}
+
+// Util: wrap ensures a value is a Pattern
+function wrap<T>(value: T): Pattern<T> {
+    return value instanceof Pattern
+        ? value
+        : set(value);
 }
 
 /**

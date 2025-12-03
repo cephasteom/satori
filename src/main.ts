@@ -1,6 +1,5 @@
 // TODO: docs - fx
 // TODO: more pattern functions
-// TODO: improve cts() and ctms() so that we can call them as functions or methods
 // TODO: can we add methods to numbers
 // check Granular2 looks like other params referenced bpm
 // MIDI integration
