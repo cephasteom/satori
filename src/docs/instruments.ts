@@ -51,7 +51,7 @@ s1.set({ inst: 'sampler' }) // set sampler instrument
 s2.set({ inst: 'granular' }) // set granular instrument
 s3.set({ inst: 'acid' }) // set acid synth instrument
 \`\`\``)}
-All instruments share the following parameters:
+<h3>Shared Parameters</h3>
 ${Object.entries(sharedMethods).map(([name, info]) => `
     <ul class="help__list">
         <li>
@@ -63,7 +63,6 @@ ${Object.entries(sharedMethods).map(([name, info]) => `
         </li>
     </ul>
 `).join('')}
-Each instrument has specific parameters as well:
 ${Object.entries(sections).map(([instrumentName, methods]) => `
     <h3>${instrumentName}</h3>
     <ul class="help__list">

@@ -112,6 +112,38 @@ const withValue = (callback: (...args: any[]) => any) =>
     }
 
 /**
+ * Cycles to seconds.
+ * @param cycles - number of cycles
+ * @example set(4).cts() // converts 4 cycles to seconds based on the current tempo.
+ */
+const cts = withValue((...args) => {
+    const cycles = args[0] ?? 1; // default 1
+    
+    const transport = getTransport();
+    const bpm = transport.bpm.value;
+    
+    const beatsPerCycle = 4; // assume 4/4 time signature
+    const secondsPerBeat = 60 / bpm;
+    return cycles * beatsPerCycle * secondsPerBeat;
+});
+
+/**
+ * Cycles to milliseconds.
+ * @param cycles - number of cycles
+ * @example set(4).ctms() // converts 4 cycles to milliseconds based on the current tempo.
+ */
+const ctms = withValue((...args) => {
+    const cycles = args[0] ?? 1; // default 1
+    
+    const transport = getTransport();
+    const bpm = transport.bpm.value;
+    
+    const beatsPerCycle = 4; // assume 4/4 time signature
+    const secondsPerBeat = 60 / bpm;
+    return cycles * beatsPerCycle * secondsPerBeat * 1000;
+});
+
+/**
  * Add a value or pattern.
  * @param value - value or pattern to add.
  * @example seq(1,2,3).add(2) // 3,4,5
@@ -185,38 +217,6 @@ const clamp = withValue((...args) => {
     const max = args[1] ?? 1; // default 1
     return Math.min(Math.max(value, min), max);
 }); 
-
-/**
- * Cycles to seconds.
- * @param cycles - number of cycles
- * @example set(4).cts() // converts 4 cycles to seconds based on the current tempo.
- */
-const cts = withValue((...args) => {
-    const cycles = args[0] ?? 1; // default 1
-    
-    const transport = getTransport();
-    const bpm = transport.bpm.value;
-    
-    const beatsPerCycle = 4; // assume 4/4 time signature
-    const secondsPerBeat = 60 / bpm;
-    return cycles * beatsPerCycle * secondsPerBeat;
-});
-
-/**
- * Cycles to milliseconds.
- * @param cycles - number of cycles
- * @example set(4).ctms() // converts 4 cycles to milliseconds based on the current tempo.
- */
-const ctms = withValue((...args) => {
-    const cycles = args[0] ?? 1; // default 1
-    
-    const transport = getTransport();
-    const bpm = transport.bpm.value;
-    
-    const beatsPerCycle = 4; // assume 4/4 time signature
-    const secondsPerBeat = 60 / bpm;
-    return cycles * beatsPerCycle * secondsPerBeat * 1000;
-});
 
 // Base function for generating waveform patterns with Pattern arguments
 const waveform = (callback: (i: number, ...args: number[]) => number) =>
@@ -496,8 +496,14 @@ declare global {
 
 // add all methods to the string prototype so that we can do '1 2 3'.add(2) for example
 Object.entries(methods).forEach(([name, method]) => {
+    
     String.prototype[name] = function(...args: any[]) {
         // @ts-ignore
         return method(...args, mini(this.toString()));
+    }
+    // @ts-ignore
+    Number.prototype[name] = function(...args: any[]) {
+        // @ts-ignore
+        return method(...args, set(this.valueOf()));
     }
 });

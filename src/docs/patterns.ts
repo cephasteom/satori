@@ -23,6 +23,8 @@ s0.set({
     inst: 'synth',
     n: seq(60,62,64,65),
     fx0: sine().fast(2),
+    amp: '0.5 1'.fast(4), // you can chain pattern methods off mini-notation strings
+    dtime: (1).ctms(), // call pattern methods off numbers
     e: seq(1,seq(1,1,1,1),1,1)
 })
 \`\`\``)}

@@ -5612,7 +5612,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Specify which bank of samples you want to use"
+												"text": "Sample bank to use."
 											}
 										]
 									},
@@ -10318,7 +10318,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Specify which bank of samples you want to use"
+												"text": "Sample bank to use."
 											}
 										]
 									},
