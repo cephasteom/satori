@@ -23,10 +23,10 @@ export class Scheduler {
             
             global.forEach((hap: any) => {
                 if(hap.params.cps) {
-                    // set transport bpm at the time of the event
-                    this.transport.bpm.setValueAtTime(240 * hap.params.cps, time);
                     // update scheduler cps
-                    this.cps = hap.params.cps;
+                    this.cps = [hap.params.cps].flat()[0];
+                    // set transport bpm at the time of the event
+                    this.transport.bpm.setValueAtTime(240 * this.cps, time);
                 }
             });
 

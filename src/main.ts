@@ -1,8 +1,8 @@
+// Bug: Tone synths aren't working well
 // TODO: more pattern functions
+// search box in docs
 // MIDI integration
 // customise display (sidebar)
-// Bug: Tone synths aren't working well
-// bug: global.set({cps: sine(0.5,2).slow(2), e: '1*16'})
 
 import { evaluate } from './core/compile';
 import { Scheduler } from './core/Scheduler';
