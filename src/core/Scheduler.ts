@@ -30,11 +30,13 @@ export class Scheduler {
                 }
             });
 
-            streams.forEach((hap) => handler(
+            streams
+                .filter((hap) => !hap.params.mute)
+                .forEach((hap) => handler(
                 hap, 
-                time + // time from transport
-                (hap.time - from) / // add delta value from start of this tick
-                (cpsEvents.find(({time}: any) => time >= hap.time)?.value || this.cps) // scaled by cps at that time
+                time // time from transport
+                + (hap.time - from) // add delta value from start of this tick
+                / (cpsEvents.find(({time}: any) => time >= hap.time)?.value || this.cps) // scaled by cps at that time
             ));
 
             // update time pointer for next tick

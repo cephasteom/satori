@@ -1,9 +1,8 @@
-// Utility functions scales etc
 // TODO: more pattern functions
 // MIDI integration
-// Tone synths aren't working well
 // customise display (sidebar)
-// solo and mute
+// solo
+// Bug: Tone synths aren't working well
 // bug: global.set({cps: sine(0.5,2).slow(2), e: '1*16'})
 
 import { evaluate } from './core/compile';
