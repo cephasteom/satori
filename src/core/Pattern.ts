@@ -1,5 +1,6 @@
 import { parse, evalNode } from './mini';
 import { getTransport } from 'tone';
+import { cyclesToSeconds } from './utils';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -114,18 +115,22 @@ const withValue = (callback: (...args: any[]) => any) =>
 /**
  * Cycles to seconds.
  * @param cycles - number of cycles
- * @example set(4).cts() // converts 4 cycles to seconds based on the current tempo.
+ * @example (4).cts() // convert a number as a method
+ * @example cts(1) // or as a function
+ * @example '1 2 3 4'.cts() // convert a mini pattern string
+ * @example seq(1,2,3,4).cts() // convert a Pattern
  */
-const cts = withValue((...args) => {
-    const cycles = args[0] ?? 1; // default 1
+const cts = (cyclesOrPattern: number|Pattern<number>) => {
+    const cycles = cyclesOrPattern instanceof Pattern
+        ? cyclesOrPattern
+        : set(cyclesOrPattern);
     
-    const transport = getTransport();
-    const bpm = transport.bpm.value;
-    
-    const beatsPerCycle = 4; // assume 4/4 time signature
-    const secondsPerBeat = 60 / bpm;
-    return cycles * beatsPerCycle * secondsPerBeat;
-});
+    return P((from, to) => cycles.query(from, to).map(hap => ({
+        from: hap.from,
+        to: hap.to,
+        value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to))
+    })));
+}
 
 /**
  * Cycles to milliseconds.
