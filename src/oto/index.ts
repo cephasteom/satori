@@ -56,6 +56,7 @@ function handleEvent(event: Event, time: number) {
  */
 function handleMutation(mutation: Event, time: number) {
     const { params, id } = mutation;
+    console.log(params)
     channels[id]?.mutate(
         Object.entries(params)
             // only mutate params that are prefixed with '_'

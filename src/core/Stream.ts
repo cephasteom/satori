@@ -43,9 +43,9 @@ export class Stream {
      */
     format(haps: Hap<any>[] = [], from: number, to: number): Event[] {
         return haps
-            // only keep events with a value, and where the from time falls within the range
-            .filter((e: Hap<any>) => !!+e.value && e.from >= from && e.from < to)
-            // iterate over events and build param sets
+            // only keep haps with a value, and where the from time falls within the range
+            .filter((hap: Hap<any>) => !!+hap.value && hap.from >= from && hap.from < to)
+            // iterate over haps and build param sets
             .map((hap: Hap<any>) => ({
                 id: this.id,
                 time: hap.from,
