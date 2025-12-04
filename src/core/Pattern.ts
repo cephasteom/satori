@@ -516,35 +516,35 @@ const toggle = (condition: Pattern<any>) => {
 }
 
 /**
- * Fill a cache with x values.
+ * Fill a cache with x values and repeat them.
  * @param size - amount of values to cache per cycle
  * @param clear - empties the cache when this pattern returns true
  * 
  * @param value - value or pattern to cache
- * @example coin().cache(16,4) // caches 16 values from coin() and repeats them 4 times
+ * @example coin().cache(16) // caches 16 values from coin() per cycle
  */
 const cache = (...args: any[]) => {
     let state: any[] = [];
     let pattern = args.pop() as Pattern<any>;
 
-    return P((from, to) => wrap(pattern).query(from, to).map(hap => {
-        const size = unwrap(args[0] || 16, hap.from, hap.to);
-        const clear = unwrap(args[1]?.fallsOnFrom() || 0, hap.from, hap.to);
+    return P((from, to) => {
+        const size = unwrap(args[0] || 16, from, to);
+        const clear = unwrap(args[1]?.fallsOnFrom() || 0, from, to);
 
         // clear the cache if needed
         if(clear) state = [];
 
+        const value = unwrap(pattern, from, to);
+
         // add to the cache if not full
-        state.length < size && state.push(hap.value);
+        state.length < size && state.push(value);
 
         // pad out the sequence if needed
         let values = [...state];
         while(values.length < size) values.push(0)
         
-        console.log(values)
-
-        return seq(...values).query(hap.from, hap.to)[0];
-    }))
+        return seq(...values).query(from, to);
+    })
 };
     
 // base function for handling Math[operation] patterns
