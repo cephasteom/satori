@@ -525,7 +525,6 @@ const toggle = (condition: Pattern<any>) => {
  */
 const cache = (...args: any[]) => {
     let state: any[] = [];
-    let index = 0;
     let pattern = args.pop() as Pattern<any>;
 
     return P((from, to) => wrap(pattern).query(from, to).map(hap => {
@@ -533,18 +532,18 @@ const cache = (...args: any[]) => {
         const clear = unwrap(args[1]?.fallsOnFrom() || 0, hap.from, hap.to);
 
         // clear the cache if needed
-        if(clear) {
-            state = [];
-            index = 0;
-        }
+        if(clear) state = [];
 
         // add to the cache if not full
         state.length < size && state.push(hap.value);
-        console.log(clear,size,state)
 
-        const value = state[index++ % state.length];
+        // pad out the sequence if needed
+        let values = [...state];
+        while(values.length < size) values.push(0)
+        
+        console.log(values)
 
-        return {from: hap.from, to: hap.to, value};
+        return seq(...values).query(hap.from, hap.to)[0];
     }))
 };
     
