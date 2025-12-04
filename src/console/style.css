@@ -26,3 +26,6 @@
 .console__message--info {
     color: var(--theme-mauve);
 }
+.console__message--pattern-print {
+    color: var(--theme-blue-light);
+}

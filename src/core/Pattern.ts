@@ -3,13 +3,14 @@
  * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
  * These posts outline how TidalCycles was ported to Strudel. Invaluable reading.
  */
-
 import { parse, evalNode } from './mini';
 import { cyclesPerSecond } from './utils';
 import pkg from 'noisejs';
 // @ts-ignore
 const { Noise } = pkg;
 const noiseGenerator = new Noise(Math.random());
+
+const sartori = new BroadcastChannel('sartori');
 
 /**
  * Hap type - represents a single event in a Pattern
@@ -616,6 +617,20 @@ function wrap<T>(value: T): Pattern<T> {
  */
 const mini = (value: string) => evalNode(parse(value), methods);
 
+/**
+ * Print the current Pattern value for debugging.
+ * @example seq('A', 'B', 'C').print() // prints the value of the pattern on each division of the cycle.
+ */
+const print = (pattern: Pattern<any>) => P((from, to) => {
+    return pattern.query(from, to).map(hap => {
+        sartori.postMessage({ 
+            type: 'pattern-print', 
+            message: `Cycle ${hap.from}: ${unwrap(hap.value, hap.from, hap.to)}`
+        });
+        return hap;
+    });
+});
+
 export const methods = {
     cat, set, seq,
     fast, slow,
@@ -634,6 +649,7 @@ export const methods = {
         ...obj,
         [name]: operate(name)
     }), {}),
+    print
 };
 
 // declare a type for Pattern methods, for use in the Pattern interface
