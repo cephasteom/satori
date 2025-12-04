@@ -69,7 +69,6 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
 const addButtonEvents = () => {
     // add event listeners to buttons
     document.querySelectorAll('#docs button').forEach((button) => {
-        console.log(button)
         button.addEventListener('click', () => {
             const articleId = `docs__${button.textContent?.toLowerCase().replace(' ', '-')}`;
             const previousArticle = document.getElementById(article);
