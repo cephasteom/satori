@@ -275,18 +275,18 @@ export class Channel {
      * Mutate all instruments on this channel with given params
      * @param params - e.g {n: 72, modi: 10}
      */
-    mutate(params: Record<string, any>, time: number) {
+    mutate(params: Record<string, any>, time: number, lag: number = 100) {
         Object.values(this._instruments).forEach(inst => {
-            inst.mutate(params, time, params.lag || 100);
+            inst.mutate(params, time, lag);
         });
 
         // handle bus sends
         this._busses.forEach((_, i) => params[`bus${i}`] 
-            && this.send(i, params[`bus${i}`], time, params.lag || 10));
+            && this.send(i, params[`bus${i}`], time, lag));
 
         // handle fxBus sends
         this._fxBusses.forEach((_, i) => params[`fx${i}`] 
-            && this.sendFx(i, params[`fx${i}`], time, params.lag || 10));
+            && this.sendFx(i, params[`fx${i}`], time, lag));
     }
 
     /** 

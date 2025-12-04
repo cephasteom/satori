@@ -1,12 +1,13 @@
 import { Channel, channels } from './Channel';
 import { formatParamKey } from './utils';
 
-declare type Event = {id: string, params: Record<string, any>, time: number};
+declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
 
 export function handler(event: Event, time: number) {
-    const { e, m } = event.params;
-    if (e) return handleEvent(event, time);
-    if (m) return handleMutation(event, time);
+    switch (event.type) {
+        case 'e': return handleEvent(event, time);
+        case 'm': return handleMutation(event, time);
+    }    
 }
 
 /**
@@ -56,7 +57,6 @@ function handleEvent(event: Event, time: number) {
  */
 function handleMutation(mutation: Event, time: number) {
     const { params, id } = mutation;
-    console.log(params)
     channels[id]?.mutate(
         Object.entries(params)
             // only mutate params that are prefixed with '_'
@@ -66,6 +66,7 @@ function handleMutation(mutation: Event, time: number) {
                 ...obj,
                 [formatParamKey(key)]: Array.isArray(val) ? val[0] : val
             }), {}),
-        time
+        time,
+        params.lag
     );
 }   

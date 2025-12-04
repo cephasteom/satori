@@ -47,6 +47,8 @@ export class Scheduler {
     }
 
     stop() {
+        // reset time pointer
+        this.t = 0;
         this.transport.stop(immediate())
     }
 }

@@ -41,13 +41,14 @@ export class Stream {
      * @ignore - internal use only
      * @returns 
      */
-    format(haps: Hap<any>[] = [], from: number, to: number): Event[] {
+    format(haps: Hap<any>[] = [], from: number, to: number, type: string): Event[] {
         return haps
-            // only keep haps with a value, and where the from time falls within the range
-            .filter((hap: Hap<any>) => !!+hap.value && hap.from >= from && hap.from < to)
+            // only keep event haps with a value, and where the from time falls within the range
+            .filter((hap: Hap<any>) => !!hap.value && hap.from >= from && hap.from < to)
             // iterate over haps and build param sets
             .map((hap: Hap<any>) => ({
                 id: this.id,
+                type,
                 time: hap.from,
                 params: Object.fromEntries(Object.entries(this)
                     // only keep Patterns
@@ -55,8 +56,6 @@ export class Stream {
                     // query each Pattern and...
                     .map(([key, pattern]) => [key, (pattern as Pattern<any>)
                         .query(hap.from, hap.to)
-                        // ...find the haps in which the event starts
-                        .filter(hap => hap.from >= hap.from && hap.from < hap.to) 
                         // keep the closest one(s) to the event time. Keep more than one if the closest ones have the same value
                         .reduce((acc: any[], curr) => {
                             if (acc.length === 0) return [curr];
@@ -83,8 +82,8 @@ export class Stream {
      */
     query(from: number, to: number) {
         return {
-            events: this.format(this.e?.query(from, to), from, to),
-            mutations: this.format(this.m?.query(from, to), from, to)
+            events: this.format(this.e?.query(from, to), from, to, 'e'),
+            mutations: this.format(this.m?.query(from, to), from, to, 'm'),
         }
     }
 
