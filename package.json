@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "docs:pattern": "npx typedoc src/core/Pattern.ts --json src/docs/Pattern.json",
     "docs:stream": "npx typedoc src/core/Stream.ts --json src/docs/Stream.json",
-    "docs:instruments": "npx typedoc src/oto/ct-synths/rnbo/Synth.ts src/oto/ct-synths/rnbo/Sampler2.ts src/oto/ct-synths/rnbo/Granular2.ts src/oto/ct-synths/rnbo/AcidSynth.ts --json src/docs/instruments.json",
+    "docs:instruments": "npx typedoc src/oto/ct-synths/rnbo/Synth.ts src/oto/ct-synths/rnbo/Sampler2.ts src/oto/ct-synths/rnbo/Granular2.ts src/oto/ct-synths/rnbo/AcidSynth.ts src/oto/ct-synths/tone/Synth.ts src/oto/ct-synths/tone/AMSynth.ts src/oto/ct-synths/tone/FMSynth.ts src/oto/ct-synths/tone/MonoSynth.ts --json src/docs/instruments.json",
     "docs:fx": "npx typedoc src/oto/ct-synths/rnbo/Delay.ts src/oto/ct-synths/rnbo/ReverbGen.ts src/oto/ct-synths/rnbo/FXChannel.ts --json src/docs/fx.json"
   },
   "devDependencies": {

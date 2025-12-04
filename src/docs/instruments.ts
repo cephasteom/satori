@@ -19,20 +19,19 @@ const getMethods = (json: any[]): Record<string, any> => {
         }), {} as Record<string, any>);
 }
 
-const synthMethods = getMethods(instruments.children[0].children[0]?.children || [])
-const samplerMethods = getMethods(instruments.children[2].children[0]?.children || [])
-const granularMethods = getMethods(instruments.children[1].children[0]?.children || [])
-const acidSynthMethods = getMethods(instruments.children[3].children[0]?.children || [])
-
 const sections = {
-    Synth: synthMethods,
-    Sampler: samplerMethods,
-    Granular: granularMethods,
-    AcidSynth: acidSynthMethods
+    synth: getMethods(instruments.children[0].children[0]?.children || []),
+    sampler: getMethods(instruments.children[2].children[0]?.children || []),
+    granular: getMethods(instruments.children[1].children[0]?.children || []),
+    acid: getMethods(instruments.children[3].children[0]?.children || []),
+    ['tone.synth']: getMethods(instruments.children[4].children[0]?.children || []),
+    ['tone.am']: getMethods(instruments.children[5].children[0]?.children || []),
+    ['tone.fm']: getMethods(instruments.children[6].children[0]?.children || []),
+    ['tone.mono']: getMethods(instruments.children[7].children[0]?.children || [])
 }
 
 const sharedMethods = sharedKeys(...Object.values(sections)).reduce((obj, key) => {
-    obj[key] = sections.Synth[key]; // Assuming all sections have the same keys, take from Synth
+    obj[key] = sections.synth[key]; // Assuming all sections have the same keys, take from Synth
     return obj;
 }, {} as Record<string, any>);
 
@@ -43,6 +42,10 @@ s0.set({ inst: 'synth' }) // set synth instrument
 s1.set({ inst: 'sampler' }) // set sampler instrument
 s2.set({ inst: 'granular' }) // set granular instrument
 s3.set({ inst: 'acid' }) // set acid synth instrument
+s4.set({ inst: 'tone.synth' }) // set tone synth instrument
+s5.set({ inst: 'tone.am' }) // set am synth instrument
+s6.set({ inst: 'tone.fm' }) // set fm synth instrument
+s7.set({ inst: 'tone.mono' }) // set mono synth instrument
 \`\`\``)}
 <h3>Shared Parameters</h3>
 ${Object.entries(sharedMethods).map(([name, info]) => `
