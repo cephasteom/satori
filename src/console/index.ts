@@ -12,7 +12,9 @@ let messages: {type: string, message: string}[] = [
 ]
 
 function log(type: string, message: string) {
-    messages = [...messages, { type, message }];
+    messages = type === 'clear' 
+        ? messages.filter(m => m.type === 'title' || m.type === 'credit')
+        : [...messages, { type, message }];
     render();
 }
 

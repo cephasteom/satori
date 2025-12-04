@@ -26,6 +26,9 @@ const utils = {
     },
     print: (message: any) => {
         channel.postMessage({ type: 'credit', message: String(message) } );
+    },
+    clear: () => {
+        channel.postMessage({ type: 'clear' } );
     }
 }
 

@@ -628,7 +628,7 @@ const inversion = (...args: any[]) => {
     return P((from, to) => pattern.query(from, to).map((hap, i, arr) => {
         const chordLength = arr.length;
         const note = hap.value
-        const inversion = unwrap(args[0] || 1, from, to)
+        const inversion = Math.floor(unwrap(args[0] || 1, from, to))
         const inverted = transposeOctave(
             +note, 
             Math.abs(inversion) % chordLength > i ? inversion > 0 ? 1 : -1 : 0
@@ -646,7 +646,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
     return pattern.query(from, to).map(hap => {
         sartori.postMessage({ 
             type: 'pattern-print', 
-            message: `Cycle ${hap.from}: ${unwrap(hap.value, hap.from, hap.to)}`
+            message: `Cycle ${from}: ${unwrap(hap.value, hap.from, hap.to)}`
         });
         return hap;
     });

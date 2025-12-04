@@ -1,8 +1,6 @@
-// TODO: more pattern functions
 // MIDI integration
 // host my samples / files
 // mutation bug, just triggers new notes!
-// zmod
 
 import { evaluate } from './core/compile';
 import { Scheduler } from './core/Scheduler';
