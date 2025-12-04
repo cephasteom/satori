@@ -551,7 +551,26 @@ const cache = (...args: any[]) => {
         return seq(...state).query(from, to);
     })
 };
-    
+
+/**
+ * Increment a counter each time a condition is met.
+ * @param condition - pattern to evaluate
+ * @example coin().count() // increments the count each time coin() returns 1
+ * @example count(coin()) // same as above
+ */
+const count = (condition: Pattern<any>) => {
+    let counter = 0;
+
+    return P((from, to) => {
+        const triggered = unwrap(condition, from, to);
+        triggered && (counter += 1);
+        return [{
+            from, to,
+            value: counter
+        }];
+    });
+}
+
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
     // @ts-ignore
@@ -606,7 +625,7 @@ export const methods = {
     mini,
     stack,
     interp,
-    degrade, toggle, cache,
+    degrade, toggle, cache, count,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,
     ifelse, ie, and, or, xor, not,
     c, cts, ctms, cps,
