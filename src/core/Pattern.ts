@@ -680,15 +680,3 @@ Object.entries(methods).forEach(([name, method]) => {
         return method(...args, set(this.valueOf()));
     }
 });
-
-const pat = '1?0*8'.cache(1, every(0.5))
-console.log(
-    pat.query(0,.25)[0].value,
-    pat.query(0.25,.5)[0].value,
-    pat.query(0.5,.75)[0].value,
-    pat.query(0.75,1)[0].value,
-    pat.query(1,1.25)[0].value,
-    pat.query(1.25,1.5)[0].value,
-    pat.query(1.5,1.75)[0].value,
-    pat.query(1.75,2)[0].value,
-);
