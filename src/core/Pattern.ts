@@ -496,6 +496,21 @@ const fallsOnFrom = (pattern: Pattern<any>) =>
 // @ts-ignore
 const every = (n: number) => seq(1).slow(n).fallsOnFrom();
 
+/**
+ * Toggle 1s and 0s when the condition is met.
+ * @param condition - pattern to evaluate
+ * @example s0.set({ e: '1 0 1 0' }) // trigger s0 on beats 1 and 3
+ * s1.set({ e: s0.e.toggle().ifelse('1*16', '1*8') }) // toggle between 16th and 8th notes each time s0 triggers
+ * s1.set({ e: toggle(s0.e).ifelse('1*16', '1*8') }) // also works
+ */
+const toggle = (condition: Pattern<any>) => {
+    let state = false;
+    return P((from, to) => ([{
+        from, to, 
+        value: (state = unwrap(condition, from, to) ? !state : state) ? 1 : 0
+    }]));
+}
+    
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
     // @ts-ignore
@@ -550,7 +565,7 @@ export const methods = {
     mini,
     stack,
     interp,
-    degrade,
+    degrade, toggle,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,
     ifelse, ie, and, or, xor,
     c, cts, ctms, cps,
