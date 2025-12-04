@@ -4,7 +4,7 @@
  * These posts outline how TidalCycles was ported to Strudel. Invaluable reading.
  */
 import { parse, evalNode } from './mini';
-import { cyclesPerSecond } from './utils';
+import { cyclesPerSecond, transposeOctave } from './utils';
 import pkg from 'noisejs';
 // @ts-ignore
 const { Noise } = pkg;
@@ -618,6 +618,27 @@ function wrap<T>(value: T): Pattern<T> {
 const mini = (value: string) => evalNode(parse(value), methods);
 
 /**
+ * Assuming a chord pattern, invert the chord by a given number of steps.
+ * @param steps - number of steps to invert. Positive values invert up, negative values invert down.
+ * @example 'Cma#7'.invert(1) // returns 'E G B C'
+ * @example 'Cma#7'.invert(-1) // returns 'B C E G'
+ */
+const inversion = (...args: any[]) => {
+    const pattern = wrap(args.pop() as Pattern<any>);
+    return P((from, to) => pattern.query(from, to).map((hap, i, arr) => {
+        const chordLength = arr.length;
+        const note = hap.value
+        const inversion = unwrap(args[0] || 1, from, to)
+        const inverted = transposeOctave(
+            +note, 
+            Math.abs(inversion) % chordLength > i ? inversion > 0 ? 1 : -1 : 0
+        );
+        
+        return {...hap, value: inverted }
+    }));
+}
+
+/**
  * Print the current Pattern value for debugging.
  * @example seq('A', 'B', 'C').print() // prints the value of the pattern on each division of the cycle.
  */
@@ -637,8 +658,8 @@ export const methods = {
     add, sub, mul, div, mod,
     saw, range, ramp, sine, cosine, tri, pulse, square, noise,
     mtr, scale, clamp,
+    stack, inversion,
     mini,
-    stack,
     interp,
     degrade, toggle, cache, count,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,

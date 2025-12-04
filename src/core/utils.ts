@@ -27,3 +27,7 @@ export function cyclesPerSecond(): number {
     const bpm = transport.bpm.value;
     return bpm / 60 / 4;
 }
+
+export function transposeOctave(note: number, octaves: number): number {
+    return note + (octaves * 12);
+}
