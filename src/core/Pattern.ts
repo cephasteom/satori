@@ -477,12 +477,12 @@ export const methods = {
     }), {})
 };
 
-type PatternMethods<T> = {
+type PatternMethods = {
     [K in keyof typeof methods]: (...args: Parameters<typeof methods[K]>) =>
         ReturnType<typeof methods[K]>;
 };
 
-export interface Pattern<T> extends PatternMethods<T> {}
+export interface Pattern<T> extends PatternMethods {}
 
 /**
  * Pattern class.
@@ -540,5 +540,3 @@ Object.entries(methods).forEach(([name, method]) => {
         return method(...args, set(this.valueOf()));
     }
 });
-
-console.log(noise(0, 10).query(0,1));
