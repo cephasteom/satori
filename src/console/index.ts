@@ -8,6 +8,8 @@ let messages: {type: string, message: string}[] = [
     {type: 'credit', message: `© Cephas Teom ${new Date().getFullYear()}`},
     {type: 'info', message: '`ctrl + return` to play.'},
     {type: 'info', message: '`ctrl + .` to stop.'},
+    {type: 'info', message: '`cmd + 1` to toggle console.'},
+    {type: 'info', message: '`cmd + 2` to toggle help.'},
 ]
 
 function log(type: string, message: string) {
@@ -26,7 +28,7 @@ function render() {
     `;
 
     const container = console.querySelector('.console__messages');
-    container && messages.length > 6 && (container.scrollTop = container.scrollHeight);
+    container && messages.length > 8 && (container.scrollTop = container.scrollHeight);
 }
 
 render();
