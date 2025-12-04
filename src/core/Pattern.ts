@@ -1,5 +1,8 @@
-// Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
-// This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
+/**
+ * Pattern module - core building block of Sartori.
+ * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
+ * These posts outline how TidalCycles was ported to Strudel. Invaluable reading.
+ */
 
 import { parse, evalNode } from './mini';
 import { cyclesPerSecond } from './utils';
@@ -81,7 +84,7 @@ const cat = (...values: any[]) =>
 /**
  * Alias for cat.
  */
-const set = (...args: Parameters<typeof cat>) => cat(...args);
+const set = cat
 
 /**
  * Sequence values into a single cycle.
@@ -239,7 +242,7 @@ const mtr = withValue((outMin, outMax, ...rest) => {
 /**
  * Alias for mtr.
  */
-const scale = (...args: Parameters<typeof mtr>) => mtr(...args);
+const scale = mtr
 
 /**
  * Clamp pattern values to a given range.
@@ -292,11 +295,11 @@ const saw = (min: number = 0, max: number = 1, q: number = 48) =>
 /**
  * Alias for saw
  */
-const range = (...args: Parameters<typeof saw>) => saw(...args);
+const range = saw
 
 /** Alias for saw
  */
-const ramp = (...args: Parameters<typeof saw>) => saw(...args);
+const ramp = saw
 
 /**
  * Generate a sine wave from min to max over one cycle.
@@ -468,7 +471,7 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
  * @example set(2).pow(2) // returns 4 every cycle
  * @example seq(1,2,3).pow(2) // returns the sine of 1, then 2, then 3 over successive cycles
  */
-const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
+const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function');
 
 // Util: unwrap ensures we get a raw value
 function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
@@ -508,16 +511,20 @@ export const methods = {
     and, or, xor,
     c, cts, ctms, cps,
     lt, gt, eq, neq,
-    // insert all operators from the Math object
     ...operators.reduce((obj, name) => ({
         ...obj,
         [name]: operate(name)
     }), {})
 };
 
+// declare a type for Pattern methods, for use in the Pattern interface
 type PatternMethods = {
-    [K in keyof typeof methods]: (...args: Parameters<typeof methods[K]>) =>
-        ReturnType<typeof methods[K]>;
+    // key must be a key from methods
+    // value is a function with the same parameters and return type as the corresponding method in methods
+    [K in keyof typeof methods]: (...args: Parameters<typeof methods[K]>) => ReturnType<typeof methods[K]>;
+} & {
+    // fallback for runtime operators
+    [key: string]: (...args: any[]) => any;
 };
 
 export interface Pattern<T> extends PatternMethods {}
@@ -556,6 +563,7 @@ export class Pattern<T> {
     }
 }
 
+// Extend String and Number prototypes to include Pattern methods
 declare global {
     interface String {
         [key: string]: any;
@@ -567,7 +575,6 @@ declare global {
 
 // add all methods to the string prototype so that we can do '1 2 3'.add(2) for example
 Object.entries(methods).forEach(([name, method]) => {
-    
     String.prototype[name] = function(...args: any[]) {
         // @ts-ignore
         return method(...args, mini(this.toString()));
@@ -578,3 +585,5 @@ Object.entries(methods).forEach(([name, method]) => {
         return method(...args, set(this.valueOf()));
     }
 });
+
+console.log(set(1.5).round().query(0,1)); // debug
