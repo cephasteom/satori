@@ -499,17 +499,54 @@ const every = (n: number) => seq(1).slow(n).fallsOnFrom();
 /**
  * Toggle 1s and 0s when the condition is met.
  * @param condition - pattern to evaluate
- * @example s0.set({ e: '1 0 1 0' }) // trigger s0 on beats 1 and 3
- * s1.set({ e: s0.e.toggle().ifelse('1*16', '1*8') }) // toggle between 16th and 8th notes each time s0 triggers
- * s1.set({ e: toggle(s0.e).ifelse('1*16', '1*8') }) // also works
+ * @example rarely().toggle() // toggles between 1 and 0 each time rarely() returns 1
  */
 const toggle = (condition: Pattern<any>) => {
     let state = false;
-    return P((from, to) => ([{
-        from, to, 
-        value: (state = unwrap(condition, from, to) ? !state : state) ? 1 : 0
-    }]));
+
+    return P((from, to) => {
+        const shouldToggle = unwrap(condition, from, to);
+        state = shouldToggle ? !state : state;
+        
+        return [{
+            from, to, 
+            value: state ? 1 : 0
+        }];
+    });
 }
+
+/**
+ * Fill a cache with x values.
+ * @param size - amount of values to cache per cycle
+ * @param clear - empties the cache when this pattern returns true
+ * 
+ * @param value - value or pattern to cache
+ * @example coin().cache(16,4) // caches 16 values from coin() and repeats them 4 times
+ */
+const cache = (...args: any[]) => {
+    let state: any[] = [];
+    let index = 0;
+    let pattern = args.pop() as Pattern<any>;
+
+    return P((from, to) => wrap(pattern).query(from, to).map(hap => {
+        const size = unwrap(args[0] || 16, hap.from, hap.to);
+        const clear = unwrap(args[1]?.fallsOnFrom() || 0, hap.from, hap.to);
+
+        // clear the cache if needed
+        if(clear) {
+            state = [];
+            index = 0;
+        }
+
+        // add to the cache if not full
+        state.length < size && state.push(hap.value);
+        console.log(clear,size,state)
+
+        const value = state[index++ % state.length];
+
+        return {from: hap.from, to: hap.to, value};
+    }))
+};
     
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
@@ -565,7 +602,7 @@ export const methods = {
     mini,
     stack,
     interp,
-    degrade, toggle,
+    degrade, toggle, cache,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,
     ifelse, ie, and, or, xor,
     c, cts, ctms, cps,
@@ -644,3 +681,15 @@ Object.entries(methods).forEach(([name, method]) => {
         return method(...args, set(this.valueOf()));
     }
 });
+
+const pat = '1?0*8'.cache(1, every(0.5))
+console.log(
+    pat.query(0,.25)[0].value,
+    pat.query(0.25,.5)[0].value,
+    pat.query(0.5,.75)[0].value,
+    pat.query(0.75,1)[0].value,
+    pat.query(1,1.25)[0].value,
+    pat.query(1.25,1.5)[0].value,
+    pat.query(1.5,1.75)[0].value,
+    pat.query(1.75,2)[0].value,
+);
