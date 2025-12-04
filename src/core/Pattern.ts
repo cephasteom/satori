@@ -460,19 +460,41 @@ const xor = withValue((v, w) => v != w ? 1 : 0);
  * @example random().lt(0.3).ifelse('A', 'B') // returns 1 when random()<0.3, else 0
  */
 const ifelse = (
-    thenPattern: string|number|Pattern<any>, 
+    ifPattern: string|number|Pattern<any>, 
     elsePattern: string|number|Pattern<any>,
     pattern: string|number|Pattern<any>, 
-) => 
-    P((from, to) => {
-        const condHaps = unwrap(pattern, from, to);
-        return wrap(condHaps ? thenPattern : elsePattern).query(from, to);
-    });
+) => P((from, to) => wrap(unwrap(pattern, from, to) 
+        ? ifPattern 
+        : elsePattern
+    ).query(from, to));
 
 /**
  * Alias for ifelse.
  */
 const ie = ifelse
+
+/**
+ * If hap.from === from, return hap.value, else 0.
+ * @param pattern - pattern to evaluate
+ * @example seq(1).fallsOnFrom().query(0,1) // returns 1
+ * @example seq(1).fallsOnFrom().query(0.5,1.5) // returns 0
+ * @ignore - internal use only
+ */
+const fallsOnFrom = (pattern: Pattern<any>) => 
+    P((from, to) => pattern.query(from, to).map(hap => ({
+        from: hap.from,
+        to: hap.to,
+        value: hap.from === from ? hap.value : 0
+    })));
+
+/**
+ * Return a 1 every n cycles, else 0. Only returns 1 when event falls exactly on the cycle division.
+ * @param n - interval
+ * @example every(0.25) // returns 1 every quarter cycle. Equivalent to seq(1,1,1,1).
+ * @example every(2) // returns 1 every 2 cycles. Equivalent to seq(1).slow(2).
+ */
+// @ts-ignore
+const every = (n: number) => seq(1).slow(n).fallsOnFrom();
 
 // base function for handling Math[operation] patterns
 const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycle((from, to) => {
@@ -529,8 +551,8 @@ export const methods = {
     stack,
     interp,
     degrade,
-    choose, coin, rarely, sometimes, often, ifelse, ie,
-    and, or, xor,
+    choose, coin, rarely, sometimes, often, every, fallsOnFrom,
+    ifelse, ie, and, or, xor,
     c, cts, ctms, cps,
     lt, gt, eq, neq,
     ...operators.reduce((obj, name) => ({
