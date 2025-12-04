@@ -1,5 +1,6 @@
 // TODO: more pattern functions
 // MIDI integration
+// host my samples / files
 // zmod
 
 import { evaluate } from './core/compile';
@@ -24,15 +25,15 @@ const scheduler = new Scheduler(
     (event: any, time: number) => handler(event, time) // handle scheduled events here.
 );
 
-// Toggle display of console and docs
-const toggle = (id: string, displayStyle: string = 'block') => {
+// Toggle display of help components
+const toggleHelpComponent = (id: string, displayStyle: string = 'block') => {
     const el = document.getElementById(id);
     if(!el) return;
     el.style.display = el.style.display === 'none'
         ? displayStyle
         : 'none';
 
-    // If they're all hidden, hide the parent container too
+    // When all help components are hidden, hide the parent container too
     const help: HTMLElement | null = document.querySelector('.help');
     if(!help) return;
     help.style.display = Array.from(help?.children || [])
@@ -47,14 +48,19 @@ const toggle = (id: string, displayStyle: string = 'block') => {
 window.addEventListener('keydown', (e) => {
     if(e.ctrlKey && e.key === 'Enter') scheduler.play();
     if(e.ctrlKey && e.code === 'Period') scheduler.stop();
-    // hide / show console with cmd + 1
+    
     if(e.metaKey && e.key === '1') {
         e.preventDefault();
-        toggle('console');
+        toggleHelpComponent('console');
     }
-    // hide / show docs with cmd + 2
+    
     if(e.metaKey && e.key === '2') {
         e.preventDefault();
-        toggle('docs');
+        toggleHelpComponent('docs');
+    }
+    
+    if(e.metaKey && e.key === '3') {
+        e.preventDefault();
+        toggleHelpComponent('circuit');
     }
 });

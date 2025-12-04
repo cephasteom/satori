@@ -1,5 +1,5 @@
 import { parse, evalNode } from './mini';
-import { cyclesPerSecond, cyclesToSeconds } from './utils';
+import { cyclesPerSecond } from './utils';
 // Credit: the main architecture of this was adapted from https://garten.salat.dev/idlecycles/, by Froos
 // This outlines the underlying concepts of how Tidal was ported to Strudel. Very many thanks.
 
@@ -112,7 +112,12 @@ const withValue = (callback: (...args: any[]) => any) =>
     }
 
 /**
- * Cycles to seconds.
+ * Return the current cycles per second.
+ */
+const cps = () => P((from, to) => ([{ from, to, value: cyclesPerSecond() }]));
+
+/**
+ * Convert cycles to seconds.
  * @param cycles - number of cycles
  * @example (4).cts() // convert a number as a method
  * @example cts(1) // or as a function
@@ -120,11 +125,7 @@ const withValue = (callback: (...args: any[]) => any) =>
  * @example seq(1,2,3,4).cts() // convert a Pattern
  */
 const cts = (cycles: number|string|Pattern<number>) => 
-    P((from, to) => wrap(cycles).query(from, to).map(hap => ({
-        from: hap.from,
-        to: hap.to,
-        value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to))
-    })));
+    P((from, to) => wrap(cycles).div(cps()).query(from, to));
 
 /**
  * Cycles to milliseconds.
@@ -135,16 +136,7 @@ const cts = (cycles: number|string|Pattern<number>) =>
  * @example seq(1,2,3,4).ctms() // convert a Pattern
  */
 const ctms = (cycles: number|string|Pattern<number>) => 
-    P((from, to) => wrap(cycles).query(from, to).map(hap => ({
-        from: hap.from,
-        to: hap.to,
-        value: cyclesToSeconds(unwrap(cycles, hap.from, hap.to)) * 1000
-    })));
-
-/**
- * Return the current cycles per second.
- */
-const cps = () => P((from, to) => ([{ from, to, value: cyclesPerSecond() }]));
+    cts(cycles).mul(1000);
 
 /**
  * Add a value or pattern.
@@ -421,26 +413,6 @@ const operate = (operator: string) => (...args: (number|Pattern<any>)[]) => cycl
  */
 const operators = Object.getOwnPropertyNames(Math).filter(prop => typeof (Math as any)[prop] === 'function')
 
-export const methods = {
-    cat, set, seq,
-    fast, slow,
-    add, sub, mul, div, mod,
-    saw, range, ramp, sine, cosine, tri, pulse, square,
-    mtr, scale, clamp,
-    mini,
-    stack,
-    interp,
-    degrade,
-    choose, coin, rarely, sometimes, often,
-    and, or, xor,
-    cts, ctms, cps,
-    // insert all operators from the Math object
-    ...operators.reduce((obj, name) => ({
-        ...obj,
-        [name]: operate(name)
-    }), {})
-};
-
 // Util: unwrap ensures we get a raw value
 function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
     value = typeof value === "string" ? mini(value as string) : value;
@@ -464,6 +436,33 @@ function wrap<T>(value: T): Pattern<T> {
 function mini(value: string) {
     return evalNode(parse(value), methods);
 }
+
+export const methods = {
+    cat, set, seq,
+    fast, slow,
+    add, sub, mul, div, mod,
+    saw, range, ramp, sine, cosine, tri, pulse, square,
+    mtr, scale, clamp,
+    mini,
+    stack,
+    interp,
+    degrade,
+    choose, coin, rarely, sometimes, often,
+    and, or, xor,
+    cts, ctms, cps,
+    // insert all operators from the Math object
+    ...operators.reduce((obj, name) => ({
+        ...obj,
+        [name]: operate(name)
+    }), {})
+};
+
+type PatternMethods<T> = {
+    [K in keyof typeof methods]: (...args: Parameters<typeof methods[K]>) =>
+        ReturnType<typeof methods[K]>;
+};
+
+export interface Pattern<T> extends PatternMethods<T> {}
 
 /**
  * Pattern class.
@@ -492,14 +491,18 @@ export class Pattern<T> {
 
         // bind methods to this pattern instance
         Object.entries(methods).forEach(([name, method]) => {
-            // @ts-ignore
-            this[name] = (...args: any[]) => method(...args, this);
-        } );
+            this[name as keyof typeof methods] = ((...args: any[]) =>
+                // @ts-ignore
+                method(...args, this)) as any;
+        });
     }
 }
 
 declare global {
     interface String {
+        [key: string]: any;
+    }
+    interface Number {
         [key: string]: any;
     }
 }
