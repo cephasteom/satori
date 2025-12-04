@@ -16,6 +16,7 @@ hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('javascript', javascript);
 
 const docs = document.querySelector('#docs > div')
+let article = 'docs__quick-start';
 
 const render = (searchResults: Record<string, Record<string, any>> = {}) => {
     docs && (docs.innerHTML = `
@@ -65,30 +66,33 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
     hljs.highlightAll();
 };
 
-render();
-
-// current active article
-let article = 'docs__quick-start';
-// add event listeners to buttons
-document.querySelectorAll('#docs button').forEach((button) => {
-    button.addEventListener('click', () => {
-        const articleId = `docs__${button.textContent?.toLowerCase().replace(' ', '-')}`;
-        const previousArticle = document.getElementById(article);
-        const nextArticle = document.getElementById(articleId);
-        if (previousArticle) previousArticle.style.display = 'none';
-        if (nextArticle) nextArticle.style.display = 'block';
-        article = articleId;
-        // update button styles
-        document.querySelectorAll('#docs button').forEach((btn) => {
-            btn.classList.remove('active');
+const addButtonEvents = () => {
+    // add event listeners to buttons
+    document.querySelectorAll('#docs button').forEach((button) => {
+        console.log(button)
+        button.addEventListener('click', () => {
+            const articleId = `docs__${button.textContent?.toLowerCase().replace(' ', '-')}`;
+            const previousArticle = document.getElementById(article);
+            const nextArticle = document.getElementById(articleId);
+            if (previousArticle) previousArticle.style.display = 'none';
+            if (nextArticle) nextArticle.style.display = 'block';
+            article = articleId;
+            // update button styles
+            document.querySelectorAll('#docs button').forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
         });
-        button.classList.add('active');
     });
-});
+};
+
+render();
+addButtonEvents();
 
 // search functionality
 const searchInput = document.getElementById('search') as HTMLInputElement;
 searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase();
     render(search(query));
+    addButtonEvents();
 });
