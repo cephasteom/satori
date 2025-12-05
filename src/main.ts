@@ -4,7 +4,8 @@
 // Make FXChannel slimmer - just dist, hpf, and lpf
 // midi()
 // READMEs in each folder
-import { init, handler } from './oto';
+import { init, handler as otoHandler } from './oto';
+import { handler as midiHandler } from './core/MIDI';
 import { Scheduler } from './core/Scheduler';
 
 import './normalize.css'
@@ -17,10 +18,8 @@ import './console';
 // Init oto
 init();
 
-// Create a new scheduler and pass in Oto's handler function
-const scheduler = new Scheduler(
-    (event: any, time: number) => handler(event, time) // handle scheduled events here.
-);
+// Create a new scheduler and pass in and handlers
+const scheduler = new Scheduler(otoHandler, midiHandler);
 
 // Toggle display of help components
 const toggleHelpComponent = (id: string, displayStyle: string = 'block') => {

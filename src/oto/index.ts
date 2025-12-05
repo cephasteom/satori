@@ -1,7 +1,6 @@
 import { start } from 'tone';
 import { Channel, channels } from './Channel';
 import { formatParamKey } from './utils';
-import { WebMidi } from 'webmidi';
 
 declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
 const sartori = new BroadcastChannel('sartori');
@@ -10,8 +9,6 @@ export function init() {
     window.addEventListener('keydown', startAudio)
     window.addEventListener('click', startAudio)
     window.addEventListener('touchstart', startAudio)
-    
-    WebMidi.enable().then(() => sartori.postMessage({ type: 'success', message: 'MIDI enabled' }))
 }
 
 async function startAudio() {

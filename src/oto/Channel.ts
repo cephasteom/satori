@@ -206,7 +206,7 @@ export class Channel {
      * @param time 
      */
     play(params: any, time: number) {
-        const { inst, level = 1 } = params;
+        const { inst, midi, level = 1 } = params;
         
         // handle output routing
         params.out && this.routeOutput(params.out);
@@ -229,10 +229,14 @@ export class Channel {
         if(['fx0', 'fx1', 'fx2', 'fx3'].includes(this.id)) return;
         
         // exit if no valid instrument specified
-        if(!Object.keys(instMap).includes(inst)) return sartori.postMessage({ 
-                type: 'error', 
-                message: `Instrument type "${inst}" not recognised.` 
-            });
+        const noInst = !Object.keys(instMap).includes(inst)
+        // throw error if invalid instrument and we're not using MIDI
+        if(noInst && midi === undefined) sartori.postMessage({ 
+            type: 'error', 
+            message: `Instrument type "${inst}" not recognised.` 
+        });
+        // exit if no valid instrument specified
+        if(noInst) return;
 
         // initialize instrument if it doesn't exist on this channel yet
         if(!this._instruments[inst]) {

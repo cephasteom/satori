@@ -323,7 +323,8 @@ export const parse = (input: string) => {
     try {
         return memoizedParse(input)
     } catch (e: any) {
-        channel.postMessage({ type: 'error', message: e.message } );
+        // if we can't parse it, just return the input as-is
+        return input;
     }
 }
 

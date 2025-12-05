@@ -1,5 +1,6 @@
 import { getTransport } from 'tone';
 import { scales } from './scales';
+import { WebMidi } from 'webmidi';
 
 const channel = new BroadcastChannel('sartori');
 
@@ -55,4 +56,8 @@ export const utilities = {
         channel.postMessage({ type: 'success', message: 'Effects ->\n' });
         channel.postMessage({ type: 'info', message: 'reverb, delay, dist, hpf, lpf' } );
     },
+    midi: () => {
+        channel.postMessage({ type: 'success', message: 'MIDI outs ->\n' });
+        channel.postMessage({ type: 'info', message: WebMidi.outputs.map(i => i.name).join(', ') } );
+    }
 }

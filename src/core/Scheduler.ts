@@ -1,6 +1,8 @@
 import { getTransport, immediate, Loop } from 'tone'
 import { compile } from "./compile";
 
+const latency = 0.1; // seconds to schedule ahead
+
 export class Scheduler {
     cps: number = 0.5;
     transport;
@@ -8,7 +10,7 @@ export class Scheduler {
     t: number = 0; // time pointer in cycles
     loop: Loop;
 
-    constructor(handler: Function) {
+    constructor(...handlers: Function[]) {
         this.transport = getTransport()
         this.loop = new Loop(time => {
             const from = this.t;
@@ -30,12 +32,13 @@ export class Scheduler {
 
             streams
                 .filter((hap) => !hap.params.mute)
-                .forEach((hap) => handler(
-                hap, 
-                time // time from transport
-                + (hap.time - from) // add delta value from start of this tick
-                / (cpsEvents.find(({time}: any) => time >= hap.time)?.value || this.cps) // scaled by cps at that time
-            ));
+                .forEach((hap) => handlers.forEach(handler => handler(
+                    hap, 
+                    time // time from transport
+                    + (hap.time - from) // add delta value from start of this tick
+                    / (cpsEvents.find(({time}: any) => time >= hap.time)?.value || this.cps) // scaled by cps at that time
+                    + latency
+                )));
 
             // update time pointer for next tick
             this.t = to;
