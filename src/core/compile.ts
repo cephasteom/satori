@@ -1,44 +1,17 @@
 import { Stream, type Event } from './Stream';
 import { methods } from './Pattern';
-import { scales } from './scales';
+import { utilities } from './utils';
 
-// keep track of the last successfully evaluated code
-let lastCode: string = '';
+let lastCode: string = ''; // last successfully evaluated code
 
-// create 16 streams: s0, s1, s2, ... s15
+// create streams
+const global = new Stream('global');
 const streams = Array(16).fill(0).map((_, i) => new Stream('s' + i))
-
-// create 4 fxStreams: fx0, fx1, fx2, fx3
 const fxStreams = Array(4).fill(0).map((_, i) => new Stream('fx' + i))
 
-const global = new Stream('global');
-
-// Util: reset all streams to initial state
 export const reset = () => [global, ...streams, ...fxStreams].forEach(stream => stream.__reset());
 
 const channel = new BroadcastChannel('sartori');
-
-// Utility functions accessible in user code
-const utils = {
-    scales: () => {
-        channel.postMessage({ type: 'success', message: 'Scales ->\n' });
-        channel.postMessage({ type: 'info', message: Object.keys(scales).join(', ') } );
-    },
-    print: (message: any) => {
-        channel.postMessage({ type: 'credit', message: String(message) } );
-    },
-    clear: () => {
-        channel.postMessage({ type: 'clear' } );
-    },
-    instruments: () => {
-        channel.postMessage({ type: 'success', message: 'Instruments ->\n' });
-        channel.postMessage({ type: 'info', message: 'synth, sampler, granular, acid, tone.synth, tone.am, tone.fm, tone.mono' } );
-    },
-    effects: () => {
-        channel.postMessage({ type: 'success', message: 'Effects ->\n' });
-        channel.postMessage({ type: 'info', message: 'reverb, delay, dist, hpf, lpf' } );
-    },
-}
 
 // everything the user should be able to access in their code
 const scope = {
@@ -53,7 +26,7 @@ const scope = {
         [stream.id]: stream
     }), {}),
     ...methods,
-    ...utils,
+    ...utilities,
 }
 
 /**
@@ -68,7 +41,6 @@ export function evaluate(code: string) {
         new Function(...Object.keys(scope), `${code}`)(...Object.values(scope));
         // Store the last successfully evaluated code
         lastCode = code;
-        
     } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);
@@ -85,6 +57,12 @@ window.addEventListener("evaluateCode", (e) => {
     evaluate(customEvent.detail.code);
 });
 
+/**
+ * Compile current code into a list of events and mutations between the specified time range.
+ * @param from - The start time in cycles.
+ * @param to - The end time in cycles.
+ * @returns An object containing global events and stream-specific events and mutations.
+ */ 
 export const compile = (from: number, to: number) => ({
     // at the global level, we are only interested in events (at least for now)
     global: global.query(from, to).events,

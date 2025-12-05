@@ -1,4 +1,7 @@
 import { getTransport } from 'tone';
+import { scales } from './scales';
+
+const channel = new BroadcastChannel('sartori');
 
 // memoize multiple argument function - use sparingly as we're creating strings as keys
 export function memoize(fn: (...args: any[]) => any) {
@@ -30,4 +33,26 @@ export function cyclesPerSecond(): number {
 
 export function transposeOctave(note: number, octaves: number): number {
     return note + (octaves * 12);
+}
+
+// Utility functions accessible in user code
+export const utilities = {
+    scales: () => {
+        channel.postMessage({ type: 'success', message: 'Scales ->\n' });
+        channel.postMessage({ type: 'info', message: Object.keys(scales).join(', ') } );
+    },
+    print: (message: any) => {
+        channel.postMessage({ type: 'credit', message: String(message) } );
+    },
+    clear: () => {
+        channel.postMessage({ type: 'clear' } );
+    },
+    instruments: () => {
+        channel.postMessage({ type: 'success', message: 'Instruments ->\n' });
+        channel.postMessage({ type: 'info', message: 'synth, sampler, granular, acid, tone.synth, tone.am, tone.fm, tone.mono' } );
+    },
+    effects: () => {
+        channel.postMessage({ type: 'success', message: 'Effects ->\n' });
+        channel.postMessage({ type: 'info', message: 'reverb, delay, dist, hpf, lpf' } );
+    },
 }
