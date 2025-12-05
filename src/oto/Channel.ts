@@ -229,12 +229,10 @@ export class Channel {
         if(['fx0', 'fx1', 'fx2', 'fx3'].includes(this.id)) return;
         
         // exit if no valid instrument specified
-        if(!Object.keys(instMap).includes(inst)) {
-            return sartori.postMessage({ 
+        if(!Object.keys(instMap).includes(inst)) return sartori.postMessage({ 
                 type: 'error', 
                 message: `Instrument type "${inst}" not recognised.` 
             });
-        }
 
         // initialize instrument if it doesn't exist on this channel yet
         if(!this._instruments[inst]) {
