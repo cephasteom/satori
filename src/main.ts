@@ -2,7 +2,7 @@
 // host my samples / files
 // Parsing: Bbmi / A#mi7 not working
 // Make FXChannel slimmer - just dist, hpf, and lpf
-// instruments(), midi()
+// midi()
 // READMEs in each folder
 import { init, handler } from './oto';
 import { Scheduler } from './core/Scheduler';

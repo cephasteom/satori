@@ -29,7 +29,15 @@ const utils = {
     },
     clear: () => {
         channel.postMessage({ type: 'clear' } );
-    }
+    },
+    instruments: () => {
+        channel.postMessage({ type: 'success', message: 'Instruments ->\n' });
+        channel.postMessage({ type: 'info', message: 'synth, sampler, granular, acid, tone.synth, tone.am, tone.fm, tone.mono' } );
+    },
+    effects: () => {
+        channel.postMessage({ type: 'success', message: 'Effects ->\n' });
+        channel.postMessage({ type: 'info', message: 'reverb, delay, dist, hpf, lpf' } );
+    },
 }
 
 // everything the user should be able to access in their code
