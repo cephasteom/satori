@@ -69,6 +69,14 @@ export function evaluate(code: string) {
     }
 }
 
+/**
+ * Listen for 'evaluateCode' events from the editor and evaluate the code
+ */
+window.addEventListener("evaluateCode", (e) => {
+    const customEvent = e as CustomEvent<{ code: string }>;
+    evaluate(customEvent.detail.code);
+});
+
 export const compile = (from: number, to: number) => ({
     // at the global level, we are only interested in events (at least for now)
     global: global.query(from, to).events,

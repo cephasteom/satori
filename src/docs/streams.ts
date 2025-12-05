@@ -63,4 +63,14 @@ ${marked(`\`\`\`typescript
 s0.set({ cut: 'all' )} // cut all other streams
 \`\`\``)}
         </li>
+        <li>
+            <h4>Stream Interference</h4>
+            <p>You can use stream parameters as vales for other stream parameters and pattern arguments. This allows for interesting interactions between streams.</p>
+            ${marked(`\`\`\`typescript
+s0.set({ n: 'Cmi7', // set s0 to play C minor 7
+    e: '1*4' }) // and trigger every 4 steps
+s1.set({ n: s0.n.add(12), // s1 uses s0's note + 12 semitones
+    e: not(s0.e).and('1*8') }) // s1 triggers on 8th notes, but only when s0 is not triggering
+\`\`\``)}
+        </li>
     </ul>`

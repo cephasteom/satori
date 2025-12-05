@@ -82,6 +82,7 @@ main > section > div {
     border-radius: 2px;
     outline: none;
     color: white;
+    width: 100px;
     
 }
 .help__component input::placeholder {

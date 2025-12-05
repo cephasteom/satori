@@ -1,9 +1,10 @@
 // MIDI integration
 // host my samples / files
-
-import { evaluate } from './core/compile';
-import { Scheduler } from './core/Scheduler';
+// Parsing: Bbmi / A#mi7 not working
+// Make FXChannel slimmer - just dist, hpf, and lpf
+// instruments(), midi()
 import { init, handler } from './oto';
+import { Scheduler } from './core/Scheduler';
 
 import './normalize.css'
 import './style.css'
@@ -11,16 +12,11 @@ import './style.css'
 import './editor';
 import './docs';
 import './console';
-
-// Listen for 'evaluateCode' events from the editor and evaluate the code
-window.addEventListener("evaluateCode", (e) => {
-    const customEvent = e as CustomEvent<{ code: string }>;
-    evaluate(customEvent.detail.code);
-});
     
 // Init oto
 init();
-// Initialize the scheduler, passing in oto's event handler
+
+// Create a new scheduler and pass in Oto's handler function
 const scheduler = new Scheduler(
     (event: any, time: number) => handler(event, time) // handle scheduled events here.
 );
