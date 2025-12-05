@@ -1,5 +1,6 @@
 import { immediate } from 'tone';
 import { WebMidi } from 'webmidi';
+import { formatCCParams } from './utils';
 declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
 
 const sartori = new BroadcastChannel('sartori');
@@ -12,7 +13,7 @@ export function handler(event: Event, time: number) {
     
     // If no MIDI param, ignore
     if(midi === undefined) return
-    
+
     const device = WebMidi.getOutputByName(midi);
     
     // If invalid MIDI device, error
@@ -20,7 +21,7 @@ export function handler(event: Event, time: number) {
         type: 'error', 
         message: 'Invalid MIDI device' 
     });
-    
+
     // playnote expects timestamp in ms from now
     const delta = time - immediate()
     const timestamp = (delta * 1000) + +mididelay;
@@ -31,12 +32,15 @@ export function handler(event: Event, time: number) {
     const options = {
         time: `+${timestamp}`,
         attack: +amp,
+        duration: +dur,
         channels,
     }
 
-    device.playNote(n, {...options, time: `+${timestamp}`});
+    // if an event, trigger notes
+    event.type === 'e' && device.playNote(n, {...options, time: `+${timestamp}`});
 
-    const id = setTimeout(() => {
-        device.stopNote(n, {channels});
-    }, timestamp + +dur);
+    // if an event or mutation, send CC params
+    Object.entries(formatCCParams(params))
+        .forEach(([cc, val]) => 
+            device.sendControlChange(+cc, +val, {...options, time: `+${timestamp}`}));
 }

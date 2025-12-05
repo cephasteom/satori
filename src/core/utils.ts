@@ -15,17 +15,6 @@ export function memoize(fn: (...args: any[]) => any) {
         }
     }
 
-export function cyclesToSeconds(cycles: number): number {
-    const transport = getTransport();
-    const bpm = transport.bpm.value;
-    const secondsPerBeat = 60 / bpm;
-    return cycles * 4 * secondsPerBeat;
-}
-
-export function cyclesToMilliseconds(cycles: number): number {
-    return cyclesToSeconds(cycles) * 1000;
-}
-
 export function cyclesPerSecond(): number {
     const transport = getTransport();
     const bpm = transport.bpm.value;
@@ -34,6 +23,15 @@ export function cyclesPerSecond(): number {
 
 export function transposeOctave(note: number, octaves: number): number {
     return note + (octaves * 12);
+}
+
+export function formatCCParams(params: Record<string, any>): Record<string, any> {
+    return Object.entries(params)
+        .filter(([key, val]) => key.startsWith('cc') && val !== undefined)
+        .reduce((obj, [key, val]) => ({
+            ...obj,
+            [+key.replace('cc', '')]: Math.floor(val * 128)
+        }), {});
 }
 
 // Utility functions accessible in user code
