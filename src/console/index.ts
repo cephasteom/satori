@@ -29,7 +29,7 @@ function render() {
     `;
 
     const container = console.querySelector('.console__messages');
-    container && messages.length > 7 && (container.scrollTop = container.scrollHeight);
+    container && messages.length > 8 && (container.scrollTop = container.scrollHeight);
 }
 
 render();

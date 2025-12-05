@@ -228,7 +228,7 @@ export class Channel {
         // exit if this is an FX channel
         if(['fx0', 'fx1', 'fx2', 'fx3'].includes(this.id)) return;
         
-        // check that instrument is valid
+        // exit if no valid instrument specified
         if(!Object.keys(instMap).includes(inst)) {
             return sartori.postMessage({ 
                 type: 'error', 
@@ -258,8 +258,8 @@ export class Channel {
         
         // if any fx params are > 0, initialize fx if not already done
         !this._fx
-        && [dist, ring, chorus, lpf, hpf].reduce((a, b) => a + b, 0) > 0 
-        && this.initFX()
+            && [dist, ring, chorus, lpf, hpf].reduce((a, b) => a + b, 0) > 0 
+            && this.initFX()
 
         // initialize reverb / delay if needed
         params.reverb > 0 && !this._reverb && this.initReverb()
@@ -276,9 +276,8 @@ export class Channel {
      * @param params - e.g {n: 72, modi: 10}
      */
     mutate(params: Record<string, any>, time: number, lag: number = 100) {
-        Object.values(this._instruments).forEach(inst => {
-            inst.mutate(params, time, lag);
-        });
+        Object.values(this._instruments)
+            .forEach(inst => inst.mutate(params, time, lag));
 
         // handle bus sends
         this._busses.forEach((_, i) => params[`bus${i}`] 
@@ -293,9 +292,8 @@ export class Channel {
      * Cut all instruments on this channel
      */
     cut(time: number) {
-        Object.values(this._instruments).forEach(inst => {
-            inst.cut(time);
-        });
+        Object.values(this._instruments)
+            .forEach(inst => inst.cut(time));
     }
 }
 

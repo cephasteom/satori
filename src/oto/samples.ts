@@ -11,8 +11,11 @@ export const result = fetch('https://raw.githubusercontent.com/tidalcycles/dirt-
                 [bank]: [samples].flat().map((sample: string) => `https://raw.githubusercontent.com/tidalcycles/Dirt-Samples/master/${sample}`)
             }), {});
 
-        sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
-        sartori.postMessage({ type: 'info', message: Object.keys(samplesWithPath).filter(key => key !== '_base').join(',\n') });
+        // delay messages slightly
+        setTimeout(() => {
+            sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
+            sartori.postMessage({ type: 'info', message: Object.keys(samplesWithPath).filter(key => key !== '_base').join(',\n') });
+        }, 50);
         return samplesWithPath;
     })
     .catch(_ => sartori.postMessage({ type: 'error', message: 'No samples loaded' }));
