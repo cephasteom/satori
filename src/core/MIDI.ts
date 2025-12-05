@@ -1,5 +1,5 @@
 import { immediate } from 'tone';
-import { WebMidi } from 'webmidi';
+import { WebMidi, type Output } from 'webmidi';
 import { formatCCParams } from './utils';
 declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
 
@@ -7,9 +7,13 @@ const sartori = new BroadcastChannel('sartori');
 
 WebMidi.enable().then(() => sartori.postMessage({ type: 'success', message: 'MIDI enabled' }));
 
+// keep track of the devices and channels assigned to each stream
+// this is because we can't use Output.clear(). See https://bugs.chromium.org/p/chromium/issues/detail?id=471798.
+let streams: Record<string, { device: Output, channels?: number[] }> = {};
+
 export function handler(event: Event, time: number) {
     const { params } = event;
-    const { midi, midichan, mididelay = 0, amp = 0.5, n = 60, dur = 500 } = params;
+    const { midi, midichan, mididelay = 0, amp = 0.5, n = 60, dur = 500, cut = [] } = params;
     
     // If no MIDI param, ignore
     if(midi === undefined) return
@@ -22,12 +26,14 @@ export function handler(event: Event, time: number) {
         message: 'Invalid MIDI device' 
     });
 
+    // determine channels to play on
+    const channels = midichan ? (Array.isArray(midichan) ? midichan : [+midichan]) : undefined;
+
+    streams[event.id] = { device, channels };
+    
     // playnote expects timestamp in ms from now
     const delta = time - immediate()
     const timestamp = (delta * 1000) + +mididelay;
-
-    // determine channels to play on
-    const channels = midichan ? (Array.isArray(midichan) ? midichan : [+midichan]) : undefined;
 
     const options = {
         time: `+${timestamp}`,
@@ -36,11 +42,25 @@ export function handler(event: Event, time: number) {
         channels,
     }
 
-    // if an event, trigger notes
-    event.type === 'e' && device.playNote(n, {...options, time: `+${timestamp}`});
-
-    // if an event or mutation, send CC params
+    // send CC params
     Object.entries(formatCCParams(params))
         .forEach(([cc, val]) => 
             device.sendControlChange(+cc, +val, {...options, time: `+${timestamp}`}));
+
+    // exit if a mutation
+    if(event.type !== 'e') return;
+    
+    // trigger notes
+    device.playNote(n, {...options, time: `+${timestamp}`});
+
+    // handle cut
+    [cut || []].flat()
+        .flatMap(c => c === 'all' ? Object.keys(streams) : c)
+        // cut every note on the specified streams
+        .forEach((id: string) => Array.from({ length: 128 }, (_, i) => i)
+            .forEach(note => streams[id]?.device.stopNote(note, {
+                ...options,
+                time: `+${timestamp - 20}`,
+                channels: streams[id]?.channels,
+            })));   
 }

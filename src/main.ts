@@ -1,8 +1,8 @@
-// MIDI integration
+// docs don't show fx methods
+// search('...') utility function
 // host my samples / files
 // Parsing: Bbmi / A#mi7 not working
 // Make FXChannel slimmer - just dist, hpf, and lpf
-// midi()
 // READMEs in each folder
 import { init, handler as otoHandler } from './oto';
 import { handler as midiHandler } from './core/MIDI';
