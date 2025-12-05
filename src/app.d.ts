@@ -1,1 +1,0 @@
-export declare type Hap<T> = { from: number; to: number; value: T };
