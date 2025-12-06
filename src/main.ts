@@ -1,9 +1,11 @@
 // docs don't show fx methods
+// midi docs
 // search('...') utility function
 // host my samples / files
 // Parsing: Bbmi / A#mi7 not working
 // Make FXChannel slimmer - just dist, hpf, and lpf
 // READMEs in each folder
+// refactor sartori init...
 import { init, handler as otoHandler } from './oto';
 import { handler as midiHandler } from './core/MIDI';
 import { Scheduler } from './core/Scheduler';
