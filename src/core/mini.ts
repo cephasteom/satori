@@ -234,21 +234,22 @@ NumberList
     }
 
 StackMusic
-  = root:[A-G]
+  = root:[A-G] acc:("#" / "b")?
     type:[a-z]+
     ext:Extension?
     mod:ModLength?
     spread:SpreadModifier?
     random:RandomModifier? {
 
-      let notes = buildStack(root, type.join(""), ext ? ext.join("") : null);
-      
+      const rootName = root + (acc || "");
+      let notes = buildStack(rootName, type.join(""), ext ? ext.join("") : null);
+
       if (mod) {
         const n = parseInt(mod,10);
         if (!n || n <= 0) throw new Error("Invalid % length: " + mod);
         notes = expandNotesLinear(notes,n);
-        }
-        
+      }
+
       if (random) return { type:"choose", items: notes.slice() };
       if (spread) return { type:"seq", items: notes.slice() };
 

@@ -9,6 +9,7 @@ import { patternDoc } from './patterns';
 import miniNotation from './mini-notation';
 import { instrumentsDoc } from './instruments';
 import effects from './effects';
+import midi from './midi';
 import { search } from './utils';
 import './style.css';
 
@@ -46,6 +47,7 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                     <button><h3>Mini</h3></button>
                     <button><h3>Instruments</h3></button>
                     <button><h3>Effects</h3></button>
+                    <button><h3>MIDI</h3></button>
 
                     ${Object.entries({
                         ['quick-start']: quickStart,
@@ -53,7 +55,8 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                         ['pattern']: patternDoc,
                         ['mini']: marked(miniNotation),
                         ['instruments']: instrumentsDoc,
-                        ['effects']: effects
+                        ['effects']: effects,
+                        ['midi']: marked(midi),
                     }).map(([id, content]) => `
                         <article id="docs__${id}">
                             ${content}
