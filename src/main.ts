@@ -1,9 +1,8 @@
 // docs don't show fx methods
-// host my samples / files
 // Make FXChannel slimmer - just dist, hpf, and lpf
 // READMEs in each folder
 // refactor sartori init...
-import { init, handler as otoHandler } from './oto';
+import { init } from './oto';
 import { handler as midiHandler } from './core/MIDI';
 import { Scheduler } from './core/Scheduler';
 
@@ -15,7 +14,7 @@ import './docs';
 import './console';
     
 // Init oto
-init();
+const otoHandler = init();
 
 // Create a new scheduler and pass in and handlers
 const scheduler = new Scheduler(otoHandler, midiHandler);
