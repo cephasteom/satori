@@ -1,8 +1,14 @@
 const sartori = new BroadcastChannel('sartori');
 
+// https://raw.githubusercontent.com/cephasteom/samples/main/samples.json
 // or https://raw.githubusercontent.com/tidalcycles/dirt-samples/main/strudel.json
 
-export const result = fetch('https://raw.githubusercontent.com/cephasteom/samples/main/samples.json')
+// get ?samples= URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const samplesParam = urlParams.get('samples');
+const samplesURL = samplesParam && decodeURIComponent(samplesParam)
+
+export const result = samplesURL && fetch(samplesURL)
     .then(res => res.json())
     .then((json: Record<string, Array<string>>) => {
         if(!json) return

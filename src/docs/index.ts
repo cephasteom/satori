@@ -11,6 +11,7 @@ import { instrumentsDoc } from './instruments';
 import effects from './effects';
 import midi from './midi';
 import { search } from './utils';
+import samples from './samples';
 import './style.css';
 
 hljs.registerLanguage('typescript', typescript);
@@ -48,6 +49,7 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                     <button><h3>Instruments</h3></button>
                     <button><h3>Effects</h3></button>
                     <button><h3>MIDI</h3></button>
+                    <button><h3>Samples</h3></button>
 
                     ${Object.entries({
                         ['quick-start']: quickStart,
@@ -57,6 +59,7 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                         ['instruments']: instrumentsDoc,
                         ['effects']: effects,
                         ['midi']: marked(midi),
+                        ['samples']: marked(samples),
                     }).map(([id, content]) => `
                         <article id="docs__${id}">
                             ${content}
