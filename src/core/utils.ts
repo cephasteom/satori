@@ -1,7 +1,6 @@
 import { getTransport } from 'tone';
 import { scales } from './scales';
 import { WebMidi } from 'webmidi';
-import samples from '../docs/samples';
 
 const channel = new BroadcastChannel('sartori');
 
