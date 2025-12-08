@@ -64,6 +64,7 @@ export const utilities = {
         channel.postMessage({ type: 'info', message: WebMidi.outputs.map(i => i.name).join(', ') } );
     },
     samples: () => {
-        channel.postMessage({ type: 'samples', message: samplesMessage } );
+        channel.postMessage({ type: 'success', message: 'Sample banks ->\n' });
+        channel.postMessage({ type: 'info', message: samplesMessage } );
     }
 }
