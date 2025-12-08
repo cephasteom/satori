@@ -1,3 +1,4 @@
+// 'C4'.add(12) doesn't work, 'C4*2'.add(12) does
 import { Satori } from './core/Satori';
 import { init as initOto } from './oto';
 import { handler as midiHandler } from './core/MIDI';

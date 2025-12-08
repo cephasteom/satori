@@ -101,6 +101,7 @@ const seq = (...values: any[]) => fast(values.length, cat(...values));
  */
 const choose = (...values: (any[])) => 
     cycle((from, to) => ([{ from, to, value: values[Math.floor(Math.random() * values.length)]}]))
+ 
 
 /**
  * Edit the Hap values in a pattern using a callback function
@@ -172,7 +173,7 @@ const ctms = (cycles: number|string|Pattern<number>) =>
  * @example seq(1,2,3).add(2) // 3,4,5
  * @example seq(1,2,3).add(saw(0,3,3)) // 1, 3, 5
  */ 
-const add = withValue((next, prev) => next + prev);
+const add = withValue((amount, value) => amount + value);
 
 /** 
  * Subtract a value or pattern.
@@ -180,7 +181,7 @@ const add = withValue((next, prev) => next + prev);
  * @example seq(5,6,7).sub(2) // 3,4,5
  * @example seq(5,6,7).sub(saw(0,3,3)) // 5, 5, 5
  */
-const sub = withValue((next, prev) => prev - next);
+const sub = withValue((amount, value) => value - amount);
 
 /** 
  * Multiply a value or pattern.
@@ -188,7 +189,7 @@ const sub = withValue((next, prev) => prev - next);
  * @example seq(1,2,3).mul(2) // 2,4,6
  * @example seq(1,2,3).mul(saw(1,3,3)) // 1, 4, 9
  */
-const mul = withValue((next, prev) => next * prev);
+const mul = withValue((amount, value) => amount * value);
    
 /** 
  * Divide a value or pattern.
@@ -196,7 +197,7 @@ const mul = withValue((next, prev) => next * prev);
  * @example seq(2,4,6).div(2) // 1,2,3
  * @example seq(2,4,6).div(saw(1,3,3)) // 2, 2, 2
  */
-const div = withValue((next, prev) => prev / next);
+const div = withValue((amount, value) => value / amount);
 
 /**
  * Modulo by a value or pattern.
@@ -204,7 +205,7 @@ const div = withValue((next, prev) => prev / next);
  * @example seq(5,6,7).mod(4) // 1,2,3
  * @example seq(5,6,7).mod(saw(1,4,3)) // 5%1, 6%2, 7%3
  */
-const mod = withValue((next, prev) => prev % next);
+const mod = withValue((amount, value) => value % amount);
 
 /**
  * Round to a particular step.
@@ -214,36 +215,36 @@ const mod = withValue((next, prev) => prev % next);
 const step = withValue((step, value) => Math.round(value / step) * step);
 
 /**
- * Less than comparison. Returns 1 if prev < next, else 0.
+ * Less than comparison. Returns 1 if value < threshold, else 0.
  * @param value - value or pattern to compare with.
  * @example seq(1,2,3).lt(2) // 1,0,0
  * @example seq(1,2,3).lt(saw(0,4,3)) // compares each value with saw values
  */
-const lt = withValue((next, prev) => prev < next ? 1 : 0);
+const lt = withValue((threshold, value) => value < threshold ? 1 : 0);
 
 /**
- * Greater than comparison. Returns 1 if prev > next, else 0.
+ * Greater than comparison. Returns 1 if value > threshold, else 0.
  * @param value - value or pattern to compare with.
  * @example seq(1,2,3).gt(2) // 0,0,1
  * @example seq(1,2,3).gt(saw(0,4,3)) // compares each value with saw values
  */
-const gt = withValue((next, prev) => prev > next ? 1 : 0);
+const gt = withValue((threshold, value) => value > threshold ? 1 : 0);
 
 /**
- * Equal to comparison. Returns 1 if prev == next, else 0.
+ * Equal to comparison. Returns 1 if value == threshold, else 0.
  * @param value - value or pattern to compare with.
  * @example seq(1,2,2).eq(2) // 0,1,1
  * @example seq(1,2,3).eq(saw(0,4,3)) // compares each value with saw values
  */
-const eq = withValue((next, prev) => prev == next ? 1 : 0);
+const eq = withValue((threshold, value) => value == threshold ? 1 : 0);
 
 /**
- * Not equal to comparison. Returns 1 if prev != next, else 0.
+ * Not equal to comparison. Returns 1 if value != threshold, else 0.
  * @param value - value or pattern to compare with.
  * @example seq(1,2,2).neq(2) // 1,0,0
  * @example seq(1,2,3).neq(saw(0,4,3)) // compares each value with saw values
  */
-const neq = withValue((next, prev) => prev != next ? 1 : 0);
+const neq = withValue((threshold, value) => value != threshold ? 1 : 0);
 
 /**
  * If a value is true, negate it (1 -> 0, 0 -> 1).
@@ -256,8 +257,9 @@ const not = withValue((value) => value ? 0 : 1);
 /**
  * Use a custom function to transform pattern values.
  * @param func - function to apply. Receives the current value as the first argument.
+ * @example seq(1,2,3).fn(x => x * x) // 1,4,9
  */
-const fn = withValue((fn, prev) => fn(prev));
+const fn = withValue((func, ...args) => func(...args));
 
 /**
  * Map from one range to another.
@@ -458,7 +460,7 @@ const sometimes = coin
  * Return mostly 0s, occasionally 1s
  * @example rarely()
  */
-const rarely = () => weightedCoin(0.25)
+const rarely = () => weightedCoin(0.125)
 
 /**
  * Return mostly 1s, occasionally 0s.
@@ -666,6 +668,25 @@ const inversion = (...args: any[]) => {
 }
 
 /**
+ * Expand the current value into a list of n values. An optional function can be provided to transform each value.
+ * @param n - number of values to expand into
+ * @param func - optional function to transform each value. Receives the current value and the index as arguments.
+ * @example 'C'.expand(3) // returns stack('C', 'C', 'C')
+ * @example 'C'.expand(3, (note, i) => note + i * 2) // returns stack('C', 'D', 'E')
+ * @example s1.set({
+    inst: 'synth', n: 'C4*2'.expand(16, (x,i) => x+i*2),
+    strum: ctms(1/8),
+    e: every(2) })
+ */
+const expand = withValue((...args) => {
+    args = args.slice(0, -2); // remove from and to
+    const value = args.pop(); // last arg is the value
+    const n = args[0] || 1; // first arg is n
+    const func = args[1] || ((x: any) => x); // second arg is optional function
+    return Array.from({ length: n }, (_, i) => func(value, i));
+});
+
+/**
  * Print the current Pattern value for debugging.
  * @example seq('A', 'B', 'C').print() // prints the value of the pattern on each division of the cycle.
  */
@@ -689,8 +710,7 @@ export const methods = {
     mtr, scale, clamp,
     stack, inversion,
     mini,
-    interp,
-    degrade, toggle, cache, count,
+    interp, degrade, expand, toggle, cache, count,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,
     ifelse, ie, and, or, xor, not,
     cts, ctms, cps,
