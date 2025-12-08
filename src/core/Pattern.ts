@@ -251,7 +251,13 @@ const neq = withValue((next, prev) => prev != next ? 1 : 0);
  * @example coin().not() // returns 1 when coin() is 0, else 0
  * @example not(coin()) // same as above
  */
-const not = withValue((next) => next ? 0 : 1);
+const not = withValue((value) => value ? 0 : 1);
+
+/**
+ * Use a custom function to transform pattern values.
+ * @param func - function to apply. Receives the current value as the first argument.
+ */
+const fn = withValue((fn, prev) => fn(prev));
 
 /**
  * Map from one range to another.
@@ -675,6 +681,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
 
 export const methods = {
     t, c,
+    fn,
     cat, set, seq,
     fast, slow,
     add, sub, mul, div, mod, step,

@@ -6,7 +6,7 @@ import { toggle, init as initDocs } from './docs';
 import { init as initEditor } from './editor';
 import { init as initConsole } from './console';
 
-('serviceWorker' in navigator) && window.addEventListener('load', () => 
+('serviceWorker' in navigator && import.meta.env.PROD) && window.addEventListener('load', () => 
     navigator.serviceWorker.register('/service-worker.js'));
 
 // initialize UI components
