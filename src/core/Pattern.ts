@@ -707,8 +707,8 @@ export class Pattern<T> {
      * @param query - function that returns Haps for a given time range
      * @ignore - internal use only
      */
-    constructor(query: (from: number, to: number) => Hap<T>[] = () => []) {
-        this.query = query;
+    constructor(query: (from: number, to: number) => Hap<T>[] = (from, to) => [{from, to, value: null as any}]) {
+        this.query = query
 
         // bind methods to this pattern instance
         Object.entries(methods).forEach(([name, method]) => {

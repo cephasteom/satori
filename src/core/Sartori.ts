@@ -1,9 +1,9 @@
 import { getTransport, immediate, Loop } from 'tone'
-import { compile } from "./compile";
+import { evaluate, compile } from "./compile";
 
 const latency = 0.1; // seconds to schedule ahead
 
-export class Scheduler {
+export class Sartori {
     cps: number = 0.5;
     transport;
     divisions: number = 4; // how many times / cycle to query
@@ -53,5 +53,10 @@ export class Scheduler {
         // reset time pointer
         this.t = 0;
         this.transport.stop(immediate())
+    }
+
+    evaluate(code: string) {
+        // pass code to compile module
+        evaluate(code);
     }
 }
