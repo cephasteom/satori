@@ -7,7 +7,7 @@ import TSynth from './ct-synths/tone/Synth'
 import TMono from './ct-synths/tone/MonoSynth'
 import TFM from './ct-synths/tone/FMSynth'
 import TAM from './ct-synths/tone/AMSynth'
-import FXChannel from './ct-synths/rnbo/FXChannel';
+import FXChannel from './ct-synths/rnbo/FXChannel2';
 import FXDelay from './ct-synths/rnbo/Delay';
 import ReverbGen from './ct-synths/rnbo/ReverbGen';
 
