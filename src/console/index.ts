@@ -14,7 +14,7 @@ let messages: {type: string, message: string}[] = [
 
 function log(type: string, message: string) {
     messages = type === 'clear' 
-        ? messages.filter(m => m.type === 'title' || m.type === 'credit')
+        ? messages.slice(0, 2)
         : [...messages, { type, message }];
     hasInitialized && render();
 }

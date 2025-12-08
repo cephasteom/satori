@@ -65,6 +65,6 @@ export const utilities = {
     },
     samples: () => {
         channel.postMessage({ type: 'success', message: 'Sample banks ->\n' });
-        channel.postMessage({ type: 'info', message: samplesMessage } );
+        channel.postMessage({ type: 'samples', message: samplesMessage } );
     }
 }
