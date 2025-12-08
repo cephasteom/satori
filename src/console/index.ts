@@ -2,24 +2,25 @@ import './style.css'
 
 const channel = new BroadcastChannel('sartori');
 channel.addEventListener('message', (e) => log(e.data.type, e.data.message));
+let hasInitialized = false;
 
 let messages: {type: string, message: string}[] = [
     {type: 'title', message: 'Sartori'},
     {type: 'credit', message: `© Cephas Teom ${new Date().getFullYear()}`},
-    {type: 'info', message: '`ctrl + return` to play.'},
-    {type: 'info', message: '`ctrl + .` to stop.'},
-    {type: 'info', message: 'Toggle console `cmd + 1`, docs `cmd + 2`.'},
+    {type: 'info', message: '`ctrl + return` to play. `ctrl + .` to stop.'},
+    {type: 'info', message: '`cmd + 1` console, `cmd + 2` docs.'},
+    {type: 'info', message: '`instruments()`, `effects()`, and `midi()` to list devices.'},
 ]
 
 function log(type: string, message: string) {
     messages = type === 'clear' 
         ? messages.filter(m => m.type === 'title' || m.type === 'credit')
         : [...messages, { type, message }];
-    render();
+    hasInitialized && render();
 }
 
-function render() {
-    const console = document.getElementById('console');
+function render(element: string = '#console') {
+    const console = document.querySelector(element);
     if (!console) return;
 
     console.innerHTML = `
@@ -32,4 +33,4 @@ function render() {
     container && messages.length > 8 && (container.scrollTop = container.scrollHeight);
 }
 
-render();
+export const init = () => { render(); hasInitialized = true; }

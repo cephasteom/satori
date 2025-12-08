@@ -22,30 +22,32 @@ import { preset } from "./preset";
 
 import './style.css'
 
-/**
- * Initialize the code editor in an element with ID 'editor'
- */
-export const editor = editorFromPlaceholder(
-    '#editor',
-    {
-        language: 'typescript',
-        lineNumbers: false,
-        value: localStorage.getItem("sartori.code") || preset,
-    },
-    matchBrackets(),
-    defaultCommands(),
-    editHistory(),
-);
+export const init = (element: string = '#editor') => {
+    /**
+     * Initialize the code editor in an element with ID 'editor'
+     */
+    const editor = editorFromPlaceholder(
+        element,
+        {
+            language: 'typescript',
+            lineNumbers: false,
+            value: localStorage.getItem("sartori.code") || preset,
+        },
+        matchBrackets(),
+        defaultCommands(),
+        editHistory(),
+    );
 
-/**
- * If a user presses Shift+Enter, fire a custom 'evaluateCode' event
- */
-editor.textarea.addEventListener('keydown', (e) => {
-    localStorage.setItem("sartori.code", editor.value);
+    /**
+     * If a user presses Shift+Enter, fire a custom 'evaluateCode' event
+     */
+    editor.textarea.addEventListener('keydown', (e) => {
+        localStorage.setItem("sartori.code", editor.value);
 
-    if (e.key === 'Enter' && e.ctrlKey) {
-        e.preventDefault();
-        window.dispatchEvent(new CustomEvent("evaluateCode", { detail: { code: editor.value } }));
-        return false;
-    }
-});
+        if (e.key === 'Enter' && e.ctrlKey) {
+            e.preventDefault();
+            window.dispatchEvent(new CustomEvent("evaluateCode", { detail: { code: editor.value } }));
+            return false;
+        }
+    });
+}

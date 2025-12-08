@@ -1,18 +1,20 @@
 // docs don't show fx methods
 // Make FXChannel slimmer - just dist, hpf, and lpf
+import { Sartori } from './core/Sartori';
 import { init as initOto } from './oto';
 import { handler as midiHandler } from './core/MIDI';
-import { toggle, init as initDocs } from './docs';
-import { Sartori } from './core/Sartori';
 
-import { Pattern } from './core/Pattern';
-import './editor';
-import './console';
+import { toggle, init as initDocs } from './docs';
+import { init as initEditor } from './editor';
+import { init as initConsole } from './console';
 
 import './normalize.css'
 import './style.css'
     
 initDocs();
+initEditor();
+initConsole();
+
 const otoHandler = initOto();
 
 // Create a new sartori instance and pass in handlers

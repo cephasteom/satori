@@ -1,7 +1,7 @@
 # Sartori
 A live coding language for unlimited pattern interference. It supersedes Zen, which was restricted to grid-based event triggering. Sartori offers fully flexible timing, and allows parameters from any musical layer to control or transform those of any other. As with Zen, it also includes a simple API for designing, running, and sonifying quantum algorithms via its built-in simulator.
 
-The codebase is modular by design. You can use Sartori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional versino of Sartori is hosted at [sartori.cephasteom.co.uk](https://sartori.cephasteom.co.uk).
+The codebase is modular by design. You can use Sartori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional version of Sartori is hosted at: [sartori.cephasteom.co.uk](https://sartori.cephasteom.co.uk).
 
 ## Local Development
 To run this project locally, as a complete application:
@@ -66,6 +66,29 @@ console.log(p2.coin().fast(8).ifelse(
     saw(10,1)
 ))
 ```
+
+## To use the standlaone code editor
+```js
+import { init } from './editor'
+
+init('#editor')
+
+window.addEventListener("evaluateCode", (e) => console.log(e.detail.code));
+```
+
+Will load the editor in the element provided by the id. Default is `#editor`. Listen out for the `evaluateCode` event to handle the editor output.
+
+## To use the standalone console
+```js
+import { init } from './console';
+
+init('#console')
+
+const channel = new BroadcastChannel('sartori');
+channel.postMessage({ type: 'info', message: 'a message' } );
+```
+
+Initialise the console, passing in the element in which it should render. Default is `#console`. Send messages to the console using the BroadcastChannel interface. Types are `info`, `success`, and `error`.
 
 ## Acknowledgements
 * This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/).
