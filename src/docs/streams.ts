@@ -62,6 +62,12 @@ s0.set({ cut: ['s0', 's1', 's2'] )} // cut self and other streams
 ${marked(`\`\`\`typescript
 s0.set({ cut: 'all' )} // cut all other streams
 \`\`\``)}
+${marked(`\`\`\`typescript
+s1.set({
+  inst: 'synth', n: 'Cmi%16', 
+  strum: ctms(1/8), // strum staggers notes (in ms) when multiple notes are played
+  e: '1|0'})
+\`\`\``)}
         </li>
         <li>
             <h4>Stream Interference</h4>

@@ -35,7 +35,7 @@ export function handler(event: Event, time: number) {
  */
 function handleEvent(event: Event, time: number) {
     const { id, params } = event;
-    const { out = 0 } = params;
+    const { out = 0, strum = 0 } = params;
     
     // remove the _ prefix from all param keys
     const formatted: Record<string, any> = Object.entries(params)
@@ -64,7 +64,7 @@ function handleEvent(event: Event, time: number) {
                         [key]: Array.isArray(val) ? val[noteIndex%val.length] : val
                     }), {}),
                 n
-            }, time);
+            }, time + ((strum/1000) * noteIndex));
         })
 }
 
