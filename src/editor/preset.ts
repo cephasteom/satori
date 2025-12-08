@@ -1,8 +1,9 @@
 export const preset = 
 `global.set({
-  cps:1, e:set(1) })
+  cps: 1.5, e: '1*4'})
 
 s0.set({ 
-  inst:'sampler', n:60, cut:'s0', bank:'808bd', 
-  e:seq(1,1,1).fast(2) })
+  inst:'sampler', cut:'s0', bank:'breaks', snap: ctms(8),
+  begin: noise().slow(.66).step(1/16),
+  e: '1?0*4' })
 `

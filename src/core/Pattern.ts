@@ -193,6 +193,13 @@ const div = withValue((next, prev) => prev / next);
 const mod = withValue((next, prev) => prev % next);
 
 /**
+ * Round to a particular step.
+ * @param step - step size to round to.
+ * @example random().round(0.25) // random values rounded to nearest 0.25
+ */
+const step = withValue((step, value) => Math.round(value / step) * step);
+
+/**
  * Less than comparison. Returns 1 if prev < next, else 0.
  * @param value - value or pattern to compare with.
  * @example seq(1,2,3).lt(2) // 1,0,0
@@ -655,7 +662,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
 export const methods = {
     cat, set, seq,
     fast, slow,
-    add, sub, mul, div, mod,
+    add, sub, mul, div, mod, step,
     saw, range, ramp, sine, cosine, tri, pulse, square, noise,
     mtr, scale, clamp,
     stack, inversion,
