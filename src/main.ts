@@ -1,42 +1,21 @@
 // docs don't show fx methods
 // Make FXChannel slimmer - just dist, hpf, and lpf
-// READMEs in each folder
-// refactor sartori init...
-import { init } from './oto';
+// Update README
+import { init as initOto } from './oto';
+import { toggle, init as initDocs } from './docs';
 import { handler as midiHandler } from './core/MIDI';
 import { Scheduler } from './core/Scheduler';
+import './editor';
+import './console';
 
 import './normalize.css'
 import './style.css'
-
-import './editor';
-import './docs';
-import './console';
     
-// Init oto
-const otoHandler = init();
+initDocs();
+const otoHandler = initOto();
 
 // Create a new scheduler and pass in and handlers
 const scheduler = new Scheduler(otoHandler, midiHandler);
-
-// Toggle display of help components
-const toggleHelpComponent = (id: string, displayStyle: string = 'block') => {
-    const el = document.getElementById(id);
-    if(!el) return;
-    el.style.display = el.style.display === 'none'
-        ? displayStyle
-        : 'none';
-
-    // When all help components are hidden, hide the parent container too
-    const help: HTMLElement | null = document.querySelector('.help');
-    if(!help) return;
-    help.style.display = Array.from(help?.children || [])
-        // @ts-ignore
-        .map((c: Element) => c.style.display)
-        .every(style => style === 'none')
-        ? 'none'
-        : 'flex';
-}
 
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
@@ -45,16 +24,16 @@ window.addEventListener('keydown', (e) => {
     
     if(e.metaKey && e.key === '1') {
         e.preventDefault();
-        toggleHelpComponent('console');
+        toggle('console');
     }
     
     if(e.metaKey && e.key === '2') {
         e.preventDefault();
-        toggleHelpComponent('docs');
+        toggle('docs');
     }
     
     if(e.metaKey && e.key === '3') {
         e.preventDefault();
-        toggleHelpComponent('circuit');
+        toggle('circuit');
     }
 });

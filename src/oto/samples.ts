@@ -39,5 +39,9 @@ const result = repos.map(url =>
 
 export const samples = await result || {};
 
-            sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
-            sartori.postMessage({ type: 'info', message: Object.keys(samples).join(',\n') });
+if(Object.keys(samples).length > 0) {
+    sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
+    sartori.postMessage({ type: 'info', message: Object.keys(samples).join(',\n') });
+} else {
+    sartori.postMessage({ type: 'warning', message: 'No sample banks loaded' });
+}
