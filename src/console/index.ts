@@ -25,7 +25,19 @@ function render(element: string = '#console') {
 
     console.innerHTML = `
         <div class="console__messages">
-            ${messages.map(message => `<${message.type === 'title' ? 'h1' : 'p'} class="console__message console__message--${message.type}">${message.message}</${message.type === 'title' ? 'h1' : 'p'}>`).join('')}
+            ${
+                messages
+                    // wrap any `...` between in <code> tags
+                    .map(message => {
+                        const formattedMessage = message.message.replace(/`{3}([\s\S]*?)`{3}/g, (_match, p1) => {
+                            return `<pre><code>${p1}</code></pre>`;
+                        }).replace(/`{1}([\s\S]*?)`{1}/g, (_match, p1) => {
+                            return `<code>${p1}</code>`;
+                        });
+                        return { type: message.type, message: formattedMessage };
+                    })
+                    .map(message => `<${message.type === 'title' ? 'h1' : 'p'} class="console__message console__message--${message.type}">${message.message}</${message.type === 'title' ? 'h1' : 'p'}>`).join('')
+            }
         </div>
     `;
 

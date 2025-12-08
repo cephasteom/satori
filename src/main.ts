@@ -1,4 +1,3 @@
-// docs don't show fx methods
 // Make FXChannel slimmer - just dist, hpf, and lpf
 import { Sartori } from './core/Sartori';
 import { init as initOto } from './oto';

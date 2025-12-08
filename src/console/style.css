@@ -3,6 +3,12 @@
     padding: 1rem;
 }
 
+#console code {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: var(--theme-orange)
+}
+
 .prism-code-editor {
     --editor__bg-highlight: transparent;
 }

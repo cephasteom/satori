@@ -78,11 +78,14 @@ main > section > div {
     right: 1rem;
     border: none;
     padding: 0.5rem 1rem;
-    background-color: var(--theme-blue);
+    background-color: var(--theme-blue-medium);
     border-radius: 2px;
     outline: none;
     color: white;
     width: 100px;
+    border: .5rem solid var(--theme-blue-dark);
+    border-top: 0;
+    border-right: 0;
     
 }
 .help__component input::placeholder {
