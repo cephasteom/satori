@@ -21,8 +21,6 @@ import peg from 'pegjs';
 // 'Clyd%8' => seq([60,62,64,66,67,69,71,73]) - scale to MIDI, with 8 notes
 // 'Clyd..' => seq(60,62,64,66,67,69,71,73) - spread out scale or chord over time
 
-const channel = new BroadcastChannel('sartori');
-
 // Extensions
 export const extensions: Record<string, number[]> = {
     6: [9],
