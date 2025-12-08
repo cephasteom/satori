@@ -17,10 +17,10 @@ import './style.css';
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('javascript', javascript);
 
-const docs = document.querySelector('#docs > div')
 let article = 'docs__quick-start';
 
 const render = (searchResults: Record<string, Record<string, any>> = {}) => {
+    const docs = document.querySelector('#docs > div')
     docs && (docs.innerHTML = `
         <div>
             ${Object.keys(searchResults).length > 0
@@ -91,13 +91,15 @@ const addButtonEvents = () => {
     });
 };
 
-// search functionality
-const searchInput = document.getElementById('search') as HTMLInputElement;
-searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    render(search(query));
-    addButtonEvents();
-});
+const addSearch = () => {
+    // search functionality
+    const searchInput = document.getElementById('search') as HTMLInputElement;
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        render(search(query));
+        addButtonEvents();
+    });
+};
 
 export const toggle = (id: string, displayStyle: string = 'block') => {
     const el = document.getElementById(id);
@@ -118,7 +120,14 @@ export const toggle = (id: string, displayStyle: string = 'block') => {
 }
 
 export const init = () => {
+    const docs = document.querySelector('#docs')
+    // add inner div and input for search
+    if(docs) docs.innerHTML = `
+        <div></div>
+        <input type="text" id="search" placeholder="Search..." />
+    `;
     render();
     addButtonEvents();
+    addSearch();
     if(!docs) console.warn('Docs element not found');
 }

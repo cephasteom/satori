@@ -1,4 +1,3 @@
-// Make FXChannel slimmer - just dist, hpf, and lpf
 import { Sartori } from './core/Sartori';
 import { init as initOto } from './oto';
 import { handler as midiHandler } from './core/MIDI';
@@ -14,28 +13,17 @@ initDocs();
 initEditor();
 initConsole();
 
-const otoHandler = initOto();
-
 // Create a new sartori instance and pass in handlers
-const sartori = new Sartori(otoHandler, midiHandler);
+const sartori = new Sartori(initOto(), midiHandler);
 
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
     if(e.ctrlKey && e.key === 'Enter') sartori.play();
     if(e.ctrlKey && e.code === 'Period') sartori.stop();
     
-    if(e.metaKey && e.key === '1') {
+    const components = ['console', 'docs', 'circuit'];
+    if(e.metaKey && parseInt(e.key) < components.length + 1) {
         e.preventDefault();
-        toggle('console');
-    }
-    
-    if(e.metaKey && e.key === '2') {
-        e.preventDefault();
-        toggle('docs');
-    }
-    
-    if(e.metaKey && e.key === '3') {
-        e.preventDefault();
-        toggle('circuit');
+        toggle(components[parseInt(e.key) - 1]);
     }
 });
