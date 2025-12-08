@@ -2,7 +2,7 @@ import { getTransport } from 'tone';
 import { scales } from './scales';
 import { WebMidi } from 'webmidi';
 
-const channel = new BroadcastChannel('sartori');
+const channel = new BroadcastChannel('satori');
 
 // memoize multiple argument function - use sparingly as we're creating strings as keys
 export function memoize(fn: (...args: any[]) => any) {

@@ -1,11 +1,11 @@
 import './style.css'
 
-const channel = new BroadcastChannel('sartori');
+const channel = new BroadcastChannel('satori');
 channel.addEventListener('message', (e) => log(e.data.type, e.data.message));
 let hasInitialized = false;
 
 let messages: {type: string, message: string}[] = [
-    {type: 'title', message: '<a href="https://github.com/cephasteom/sartori" target="_blank">Sartori</a>'},
+    {type: 'title', message: '<a href="https://github.com/cephasteom/satori" target="_blank">Satori</a>'},
     {type: 'success', message: `© <a href="https://cephasteom.co.uk" target="_blank">Cephas Teom</a> ${new Date().getFullYear()}`},
     {type: 'info', message: '`ctrl + return` to play. `ctrl + .` to stop.'},
     {type: 'info', message: '`cmd + 1` console, `cmd + 2` docs.'},

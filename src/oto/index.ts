@@ -3,7 +3,7 @@ import { Channel, channels } from './Channel';
 import { formatParamKey } from './utils';
 
 declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
-const sartori = new BroadcastChannel('sartori');
+const satori = new BroadcastChannel('satori');
 
 export function init() {
     window.addEventListener('keydown', startAudio)
@@ -15,7 +15,7 @@ export function init() {
 
 async function startAudio() {
     await start()
-    sartori.postMessage({ type: 'success', message: 'Started audio' });
+    satori.postMessage({ type: 'success', message: 'Started audio' });
     window.removeEventListener('keydown', startAudio)
     window.removeEventListener('click', startAudio)
     window.removeEventListener('touchstart', startAudio)

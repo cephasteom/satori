@@ -17,7 +17,7 @@ export const patternMethods: Record<string, any> = (Pattern.children.find((item)
 
 export const patternDoc = `
 <ul class="docs__list">
-    <p>Patterns are the building blocks of Sartori. They can be used to control any stream parameter.</p>
+    <p>Patterns are the building blocks of Satori. They can be used to control any stream parameter.</p>
     ${marked(`\`\`\`typescript
 s0.set({  
     inst: 'synth',

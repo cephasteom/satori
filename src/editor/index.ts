@@ -31,7 +31,7 @@ export const init = (element: string = '#editor') => {
         {
             language: 'typescript',
             lineNumbers: false,
-            value: localStorage.getItem("sartori.code") || preset,
+            value: localStorage.getItem("satori.code") || preset,
         },
         matchBrackets(),
         defaultCommands(),
@@ -42,7 +42,7 @@ export const init = (element: string = '#editor') => {
      * If a user presses Shift+Enter, fire a custom 'evaluateCode' event
      */
     editor.textarea.addEventListener('keydown', (e) => {
-        localStorage.setItem("sartori.code", editor.value);
+        localStorage.setItem("satori.code", editor.value);
 
         if (e.key === 'Enter' && e.ctrlKey) {
             e.preventDefault();

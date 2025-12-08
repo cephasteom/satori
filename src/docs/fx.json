@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0",
 	"id": 0,
-	"name": "sartori",
+	"name": "satori",
 	"variant": "project",
 	"kind": 1,
 	"flags": {},
@@ -58,12 +58,12 @@
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "sartori",
+									"packageName": "satori",
 									"packagePath": "src/oto/ct-synths/types.ts",
 									"qualifiedName": "Dictionary"
 								},
 								"name": "Dictionary",
-								"package": "sartori"
+								"package": "satori"
 							},
 							"defaultValue": "{}",
 							"inheritedFrom": {
@@ -1034,12 +1034,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 								"qualifiedName": "RNBODevice"
 							},
 							"name": "RNBODevice",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -1113,12 +1113,12 @@
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "sartori",
+									"packageName": "satori",
 									"packagePath": "src/oto/ct-synths/types.ts",
 									"qualifiedName": "Dictionary"
 								},
 								"name": "Dictionary",
-								"package": "sartori"
+								"package": "satori"
 							},
 							"defaultValue": "{}",
 							"inheritedFrom": {
@@ -3259,12 +3259,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 								"qualifiedName": "RNBODevice"
 							},
 							"name": "RNBODevice",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -3338,12 +3338,12 @@
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "sartori",
+									"packageName": "satori",
 									"packagePath": "src/oto/ct-synths/types.ts",
 									"qualifiedName": "Dictionary"
 								},
 								"name": "Dictionary",
-								"package": "sartori"
+								"package": "satori"
 							},
 							"defaultValue": "{}",
 							"inheritedFrom": {
@@ -4626,12 +4626,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 								"qualifiedName": "RNBODevice"
 							},
 							"name": "RNBODevice",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -4664,1156 +4664,1156 @@
 			]
 		}
 	],
-	"packageName": "sartori",
+	"packageName": "satori",
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# Sartori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/). Many, many thanks."
+			"text": "# Satori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/). Many, many thanks."
 		}
 	],
 	"symbolIdMap": {
 		"1": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": ""
 		},
 		"2": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": ""
 		},
 		"3": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": ""
 		},
 		"4": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay"
 		},
 		"11": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.delay"
 		},
 		"12": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.delay"
 		},
 		"13": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"14": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"15": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._delay"
 		},
 		"16": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._delay"
 		},
 		"17": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"18": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"19": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dtime"
 		},
 		"20": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dtime"
 		},
 		"21": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"22": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"23": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dtime"
 		},
 		"24": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dtime"
 		},
 		"25": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"26": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"27": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dfb"
 		},
 		"28": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dfb"
 		},
 		"29": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"30": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"31": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dfb"
 		},
 		"32": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dfb"
 		},
 		"33": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"34": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"35": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dspread"
 		},
 		"36": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dspread"
 		},
 		"37": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"38": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"39": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dspread"
 		},
 		"40": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dspread"
 		},
 		"41": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"42": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"43": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dcolour"
 		},
 		"44": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dcolour"
 		},
 		"45": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"46": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"47": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dcolour"
 		},
 		"48": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dcolour"
 		},
 		"49": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"50": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"51": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dfilter"
 		},
 		"52": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay.dfilter"
 		},
 		"53": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"54": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"55": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dfilter"
 		},
 		"56": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "FXDelay._dfilter"
 		},
 		"57": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "value"
 		},
 		"58": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Delay.ts",
 			"qualifiedName": "time"
 		},
 		"59": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 			"qualifiedName": "RNBODevice.defaults"
 		},
 		"88": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen"
 		},
 		"95": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.reverb"
 		},
 		"96": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.reverb"
 		},
 		"97": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"98": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"99": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._reverb"
 		},
 		"100": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._reverb"
 		},
 		"101": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"102": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"103": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rsize"
 		},
 		"104": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rsize"
 		},
 		"105": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"106": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"107": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rsize"
 		},
 		"108": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rsize"
 		},
 		"109": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"110": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"111": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rtime"
 		},
 		"112": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rtime"
 		},
 		"113": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"114": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"115": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rtime"
 		},
 		"116": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rtime"
 		},
 		"117": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"118": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"119": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rdamp"
 		},
 		"120": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rdamp"
 		},
 		"121": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"122": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"123": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rdamp"
 		},
 		"124": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rdamp"
 		},
 		"125": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"126": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"127": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rspread"
 		},
 		"128": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rspread"
 		},
 		"129": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"130": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"131": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rspread"
 		},
 		"132": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rspread"
 		},
 		"133": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"134": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"135": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rwidth"
 		},
 		"136": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rwidth"
 		},
 		"137": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"138": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"139": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rwidth"
 		},
 		"140": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rwidth"
 		},
 		"141": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"142": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"143": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rearly"
 		},
 		"144": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rearly"
 		},
 		"145": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"146": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"147": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rearly"
 		},
 		"148": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rearly"
 		},
 		"149": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"150": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"151": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rtail"
 		},
 		"152": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen.rtail"
 		},
 		"153": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"154": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"155": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rtail"
 		},
 		"156": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "ReverbGen._rtail"
 		},
 		"157": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "value"
 		},
 		"158": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/ReverbGen.ts",
 			"qualifiedName": "time"
 		},
 		"159": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 			"qualifiedName": "RNBODevice.defaults"
 		},
 		"188": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel"
 		},
 		"195": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.dist"
 		},
 		"196": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.dist"
 		},
 		"197": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"198": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"199": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._dist"
 		},
 		"200": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._dist"
 		},
 		"201": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"202": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"203": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.drive"
 		},
 		"204": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.drive"
 		},
 		"205": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"206": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"207": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._drive"
 		},
 		"208": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._drive"
 		},
 		"209": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"210": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"211": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ring"
 		},
 		"212": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ring"
 		},
 		"213": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"214": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"215": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ring"
 		},
 		"216": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ring"
 		},
 		"217": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"218": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"219": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringf"
 		},
 		"220": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringf"
 		},
 		"221": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"222": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"223": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringf"
 		},
 		"224": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringf"
 		},
 		"225": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"226": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"227": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringspread"
 		},
 		"228": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringspread"
 		},
 		"229": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"230": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"231": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringspread"
 		},
 		"232": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringspread"
 		},
 		"233": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"234": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"235": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringmode"
 		},
 		"236": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.ringmode"
 		},
 		"237": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"238": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"239": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringmode"
 		},
 		"240": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._ringmode"
 		},
 		"241": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"242": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"243": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chorus"
 		},
 		"244": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chorus"
 		},
 		"245": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"246": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"247": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chorus"
 		},
 		"248": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chorus"
 		},
 		"249": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"250": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"251": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chdepth"
 		},
 		"252": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chdepth"
 		},
 		"253": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"254": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"255": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chdepth"
 		},
 		"256": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chdepth"
 		},
 		"257": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"258": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"259": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chlfo"
 		},
 		"260": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chlfo"
 		},
 		"261": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"262": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"263": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chlfo"
 		},
 		"264": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chlfo"
 		},
 		"265": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"266": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"267": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chspread"
 		},
 		"268": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.chspread"
 		},
 		"269": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"270": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"271": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chspread"
 		},
 		"272": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._chspread"
 		},
 		"273": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"274": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"275": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.lpf"
 		},
 		"276": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.lpf"
 		},
 		"277": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"278": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"279": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._lpf"
 		},
 		"280": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._lpf"
 		},
 		"281": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"282": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"283": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.hpf"
 		},
 		"284": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.hpf"
 		},
 		"285": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"286": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"287": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._hpf"
 		},
 		"288": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._hpf"
 		},
 		"289": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"290": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"295": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._gain"
 		},
 		"296": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._gain"
 		},
 		"297": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"298": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"299": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.lthresh"
 		},
 		"300": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel.lthresh"
 		},
 		"301": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"302": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"303": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._lthresh"
 		},
 		"304": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "FXChannel._lthresh"
 		},
 		"305": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "value"
 		},
 		"306": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/FXChannel.ts",
 			"qualifiedName": "time"
 		},
 		"307": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/RNBODevice.ts",
 			"qualifiedName": "RNBODevice.defaults"
 		}

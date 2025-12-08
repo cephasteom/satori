@@ -29,7 +29,7 @@ export const effects = {
 }
 
 export default `
-Sartori includes filters and effects that can be applied to each stream's output, or used on a separate effect stream. Effects remain inactive until their wet/dry parameters are set to a value greater than 0. 
+Satori includes filters and effects that can be applied to each stream's output, or used on a separate effect stream. Effects remain inactive until their wet/dry parameters are set to a value greater than 0. 
 ${marked(`\`\`\`typescript
 s0.set({ reverb: 0.5 }) // set reverb effect on stream 0
 s1.set({ delay: 0.3 }) // set delay effect on stream 1

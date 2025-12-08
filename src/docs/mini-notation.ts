@@ -1,5 +1,5 @@
 export default `
-Sartori parses mini-notation strings into pattern methods, using a syntax similar to TidalCycles. They can be used to control any stream parameter.
+Satori parses mini-notation strings into pattern methods, using a syntax similar to TidalCycles. They can be used to control any stream parameter.
 
 #### Basic syntax
 \`\`\`js

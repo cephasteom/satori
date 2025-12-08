@@ -1,5 +1,5 @@
 /**
- * Pattern module - core building block of Sartori.
+ * Pattern module - core building block of Satori.
  * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
  * These posts outline how TidalCycles was ported to Strudel. Invaluable reading.
  */
@@ -10,7 +10,7 @@ import pkg from 'noisejs';
 const { Noise } = pkg;
 const noiseGenerator = new Noise(Math.random());
 
-const sartori = new BroadcastChannel('sartori');
+const satori = new BroadcastChannel('satori');
 
 /**
  * Hap type - represents a single event in a Pattern
@@ -651,7 +651,7 @@ const inversion = (...args: any[]) => {
  */
 const print = (pattern: Pattern<any>) => P((from, to) => {
     return pattern.query(from, to).map(hap => {
-        sartori.postMessage({ 
+        satori.postMessage({ 
             type: 'pattern-print', 
             message: `Cycle ${from}: ${unwrap(hap.value, hap.from, hap.to)}`
         });
@@ -694,7 +694,7 @@ export interface Pattern<T> extends PatternMethods {}
 
 /**
  * Pattern class.
- * The core building block of Sartori. Patterns represent time-varying values over cycles.
+ * The core building block of Satori. Patterns represent time-varying values over cycles.
  * @example s0.set({
  *  freq: sine(100,1000) // use a Pattern to set frequency
  *  e: seq(1,1,0,1) // use a Pattern to trigger events

@@ -1,7 +1,7 @@
-# Sartori
-A live coding language for unlimited pattern interference. It supersedes Zen, which was restricted to grid-based event triggering. Sartori offers fully flexible timing, and allows parameters from any musical layer to control or transform those of any other. As with Zen, it also includes a simple API for designing, running, and sonifying quantum algorithms via its built-in simulator.
+# Satori
+A live coding language for unlimited pattern interference. It supersedes Zen, which was restricted to grid-based event triggering. Satori offers fully flexible timing, and allows parameters from any musical layer to control or transform those of any other. As with Zen, it also includes a simple API for designing, running, and sonifying quantum algorithms via its built-in simulator.
 
-The codebase is modular by design. You can use Sartori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional version of Sartori is hosted at: [sartori.cephasteom.co.uk](https://sartori.cephasteom.co.uk).
+The codebase is modular by design. You can use Satori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional version of Satori is hosted at: [satori.cephasteom.co.uk](https://satori.cephasteom.co.uk).
 
 ## Local Development
 To run this project locally, as a complete application:
@@ -11,18 +11,18 @@ To run this project locally, as a complete application:
 * `npm run dev` for hot file reloading
 * or `npm run build` and `npm run preview` to use bundled package
 
-## To use Sartori in your own applications
+## To use Satori in your own applications
 ```js
 import { Scheduler } from './core/Scheduler';
 
 // Create a new scheduler instance and pass in handlers
-const sartori = new Sartori(...);
-// evaluate some Sartori code
-sartori.evaluate('...') 
+const satori = new Satori(...);
+// evaluate some Satori code
+satori.evaluate('...') 
 
 // play / stop
-sartori.play()
-// sartori.stop()
+satori.play()
+// satori.stop()
 ```
 
 Handlers are functions that process events. Each event has an ID (source), parameters, a trigger time, and a flag indicating whether it is a mutation or a regular event.
@@ -30,20 +30,20 @@ Handlers are functions that process events. Each event has an ID (source), param
 type Event = {id: string, params: Record<string, any>, time: number, type: 'e' | 'm'};
 ```
 
-You can create custom handlers for Sartori to connect to your system, or use Sartori’s built-in ones.
+You can create custom handlers for Satori to connect to your system, or use Satori’s built-in ones.
 ```js
 import { init as initOto } from './oto';
 import { handler as midiHandler } from './core/MIDI';
 
 const otoHandler = initOto() // initialise the synth engine and get its handler
-const sartori = new Sartori(
-    otoHandler, // Sartori now triggers events in Oto
+const satori = new Satori(
+    otoHandler, // Satori now triggers events in Oto
     midiHandler // as well as MIDI
 );
 ```
 
 ## To use standalone synth engine (Oto)
-You can use the synth engine directly, without the need to write Sartori code. Simply initialise Oto, then send your own events via the handler.
+You can use the synth engine directly, without the need to write Satori code. Simply initialise Oto, then send your own events via the handler.
 ```js
 import { init } from './oto';
 
@@ -84,7 +84,7 @@ import { init } from './console';
 
 init('#console')
 
-const channel = new BroadcastChannel('sartori');
+const channel = new BroadcastChannel('satori');
 channel.postMessage({ type: 'info', message: 'a message' } );
 ```
 

@@ -11,7 +11,7 @@ const fxStreams = Array(4).fill(0).map((_, i) => new Stream('fx' + i))
 
 export const reset = () => [global, ...streams, ...fxStreams].forEach(stream => stream.__reset());
 
-const channel = new BroadcastChannel('sartori');
+const channel = new BroadcastChannel('satori');
 
 // everything the user should be able to access in their code
 const scope = {

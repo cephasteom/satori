@@ -36,7 +36,7 @@ const sharedMethods = sharedKeys(...Object.values(instruments)).reduce((obj, key
 }, {} as Record<string, any>);
 
 export const instrumentsDoc = `
-Sartori includes a default Synth, Sampler, Granular, and AcidSynth instrument. You can set the instrument on a stream using the <code>inst</code> parameter:
+Satori includes a default Synth, Sampler, Granular, and AcidSynth instrument. You can set the instrument on a stream using the <code>inst</code> parameter:
 ${marked(`\`\`\`typescript
 s0.set({ inst: 'synth' }) // set synth instrument
 s1.set({ inst: 'sampler' }) // set sampler instrument

@@ -13,7 +13,7 @@ import ReverbGen from './ct-synths/rnbo/ReverbGen';
 
 import { samples } from './samples';
 
-const sartori = new BroadcastChannel('sartori');
+const satori = new BroadcastChannel('satori');
 
 const destination = getDestination() // system audio output
 destination.channelCount = destination.maxChannelCount // set to max channels
@@ -101,7 +101,7 @@ export class Channel {
             this._output.connect(output, 1, out+1)
             this.out = out
         } catch (e) {
-            sartori.postMessage({ 
+            satori.postMessage({ 
                 type: 'error', 
                 message: `Output channel ${out} is not available on this system.` 
             });
@@ -231,7 +231,7 @@ export class Channel {
         // exit if no valid instrument specified
         const noInst = !Object.keys(instMap).includes(inst)
         // throw error if invalid instrument and we're not using MIDI
-        if(noInst && midi === undefined) sartori.postMessage({ 
+        if(noInst && midi === undefined) satori.postMessage({ 
             type: 'error', 
             message: `Instrument type "${inst}" not recognised.` 
         });

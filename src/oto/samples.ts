@@ -1,4 +1,4 @@
-const sartori = new BroadcastChannel('sartori');
+const satori = new BroadcastChannel('satori');
 
 // get ?samples= URL parameter
 const urlParams = new URLSearchParams(window.location.search);
@@ -6,7 +6,7 @@ const samplesParam = urlParams.get('samples');
 const samplesURL = samplesParam && decodeURIComponent(samplesParam)
 
 let repos = [
-    'https://raw.githubusercontent.com/cephasteom/sartori-samples/main/samples.json' // basic Sartori samples
+    'https://raw.githubusercontent.com/cephasteom/satori-samples/main/samples.json' // basic Satori samples
 ]
 
 // handle more than one url in the param
@@ -27,7 +27,7 @@ const result = repos.map(url =>
 
             return samples;
         })
-        .catch(_ => sartori.postMessage({ type: 'error', message: `Couldn't load samples from ${url}` }))
+        .catch(_ => satori.postMessage({ type: 'error', message: `Couldn't load samples from ${url}` }))
     )
     .reduce(async (all, repo) => {
         const acc = await all;
@@ -39,9 +39,9 @@ export const samples = await result || {};
 
 setTimeout(() => {
     if(Object.keys(samples).length > 0) {
-        sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
-        sartori.postMessage({ type: 'samples', message: Object.keys(samples).join(',\n') });
+        satori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
+        satori.postMessage({ type: 'samples', message: Object.keys(samples).join(',\n') });
     } else {
-        sartori.postMessage({ type: 'warning', message: 'No sample banks loaded' });
+        satori.postMessage({ type: 'warning', message: 'No sample banks loaded' });
     }
 }, 500);

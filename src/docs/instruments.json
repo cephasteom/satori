@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0",
 	"id": 0,
-	"name": "sartori",
+	"name": "satori",
 	"variant": "project",
 	"kind": 1,
 	"flags": {},
@@ -2516,7 +2516,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSynth.hold",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -2524,7 +2524,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSynth.hold",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -4152,12 +4152,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 								"qualifiedName": "BaseSynth"
 							},
 							"name": "BaseSynth",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -5653,7 +5653,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.bank",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -5661,7 +5661,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.bank",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -7431,7 +7431,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.hold",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -7439,7 +7439,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.hold",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -7535,7 +7535,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.i",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -7543,7 +7543,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.i",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -9166,12 +9166,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 								"qualifiedName": "BaseSamplingDevice"
 							},
 							"name": "BaseSamplingDevice",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -10359,7 +10359,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.bank",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -10367,7 +10367,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.bank",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -11768,7 +11768,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.hold",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -11776,7 +11776,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.hold",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -11872,7 +11872,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSamplingDevice.i",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -11880,7 +11880,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSamplingDevice.i",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -13626,12 +13626,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 								"qualifiedName": "BaseSamplingDevice"
 							},
 							"name": "BaseSamplingDevice",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -16471,7 +16471,7 @@
 										"type": "reference",
 										"target": -1,
 										"name": "BaseSynth.hold",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -16479,7 +16479,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "BaseSynth.hold",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -18189,12 +18189,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 								"qualifiedName": "BaseSynth"
 							},
 							"name": "BaseSynth",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -18263,13 +18263,13 @@
 										"type": "reference",
 										"target": 1075,
 										"name": "AMSynth",
-										"package": "sartori"
+										"package": "satori"
 									},
 									"overwrites": {
 										"type": "reference",
 										"target": -1,
 										"name": "ToneInstrument.constructor",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -18277,7 +18277,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "ToneInstrument.constructor",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -19976,12 +19976,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 								"qualifiedName": "ToneInstrument"
 							},
 							"name": "ToneInstrument",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -20050,13 +20050,13 @@
 										"type": "reference",
 										"target": 1182,
 										"name": "FMSynth",
-										"package": "sartori"
+										"package": "satori"
 									},
 									"overwrites": {
 										"type": "reference",
 										"target": -1,
 										"name": "ToneInstrument.constructor",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -20064,7 +20064,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "ToneInstrument.constructor",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -21955,12 +21955,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 								"qualifiedName": "ToneInstrument"
 							},
 							"name": "ToneInstrument",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -22029,13 +22029,13 @@
 										"type": "reference",
 										"target": 1298,
 										"name": "MonoSynth",
-										"package": "sartori"
+										"package": "satori"
 									},
 									"overwrites": {
 										"type": "reference",
 										"target": -1,
 										"name": "ToneInstrument.constructor",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -22043,7 +22043,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "ToneInstrument.constructor",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -23483,12 +23483,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 								"qualifiedName": "ToneInstrument"
 							},
 							"name": "ToneInstrument",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -23557,13 +23557,13 @@
 										"type": "reference",
 										"target": 992,
 										"name": "Synth",
-										"package": "sartori"
+										"package": "satori"
 									},
 									"overwrites": {
 										"type": "reference",
 										"target": -1,
 										"name": "ToneInstrument.constructor",
-										"package": "sartori"
+										"package": "satori"
 									}
 								}
 							],
@@ -23571,7 +23571,7 @@
 								"type": "reference",
 								"target": -1,
 								"name": "ToneInstrument.constructor",
-								"package": "sartori"
+								"package": "satori"
 							}
 						},
 						{
@@ -24743,12 +24743,12 @@
 						{
 							"type": "reference",
 							"target": {
-								"packageName": "sartori",
+								"packageName": "satori",
 								"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 								"qualifiedName": "ToneInstrument"
 							},
 							"name": "ToneInstrument",
-							"package": "sartori"
+							"package": "satori"
 						}
 					]
 				}
@@ -24786,5406 +24786,5406 @@
 			]
 		}
 	],
-	"packageName": "sartori",
+	"packageName": "satori",
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# Sartori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/). Many, many thanks."
+			"text": "# Satori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/). Many, many thanks."
 		}
 	],
 	"symbolIdMap": {
 		"1": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": ""
 		},
 		"2": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": ""
 		},
 		"3": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": ""
 		},
 		"4": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": ""
 		},
 		"5": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/Synth.ts",
 			"qualifiedName": ""
 		},
 		"6": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": ""
 		},
 		"7": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": ""
 		},
 		"8": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": ""
 		},
 		"9": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth"
 		},
 		"13": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.osc"
 		},
 		"14": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.osc"
 		},
 		"15": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"16": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"17": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._osc"
 		},
 		"18": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._osc"
 		},
 		"19": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"20": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"21": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.drift"
 		},
 		"22": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.drift"
 		},
 		"23": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"24": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"25": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._drift"
 		},
 		"26": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._drift"
 		},
 		"27": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"28": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"29": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.modi"
 		},
 		"30": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.modi"
 		},
 		"31": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"32": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"33": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._modi"
 		},
 		"34": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._modi"
 		},
 		"35": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"36": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"37": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.harm"
 		},
 		"38": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.harm"
 		},
 		"39": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"40": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"41": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._harm"
 		},
 		"42": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._harm"
 		},
 		"43": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"44": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"45": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.lforate"
 		},
 		"46": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.lforate"
 		},
 		"47": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"48": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"49": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._lforate"
 		},
 		"50": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._lforate"
 		},
 		"51": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"52": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"53": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.lfodepth"
 		},
 		"54": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth.lfodepth"
 		},
 		"55": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"56": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"57": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._lfodepth"
 		},
 		"58": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "Synth._lfodepth"
 		},
 		"59": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "value"
 		},
 		"60": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Synth.ts",
 			"qualifiedName": "time"
 		},
 		"70": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"71": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"72": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"73": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "ms"
 		},
 		"74": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"75": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"76": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"77": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"78": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"79": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"80": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"81": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"82": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"83": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"84": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"85": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"86": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"87": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"88": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"89": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"90": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"91": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"92": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"93": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"94": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"95": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"96": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"97": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"98": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"99": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"100": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"101": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"102": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"103": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"104": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"105": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"106": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"107": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"108": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"109": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"110": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"111": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"112": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"113": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"114": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"115": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"116": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"117": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"118": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"119": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"120": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"121": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"122": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"123": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"124": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"125": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"126": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"127": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"128": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"129": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"130": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"131": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"132": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"133": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"134": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"135": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"136": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"137": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"138": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"139": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"140": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"141": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"142": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"143": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"144": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"145": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"146": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"147": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"148": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"149": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"150": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"151": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"152": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"153": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"154": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"155": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"156": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"157": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"158": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"159": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"160": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"161": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"162": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"163": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"164": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"165": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"166": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"167": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"168": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"169": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"170": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"171": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"172": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"173": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"174": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"175": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"176": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"177": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"178": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"179": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"180": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"181": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"182": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"183": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"184": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"185": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"186": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"187": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"188": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"189": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"190": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"191": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"192": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"193": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"194": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"195": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"196": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"197": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"198": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"199": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"200": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"201": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"202": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"203": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"204": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"205": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"206": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"207": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"208": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"209": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"210": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"211": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"212": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"213": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"214": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"215": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"216": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"217": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"218": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"219": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"220": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"221": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"222": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"223": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"252": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler"
 		},
 		"255": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.snap"
 		},
 		"256": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.snap"
 		},
 		"257": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"258": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"259": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.rate"
 		},
 		"260": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.rate"
 		},
 		"261": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"262": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"263": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler._rate"
 		},
 		"264": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler._rate"
 		},
 		"265": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"266": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"267": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.begin"
 		},
 		"268": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.begin"
 		},
 		"269": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"270": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"271": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.end"
 		},
 		"272": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.end"
 		},
 		"273": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"274": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"275": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.loop"
 		},
 		"276": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.loop"
 		},
 		"277": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"278": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"279": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.loopsize"
 		},
 		"280": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.loopsize"
 		},
 		"281": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"282": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"283": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler._loopsize"
 		},
 		"284": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler._loopsize"
 		},
 		"285": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"286": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"287": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.oneshot"
 		},
 		"288": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "Sampler.oneshot"
 		},
 		"289": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "value"
 		},
 		"290": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Sampler2.ts",
 			"qualifiedName": "time"
 		},
 		"295": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.bank"
 		},
 		"296": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.bank"
 		},
 		"297": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "name"
 		},
 		"302": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.i"
 		},
 		"303": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.i"
 		},
 		"304": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "value"
 		},
 		"305": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "time"
 		},
 		"315": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"316": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"317": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"318": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "ms"
 		},
 		"319": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"320": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"321": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"322": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"323": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"324": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"325": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"326": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"327": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"328": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"329": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"330": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"331": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"332": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"333": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"334": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"335": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"336": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"337": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"338": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"339": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"340": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"341": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"342": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"343": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"344": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"345": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"346": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"347": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"348": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"349": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"350": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"351": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"352": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"353": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"354": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"355": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"356": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"357": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"358": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"359": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"360": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"361": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"362": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"363": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"364": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"365": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"366": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"367": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"368": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"369": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"370": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"371": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"372": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"373": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"374": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"375": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"376": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"377": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"378": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"379": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"380": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"381": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"382": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"383": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"384": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"385": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"386": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"387": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"388": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"389": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"390": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"391": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"392": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"393": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"394": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"395": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"396": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"397": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"398": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"399": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"400": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"401": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"402": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"403": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"404": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"405": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"406": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"407": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"408": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"409": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"410": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"411": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"412": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"413": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"414": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"415": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"416": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"417": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"418": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"419": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"420": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"421": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"422": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"423": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"424": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"425": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"426": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"427": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"428": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"429": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"430": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"431": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"432": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"433": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"434": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"435": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"436": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"437": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"438": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"439": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"440": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"441": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"442": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"443": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"444": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"445": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"446": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"447": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"448": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"449": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"450": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"451": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"452": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"453": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"454": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"455": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"456": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"457": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"458": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"459": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"460": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"461": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"462": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"463": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"464": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"465": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"466": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"467": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"468": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"497": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular"
 		},
 		"500": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.snap"
 		},
 		"501": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.snap"
 		},
 		"502": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"503": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"504": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.rate"
 		},
 		"505": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.rate"
 		},
 		"506": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"507": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"508": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._rate"
 		},
 		"509": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._rate"
 		},
 		"510": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"511": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"512": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainrate"
 		},
 		"513": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainrate"
 		},
 		"514": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"515": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"516": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainrate"
 		},
 		"517": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainrate"
 		},
 		"518": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"519": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"520": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainsize"
 		},
 		"521": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainsize"
 		},
 		"522": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"523": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"524": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainsize"
 		},
 		"525": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainsize"
 		},
 		"526": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"527": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"528": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainslope"
 		},
 		"529": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainslope"
 		},
 		"530": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"531": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"532": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainslope"
 		},
 		"533": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainslope"
 		},
 		"534": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"535": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"536": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainpan"
 		},
 		"537": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.grainpan"
 		},
 		"538": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"539": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"540": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainpan"
 		},
 		"541": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._grainpan"
 		},
 		"542": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"543": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"544": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.direction"
 		},
 		"545": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.direction"
 		},
 		"546": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"547": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"548": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._direction"
 		},
 		"549": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular._direction"
 		},
 		"550": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"551": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"552": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.begin"
 		},
 		"553": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.begin"
 		},
 		"554": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"555": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"556": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.end"
 		},
 		"557": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.end"
 		},
 		"558": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"559": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"560": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.loop"
 		},
 		"561": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "Granular.loop"
 		},
 		"562": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "value"
 		},
 		"563": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/Granular2.ts",
 			"qualifiedName": "time"
 		},
 		"568": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.bank"
 		},
 		"569": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.bank"
 		},
 		"570": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "name"
 		},
 		"575": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.i"
 		},
 		"576": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "BaseSamplingDevice.i"
 		},
 		"577": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "value"
 		},
 		"578": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSamplingDevice.ts",
 			"qualifiedName": "time"
 		},
 		"588": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"589": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"590": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"591": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "ms"
 		},
 		"592": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"593": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"594": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"595": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"596": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"597": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"598": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"599": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"600": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"601": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"602": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"603": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"604": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"605": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"606": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"607": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"608": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"609": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"610": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"611": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"612": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"613": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"614": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"615": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"616": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"617": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"618": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"619": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"620": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"621": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"622": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"623": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"624": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"625": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"626": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"627": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"628": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"629": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"630": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"631": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"632": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"633": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"634": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"635": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"636": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"637": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"638": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"639": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"640": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"641": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"642": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"643": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"644": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"645": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"646": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"647": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"648": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"649": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"650": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"651": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"652": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"653": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"654": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"655": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"656": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"657": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"658": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"659": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"660": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"661": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"662": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"663": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"664": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"665": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"666": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"667": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"668": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"669": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"670": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"671": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"672": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"673": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"674": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"675": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"676": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"677": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"678": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"679": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"680": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"681": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"682": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"683": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"684": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"685": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"686": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"687": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"688": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"689": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"690": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"691": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"692": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"693": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"694": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"695": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"696": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"697": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"698": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"699": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"700": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"701": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"702": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"703": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"704": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"705": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"706": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"707": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"708": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"709": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"710": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"711": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"712": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"713": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"714": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"715": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"716": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"717": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"718": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"719": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"720": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"721": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"722": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"723": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"724": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"725": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"726": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"727": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"728": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"729": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"730": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"731": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"732": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"733": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"734": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"735": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"736": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"737": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"738": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"739": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"740": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"741": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"770": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth"
 		},
 		"773": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.osc"
 		},
 		"774": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.osc"
 		},
 		"775": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"776": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"777": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._osc"
 		},
 		"778": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._osc"
 		},
 		"779": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"780": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"781": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.slide"
 		},
 		"782": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.slide"
 		},
 		"783": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"784": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"785": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.fil"
 		},
 		"786": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.fil"
 		},
 		"787": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"788": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"789": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._fil"
 		},
 		"790": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._fil"
 		},
 		"791": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"792": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"793": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.sub"
 		},
 		"794": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth.sub"
 		},
 		"795": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"796": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"797": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._sub"
 		},
 		"798": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "AcidSynth._sub"
 		},
 		"799": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "value"
 		},
 		"800": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/AcidSynth.ts",
 			"qualifiedName": "time"
 		},
 		"810": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"811": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cut"
 		},
 		"812": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"813": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "ms"
 		},
 		"814": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"815": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dur"
 		},
 		"816": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"817": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"818": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"819": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.n"
 		},
 		"820": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"821": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"822": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"823": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._n"
 		},
 		"824": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"825": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"826": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"827": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.nudge"
 		},
 		"828": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"829": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.pan"
 		},
 		"830": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"831": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"832": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"833": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._pan"
 		},
 		"834": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"835": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"836": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"837": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.amp"
 		},
 		"838": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"839": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"840": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"841": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._amp"
 		},
 		"842": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"843": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"844": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"845": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.vol"
 		},
 		"846": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"847": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"848": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"849": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._vol"
 		},
 		"850": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"851": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"852": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"853": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.hold"
 		},
 		"854": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"855": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"856": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"857": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.a"
 		},
 		"858": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"859": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"860": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"861": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.d"
 		},
 		"862": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"863": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"864": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"865": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.s"
 		},
 		"866": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"867": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"868": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"869": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.r"
 		},
 		"870": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"871": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"872": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"873": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.acurve"
 		},
 		"874": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"875": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"876": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"877": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.dcurve"
 		},
 		"878": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"879": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"880": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"881": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.rcurve"
 		},
 		"882": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"883": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"884": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"885": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moda"
 		},
 		"886": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"887": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"888": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"889": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modd"
 		},
 		"890": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"891": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"892": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"893": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.mods"
 		},
 		"894": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"895": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"896": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"897": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modr"
 		},
 		"898": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"899": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"900": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"901": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modacurve"
 		},
 		"902": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"903": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"904": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"905": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.moddcurve"
 		},
 		"906": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"907": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"908": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"909": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.modrcurve"
 		},
 		"910": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"911": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"912": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"913": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fila"
 		},
 		"914": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"915": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"916": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"917": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fild"
 		},
 		"918": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"919": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"920": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"921": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fils"
 		},
 		"922": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"923": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"924": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"925": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filr"
 		},
 		"926": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"927": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"928": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"929": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filacurve"
 		},
 		"930": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"931": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"932": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"933": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.fildcurve"
 		},
 		"934": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"935": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"936": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"937": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.filrcurve"
 		},
 		"938": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"939": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"940": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"941": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.res"
 		},
 		"942": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"943": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"944": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"945": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._res"
 		},
 		"946": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"947": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"948": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"949": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.cutoff"
 		},
 		"950": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"951": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"952": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"953": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._cutoff"
 		},
 		"954": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"955": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"956": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"957": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth.detune"
 		},
 		"958": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"959": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"960": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"961": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "BaseSynth._detune"
 		},
 		"962": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "value"
 		},
 		"963": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/rnbo/BaseSynth.ts",
 			"qualifiedName": "time"
 		},
 		"992": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/Synth.ts",
 			"qualifiedName": "Synth"
 		},
 		"993": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/Synth.ts",
 			"qualifiedName": "Synth.__constructor"
 		},
 		"994": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/Synth.ts",
 			"qualifiedName": "Synth"
 		},
 		"1014": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1015": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1016": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1028": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1029": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1030": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1031": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1037": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1038": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1039": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1040": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1041": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1042": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1043": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1044": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1045": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1046": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1047": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1048": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1049": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1050": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1051": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1052": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1053": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1054": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1055": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1056": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1057": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1058": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1059": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1060": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1061": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1062": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1063": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1064": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1065": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1066": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1067": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1068": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1069": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1070": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1071": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1072": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1073": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1074": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1075": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth"
 		},
 		"1076": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.__constructor"
 		},
 		"1077": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth"
 		},
 		"1078": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.harm"
 		},
 		"1079": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.harm"
 		},
 		"1080": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1081": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1082": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth._harm"
 		},
 		"1083": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth._harm"
 		},
 		"1084": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1085": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1086": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "lag"
 		},
 		"1087": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.moda"
 		},
 		"1088": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.moda"
 		},
 		"1089": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1090": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modd"
 		},
 		"1091": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modd"
 		},
 		"1092": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1093": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modr"
 		},
 		"1094": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modr"
 		},
 		"1095": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1096": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.mods"
 		},
 		"1097": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.mods"
 		},
 		"1098": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1099": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modosc"
 		},
 		"1100": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "AMSynth.modosc"
 		},
 		"1101": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/AMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1121": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1122": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1123": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1135": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1136": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1137": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1138": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1144": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1145": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1146": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1147": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1148": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1149": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1150": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1151": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1152": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1153": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1154": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1155": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1156": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1157": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1158": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1159": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1160": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1161": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1162": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1163": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1164": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1165": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1166": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1167": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1168": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1169": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1170": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1171": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1172": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1173": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1174": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1175": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1176": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1177": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1178": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1179": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1180": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1181": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1182": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth"
 		},
 		"1183": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.__constructor"
 		},
 		"1184": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth"
 		},
 		"1185": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.harm"
 		},
 		"1186": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.harm"
 		},
 		"1187": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1188": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1189": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth._harm"
 		},
 		"1190": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth._harm"
 		},
 		"1191": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1192": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1193": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "lag"
 		},
 		"1194": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modi"
 		},
 		"1195": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modi"
 		},
 		"1196": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1197": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1198": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth._modi"
 		},
 		"1199": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth._modi"
 		},
 		"1200": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1201": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "time"
 		},
 		"1202": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "lag"
 		},
 		"1203": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.moda"
 		},
 		"1204": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.moda"
 		},
 		"1205": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1206": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modd"
 		},
 		"1207": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modd"
 		},
 		"1208": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1209": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modr"
 		},
 		"1210": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modr"
 		},
 		"1211": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1212": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.mods"
 		},
 		"1213": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.mods"
 		},
 		"1214": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1215": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modosc"
 		},
 		"1216": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "FMSynth.modosc"
 		},
 		"1217": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/FMSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1237": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1238": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1239": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1251": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1252": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1253": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1254": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1260": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1261": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1262": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1263": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1264": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1265": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1266": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1267": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1268": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1269": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1270": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1271": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1272": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1273": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1274": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1275": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1276": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1277": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1278": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1279": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1280": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1281": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1282": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1283": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1284": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1285": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1286": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1287": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1288": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1289": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1290": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1291": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1292": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1293": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1294": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1295": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1296": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1297": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1298": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth"
 		},
 		"1299": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.__constructor"
 		},
 		"1300": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth"
 		},
 		"1301": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fila"
 		},
 		"1302": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fila"
 		},
 		"1303": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1304": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fild"
 		},
 		"1305": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fild"
 		},
 		"1306": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1307": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.filr"
 		},
 		"1308": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.filr"
 		},
 		"1309": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1310": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fils"
 		},
 		"1311": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "MonoSynth.fils"
 		},
 		"1312": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/MonoSynth.ts",
 			"qualifiedName": "value"
 		},
 		"1332": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1333": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.cut"
 		},
 		"1334": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1346": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1347": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.vol"
 		},
 		"1348": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1349": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1355": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1356": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.pan"
 		},
 		"1357": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1358": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1359": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1360": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._pan"
 		},
 		"1361": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1362": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1363": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1364": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1365": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._n"
 		},
 		"1366": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1367": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1368": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1369": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1370": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.detune"
 		},
 		"1371": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1372": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1373": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1374": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument._detune"
 		},
 		"1375": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1376": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "time"
 		},
 		"1377": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "lag"
 		},
 		"1378": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1379": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.a"
 		},
 		"1380": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1381": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1382": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.d"
 		},
 		"1383": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1384": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1385": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.s"
 		},
 		"1386": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1387": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1388": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.r"
 		},
 		"1389": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		},
 		"1390": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1391": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "ToneInstrument.osc"
 		},
 		"1392": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/oto/ct-synths/tone/ToneInstrument.ts",
 			"qualifiedName": "value"
 		}

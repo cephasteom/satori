@@ -1,4 +1,4 @@
-import { Sartori } from './core/Sartori';
+import { Satori } from './core/Satori';
 import { init as initOto } from './oto';
 import { handler as midiHandler } from './core/MIDI';
 
@@ -10,13 +10,13 @@ initDocs();
 initEditor();
 initConsole();
 
-// Create a new sartori instance and pass in handlers
-const sartori = new Sartori(initOto(), midiHandler);
+// Create a new satori instance and pass in handlers
+const satori = new Satori(initOto(), midiHandler);
 
 // Play / Stop controls
 window.addEventListener('keydown', (e) => {
-    if(e.ctrlKey && e.key === 'Enter') sartori.play();
-    if(e.ctrlKey && e.code === 'Period') sartori.stop();
+    if(e.ctrlKey && e.key === 'Enter') satori.play();
+    if(e.ctrlKey && e.code === 'Period') satori.stop();
     
     const components = ['console', 'docs', 'circuit'];
     if(e.metaKey && parseInt(e.key) < components.length + 1) {

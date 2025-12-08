@@ -3,7 +3,7 @@ import { evaluate, compile } from "./compile";
 
 const latency = 0.1; // seconds to schedule ahead
 
-export class Sartori {
+export class Satori {
     cps: number = 0.5;
     transport;
     divisions: number = 4; // how many times / cycle to query

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0",
 	"id": 0,
-	"name": "sartori",
+	"name": "satori",
 	"variant": "project",
 	"kind": 1,
 	"flags": {},
@@ -107,7 +107,7 @@
 							"fileName": "Stream.ts",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
 						}
 					],
 					"signatures": [
@@ -122,7 +122,7 @@
 									"fileName": "Stream.ts",
 									"line": 16,
 									"character": 4,
-									"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
+									"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
 								}
 							],
 							"parameters": [
@@ -142,7 +142,7 @@
 								"type": "reference",
 								"target": 6,
 								"name": "Stream",
-								"package": "sartori"
+								"package": "satori"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -170,7 +170,7 @@
 							"fileName": "Stream.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L5"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L5"
 						}
 					],
 					"type": {
@@ -189,7 +189,7 @@
 							"fileName": "Stream.ts",
 							"line": 31,
 							"character": 4,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
 						}
 					],
 					"signatures": [
@@ -223,7 +223,7 @@
 									"fileName": "Stream.ts",
 									"line": 31,
 									"character": 4,
-									"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
+									"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
 								}
 							],
 							"parameters": [
@@ -296,13 +296,13 @@
 					"fileName": "Stream.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L4"
+					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L4"
 				},
 				{
 					"fileName": "Stream.ts",
 					"line": 15,
 					"character": 13,
-					"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L15"
+					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L15"
 				}
 			],
 			"indexSignatures": [
@@ -372,7 +372,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 73,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -400,7 +400,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 44,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -435,7 +435,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 30,
-							"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -459,7 +459,7 @@
 					"fileName": "Stream.ts",
 					"line": 2,
 					"character": 20,
-					"url": "https://github.com/cephasteom/sartori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
 				}
 			]
 		}
@@ -478,76 +478,76 @@
 			]
 		}
 	],
-	"packageName": "sartori",
+	"packageName": "satori",
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# Sartori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* Huge thanks to this series of blog posts by Froos for helping me understand how to manage time: [garten.salat.dev](https://garten.salat.dev/idlecycles/)."
+			"text": "# Satori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* Huge thanks to this series of blog posts by Froos for helping me understand how to manage time: [garten.salat.dev](https://garten.salat.dev/idlecycles/)."
 		}
 	],
 	"symbolIdMap": {
 		"0": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": ""
 		},
 		"1": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Event"
 		},
 		"3": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "__type.time"
 		},
 		"4": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "__type.params"
 		},
 		"5": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "__type.id"
 		},
 		"6": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream"
 		},
 		"7": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream.__constructor"
 		},
 		"8": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream"
 		},
 		"9": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "id"
 		},
 		"10": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream.id"
 		},
 		"11": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream.set"
 		},
 		"12": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "Stream.set"
 		},
 		"13": {
-			"packageName": "sartori",
+			"packageName": "satori",
 			"packagePath": "src/core/Stream.ts",
 			"qualifiedName": "params"
 		}

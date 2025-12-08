@@ -3,9 +3,9 @@ import { WebMidi, type Output } from 'webmidi';
 import { formatCCParams } from './utils';
 declare type Event = {id: string, params: Record<string, any>, time: number, type: string};
 
-const sartori = new BroadcastChannel('sartori');
+const satori = new BroadcastChannel('satori');
 
-WebMidi.enable().then(() => sartori.postMessage({ type: 'success', message: 'MIDI enabled' }));
+WebMidi.enable().then(() => satori.postMessage({ type: 'success', message: 'MIDI enabled' }));
 
 // keep track of the devices and channels assigned to each stream
 // this is because we can't use Output.clear(). See https://bugs.chromium.org/p/chromium/issues/detail?id=471798.
@@ -21,7 +21,7 @@ export function handler(event: Event, time: number) {
     const device = WebMidi.getOutputByName(midi);
     
     // If invalid MIDI device, error
-    if(!device) return sartori.postMessage({ 
+    if(!device) return satori.postMessage({ 
         type: 'error', 
         message: 'Invalid MIDI device' 
     });
