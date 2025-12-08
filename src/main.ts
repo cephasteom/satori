@@ -38,6 +38,3 @@ window.addEventListener('keydown', (e) => {
         toggle('circuit');
     }
 });
-
-const p = new Pattern()
-console.log(p.sine().query(0,1))
