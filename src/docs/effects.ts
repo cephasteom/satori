@@ -22,7 +22,7 @@ const delayMethods = getMethods(fx.children[0].children[0]?.children || [])
 const reverbMethods = getMethods(fx.children[2].children[0]?.children || [])
 const fxChannelMethods = getMethods(fx.children[1].children[0]?.children || [])
 
-const sections = {
+export const effects = {
     FXChannel: fxChannelMethods,
     Delay: delayMethods,
     Reverb: reverbMethods,
@@ -36,7 +36,7 @@ s1.set({ delay: 0.3 }) // set delay effect on stream 1
 s2.set({ fx0: 0.5 }) // route s2 to fx0 effect stream
 fx0.set({ delay: 0.7, reverb: 0.4, e: '1*16' }) // set delay and reverb on effect stream fx0
 \`\`\``)}
-${Object.entries(sections).map(([name, methods]) => `
+${Object.entries(effects).map(([name, methods]) => `
     <h3>${name}</h3>
     <ul class="docs__list">
         ${Object.entries(methods)

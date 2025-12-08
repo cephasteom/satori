@@ -1,6 +1,7 @@
 import { streamMethods} from './streams';
 import { patternMethods } from './patterns';
 import { instruments } from './instruments';
+import { effects } from './effects';
 
 export function sharedKeys(...objects: Record<string, any>[]): string[] {
     if (objects.length === 0) return [];
@@ -22,7 +23,8 @@ export function search(query: string): Record<string, Record<string, any>> {
     const searchable: Record<string, any> = {
         stream: streamMethods,
         pattern: patternMethods,
-        ...instruments
+        ...instruments,
+        ...effects,
     };
     return Object.entries(searchable)
         .reduce((acc, [section, items]) => {

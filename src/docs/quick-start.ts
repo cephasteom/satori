@@ -24,6 +24,6 @@ s4.set({
     n: 'Cmi..', // doesn't mutate
     _pan: sine(), // does mutate
     e: seq(1,0,1,0), // use e to trigger an event
-    m: 1*8 // use m to trigger a mutation every 8 steps
+    m: '1*8' // use m to trigger a mutation every 8 steps
 })
 \`\`\``)}`
