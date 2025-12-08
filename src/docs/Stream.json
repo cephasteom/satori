@@ -107,7 +107,7 @@
 							"fileName": "Stream.ts",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L16"
 						}
 					],
 					"signatures": [
@@ -122,7 +122,7 @@
 									"fileName": "Stream.ts",
 									"line": 16,
 									"character": 4,
-									"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L16"
+									"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L16"
 								}
 							],
 							"parameters": [
@@ -170,7 +170,7 @@
 							"fileName": "Stream.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L5"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L5"
 						}
 					],
 					"type": {
@@ -189,7 +189,7 @@
 							"fileName": "Stream.ts",
 							"line": 31,
 							"character": 4,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L31"
 						}
 					],
 					"signatures": [
@@ -212,7 +212,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\ns0.set({ \n  inst: 'synth',\n  _n: '60 62 64 65', // prefix with _ to indicate it's a mutation parameter\n  e: seq(1,0,1,0), // use e to trigger events\n  m: seq(0,1,0,1) // use m to trigger mutations\n})\n```"
+												"text": "```ts\ns0.set({ \n  inst: 'synth',\n  _n: '60 62 64 65', // prefix with _ to indicate it's a mutable parameter\n  e: seq(1,0,1,0), // use e to trigger an event\n  m: seq(0,1,0,1) // use m to trigger a mutation (modulate all active voices)\n})\n```"
 											}
 										]
 									}
@@ -223,7 +223,7 @@
 									"fileName": "Stream.ts",
 									"line": 31,
 									"character": 4,
-									"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L31"
+									"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L31"
 								}
 							],
 							"parameters": [
@@ -296,25 +296,25 @@
 					"fileName": "Stream.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L4"
+					"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L4"
 				},
 				{
 					"fileName": "Stream.ts",
 					"line": 15,
 					"character": 13,
-					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L15"
+					"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L15"
 				}
 			],
 			"indexSignatures": [
 				{
-					"id": 28,
+					"id": 29,
 					"name": "__index",
 					"variant": "signature",
 					"kind": 8192,
 					"flags": {},
 					"parameters": [
 						{
-							"id": 29,
+							"id": 30,
 							"name": "key",
 							"variant": "param",
 							"kind": 32768,
@@ -372,7 +372,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 73,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -400,7 +400,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 44,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -435,7 +435,7 @@
 							"fileName": "Stream.ts",
 							"line": 2,
 							"character": 30,
-							"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+							"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L2"
 						}
 					],
 					"type": {
@@ -459,7 +459,7 @@
 					"fileName": "Stream.ts",
 					"line": 2,
 					"character": 20,
-					"url": "https://github.com/cephasteom/satori/blob/ea4947c5ed4982010538cafc4d4ab5cd9c241f57/src/core/Stream.ts#L2"
+					"url": "https://github.com/cephasteom/sartori/blob/96fd9875d244f6a29276dd9e05339c1b2f43c75a/src/core/Stream.ts#L2"
 				}
 			]
 		}
@@ -482,7 +482,151 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# Satori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* Huge thanks to this series of blog posts by Froos for helping me understand how to manage time: [garten.salat.dev](https://garten.salat.dev/idlecycles/)."
+			"text": "# Satori\nA live coding language for unlimited pattern interference. It supersedes Zen, which was restricted to grid-based event triggering. Satori offers fully flexible timing, and allows parameters from any musical layer to control or transform those of any other. As with Zen, it also includes a simple API for designing, running, and sonifying quantum algorithms via its built-in simulator.\n\nThe codebase is modular by design. You can use Satori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional version of Satori is hosted at: [satori.cephasteom.co.uk](https://satori.cephasteom.co.uk).\n\n## Local Development\nTo run this project locally, as a complete application:\n* clone this repo\n* run "
+		},
+		{
+			"kind": "code",
+			"text": "`nvm use`"
+		},
+		{
+			"kind": "text",
+			"text": " (node version manager) to change node to correct version\n* "
+		},
+		{
+			"kind": "code",
+			"text": "`npm i`"
+		},
+		{
+			"kind": "text",
+			"text": " to install dependencies\n* "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run dev`"
+		},
+		{
+			"kind": "text",
+			"text": " for hot file reloading\n* or "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run build`"
+		},
+		{
+			"kind": "text",
+			"text": " and "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run preview`"
+		},
+		{
+			"kind": "text",
+			"text": " to use bundled package\n\n## To use Satori in your own applications\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { Scheduler } from './core/Scheduler';\n\n// Create a new scheduler instance and pass in handlers\nconst satori = new Satori(...);\n// evaluate some Satori code\nsatori.evaluate('...') \n\n// play / stop\nsatori.play()\n// satori.stop()\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nHandlers are functions that process events. Each event has an ID (source), parameters, a trigger time, and a flag indicating whether it is a mutation or a regular event.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ntype Event = {id: string, params: Record<string, any>, time: number, type: 'e' | 'm'};\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nYou can create custom handlers for Satori to connect to your system, or use Satori’s built-in ones.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init as initOto } from './oto';\nimport { handler as midiHandler } from './core/MIDI';\n\nconst otoHandler = initOto() // initialise the synth engine and get its handler\nconst satori = new Satori(\n    otoHandler, // Satori now triggers events in Oto\n    midiHandler // as well as MIDI\n);\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use standalone synth engine (Oto)\nYou can use the synth engine directly, without the need to write Satori code. Simply initialise Oto, then send your own events via the handler.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './oto';\n\nconst otoHandler = init()\n\notoHandler({ id: 'custom', params: {...}, time: 3.5, type: 'e' })\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use standalone patterning language\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { Pattern, methods } from './core/Pattern'\n\nconst p = new Pattern()\nconsole.log(p.sine().query(0,1)) // query pattern between 0 and 1 cycles\n\nconst { saw } = methods // if you want to nest, get nested methods from methods object\nconst p2 = new Pattern()\nconsole.log(p2.coin().fast(8).ifelse(\n    saw(0,10),\n    saw(10,1)\n))\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use the standlaone code editor\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './editor'\n\ninit('#editor')\n\nwindow.addEventListener(\"evaluateCode\", (e) => console.log(e.detail.code));\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nWill load the editor in the element provided by the id. Default is "
+		},
+		{
+			"kind": "code",
+			"text": "`#editor`"
+		},
+		{
+			"kind": "text",
+			"text": ". Listen out for the "
+		},
+		{
+			"kind": "code",
+			"text": "`evaluateCode`"
+		},
+		{
+			"kind": "text",
+			"text": " event to handle the editor output.\n\n## To use the standalone console\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './console';\n\ninit('#console')\n\nconst channel = new BroadcastChannel('satori');\nchannel.postMessage({ type: 'info', message: 'a message' } );\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nInitialise the console, passing in the element in which it should render. Default is "
+		},
+		{
+			"kind": "code",
+			"text": "`#console`"
+		},
+		{
+			"kind": "text",
+			"text": ". Send messages to the console using the BroadcastChannel interface. Types are "
+		},
+		{
+			"kind": "code",
+			"text": "`info`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`success`"
+		},
+		{
+			"kind": "text",
+			"text": ", and "
+		},
+		{
+			"kind": "code",
+			"text": "`error`"
+		},
+		{
+			"kind": "text",
+			"text": ".\n\n## Acknowledgements\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/).\n* Code editor built with: [Prism](https://github.com/jonpyt/prism-code-editor/?tab=readme-ov-file).\n* Mini-language built on: [PegJS](https://github.com/pegjs/pegjs).\n* Quantum simulator built with: [Quantum Circuit](https://www.npmjs.com/package/quantum-circuit)."
 		}
 	],
 	"symbolIdMap": {

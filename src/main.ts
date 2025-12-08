@@ -6,17 +6,15 @@ import { toggle, init as initDocs } from './docs';
 import { init as initEditor } from './editor';
 import { init as initConsole } from './console';
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-    });
-}
-    
+('serviceWorker' in navigator) && window.addEventListener('load', () => 
+    navigator.serviceWorker.register('/service-worker.js'));
+
+// initialize UI components
 initDocs();
 initEditor();
 initConsole();
 
-// Create a new satori instance and pass in handlers
+// Create a new Satori instance and pass in handlers
 const satori = new Satori(initOto(), midiHandler);
 
 // Play / Stop controls

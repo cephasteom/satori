@@ -120,10 +120,24 @@ const withValue = (callback: (...args: any[]) => any) =>
         })))
     }
 
-/**
- * Return the current cycle.
+/** 
+ * Return the current time in cycles.
+ * @param mod - optional modulo value
+ * @example t() // current time e.g. 3.25 (3 cycles and a quarter)
+ * @example t(4) // current time modulo 4
  */
-const c = () => P((from, to) => ([{ from, to, value: Math.trunc(from) }]));
+const t = (mod?: number|Pattern<any>) => P((from, to) => ([{ 
+    from, to, 
+    value: mod ? from % unwrap(mod, from, to) : from
+}]));
+
+/**
+ * Return the current cycle as an integer.
+ * @param mod - optional modulo value
+ * @example c() // current cycle
+ * @example c(4) // current cycle modulo 4
+ */
+const c = (mod?: number|Pattern<any>) => t(mod).trunc();
 
 /**
  * Return the current cycles per second.
@@ -660,6 +674,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
 });
 
 export const methods = {
+    t, c,
     cat, set, seq,
     fast, slow,
     add, sub, mul, div, mod, step,
@@ -671,7 +686,7 @@ export const methods = {
     degrade, toggle, cache, count,
     choose, coin, rarely, sometimes, often, every, fallsOnFrom,
     ifelse, ie, and, or, xor, not,
-    c, cts, ctms, cps,
+    cts, ctms, cps,
     lt, gt, eq, neq,
     ...operators.reduce((obj, name) => ({
         ...obj,

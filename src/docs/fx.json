@@ -52,7 +52,7 @@
 									"fileName": "RNBODevice.ts",
 									"line": 10,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/RNBODevice.ts#L10"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/RNBODevice.ts#L10"
 								}
 							],
 							"type": {
@@ -81,9 +81,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 106,
+									"line": 114,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L106"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L114"
 								}
 							],
 							"signatures": [
@@ -104,9 +104,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 106,
+											"line": 114,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L106"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L114"
 										}
 									],
 									"parameters": [
@@ -158,9 +158,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 58,
+									"line": 66,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L58"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L66"
 								}
 							],
 							"signatures": [
@@ -181,9 +181,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 58,
+											"line": 66,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L58"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L66"
 										}
 									],
 									"parameters": [
@@ -235,9 +235,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 82,
+									"line": 90,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L82"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L90"
 								}
 							],
 							"signatures": [
@@ -258,9 +258,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 82,
+											"line": 90,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L82"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L90"
 										}
 									],
 									"parameters": [
@@ -312,9 +312,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 119,
+									"line": 127,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L119"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L127"
 								}
 							],
 							"signatures": [
@@ -335,9 +335,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 119,
+											"line": 127,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L119"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L127"
 										}
 									],
 									"parameters": [
@@ -389,9 +389,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 94,
+									"line": 102,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L94"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L102"
 								}
 							],
 							"signatures": [
@@ -412,9 +412,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 94,
+											"line": 102,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L94"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L102"
 										}
 									],
 									"parameters": [
@@ -466,9 +466,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 70,
+									"line": 78,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L70"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L78"
 								}
 							],
 							"signatures": [
@@ -489,9 +489,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 70,
+											"line": 78,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L70"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L78"
 										}
 									],
 									"parameters": [
@@ -543,9 +543,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 100,
+									"line": 108,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L100"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L108"
 								}
 							],
 							"signatures": [
@@ -566,9 +566,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 100,
+											"line": 108,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L100"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L108"
 										}
 									],
 									"parameters": [
@@ -620,9 +620,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 52,
+									"line": 60,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L52"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L60"
 								}
 							],
 							"signatures": [
@@ -643,9 +643,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 52,
+											"line": 60,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L52"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L60"
 										}
 									],
 									"parameters": [
@@ -697,9 +697,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 76,
+									"line": 84,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L76"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L84"
 								}
 							],
 							"signatures": [
@@ -720,9 +720,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 76,
+											"line": 84,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L76"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L84"
 										}
 									],
 									"parameters": [
@@ -774,9 +774,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 113,
+									"line": 121,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L113"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L121"
 								}
 							],
 							"signatures": [
@@ -797,9 +797,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 113,
+											"line": 121,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L113"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L121"
 										}
 									],
 									"parameters": [
@@ -851,9 +851,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 88,
+									"line": 96,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L88"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L96"
 								}
 							],
 							"signatures": [
@@ -874,9 +874,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 88,
+											"line": 96,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L88"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L96"
 										}
 									],
 									"parameters": [
@@ -928,9 +928,9 @@
 							"sources": [
 								{
 									"fileName": "Delay.ts",
-									"line": 64,
+									"line": 72,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L64"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L72"
 								}
 							],
 							"signatures": [
@@ -951,9 +951,9 @@
 									"sources": [
 										{
 											"fileName": "Delay.ts",
-											"line": 64,
+											"line": 72,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L64"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L72"
 										}
 									],
 									"parameters": [
@@ -1025,9 +1025,9 @@
 					"sources": [
 						{
 							"fileName": "Delay.ts",
-							"line": 14,
+							"line": 22,
 							"character": 6,
-							"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L14"
+							"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L22"
 						}
 					],
 					"extendedTypes": [
@@ -1057,7 +1057,7 @@
 					"fileName": "Delay.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/Delay.ts#L1"
+					"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/Delay.ts#L1"
 				}
 			]
 		},
@@ -1107,7 +1107,7 @@
 									"fileName": "RNBODevice.ts",
 									"line": 10,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/RNBODevice.ts#L10"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/RNBODevice.ts#L10"
 								}
 							],
 							"type": {
@@ -1138,7 +1138,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 165,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L165"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L165"
 								}
 							],
 							"signatures": [
@@ -1161,7 +1161,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 165,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L165"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L165"
 										}
 									],
 									"parameters": [
@@ -1215,7 +1215,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 177,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L177"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L177"
 								}
 							],
 							"signatures": [
@@ -1238,7 +1238,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 177,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L177"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L177"
 										}
 									],
 									"parameters": [
@@ -1292,7 +1292,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 153,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L153"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L153"
 								}
 							],
 							"signatures": [
@@ -1315,7 +1315,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 153,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L153"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L153"
 										}
 									],
 									"parameters": [
@@ -1369,7 +1369,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 189,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L189"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L189"
 								}
 							],
 							"signatures": [
@@ -1392,7 +1392,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 189,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L189"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L189"
 										}
 									],
 									"parameters": [
@@ -1446,7 +1446,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 80,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L80"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L80"
 								}
 							],
 							"signatures": [
@@ -1469,7 +1469,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 80,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L80"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L80"
 										}
 									],
 									"parameters": [
@@ -1523,7 +1523,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 92,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L92"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L92"
 								}
 							],
 							"signatures": [
@@ -1546,7 +1546,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 92,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L92"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L92"
 										}
 									],
 									"parameters": [
@@ -1600,7 +1600,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 226,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L226"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L226"
 								}
 							],
 							"signatures": [
@@ -1623,7 +1623,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 226,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L226"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L226"
 										}
 									],
 									"parameters": [
@@ -1677,7 +1677,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 213,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L213"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L213"
 								}
 							],
 							"signatures": [
@@ -1700,7 +1700,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 213,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L213"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L213"
 										}
 									],
 									"parameters": [
@@ -1754,7 +1754,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 201,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L201"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L201"
 								}
 							],
 							"signatures": [
@@ -1777,7 +1777,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 201,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L201"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L201"
 										}
 									],
 									"parameters": [
@@ -1831,7 +1831,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 238,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L238"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L238"
 								}
 							],
 							"signatures": [
@@ -1854,7 +1854,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 238,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L238"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L238"
 										}
 									],
 									"parameters": [
@@ -1908,7 +1908,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 105,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L105"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L105"
 								}
 							],
 							"signatures": [
@@ -1931,7 +1931,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 105,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L105"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L105"
 										}
 									],
 									"parameters": [
@@ -1985,7 +1985,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 117,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L117"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L117"
 								}
 							],
 							"signatures": [
@@ -2008,7 +2008,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 117,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L117"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L117"
 										}
 									],
 									"parameters": [
@@ -2062,7 +2062,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 141,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L141"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L141"
 								}
 							],
 							"signatures": [
@@ -2085,7 +2085,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 141,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L141"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L141"
 										}
 									],
 									"parameters": [
@@ -2139,7 +2139,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 129,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L129"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L129"
 								}
 							],
 							"signatures": [
@@ -2162,7 +2162,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 129,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L129"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L129"
 										}
 									],
 									"parameters": [
@@ -2216,7 +2216,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 159,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L159"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L159"
 								}
 							],
 							"signatures": [
@@ -2239,7 +2239,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 159,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L159"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L159"
 										}
 									],
 									"parameters": [
@@ -2293,7 +2293,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 171,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L171"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L171"
 								}
 							],
 							"signatures": [
@@ -2316,7 +2316,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 171,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L171"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L171"
 										}
 									],
 									"parameters": [
@@ -2370,7 +2370,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 147,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L147"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L147"
 								}
 							],
 							"signatures": [
@@ -2393,7 +2393,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 147,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L147"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L147"
 										}
 									],
 									"parameters": [
@@ -2447,7 +2447,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 183,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L183"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L183"
 								}
 							],
 							"signatures": [
@@ -2470,7 +2470,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 183,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L183"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L183"
 										}
 									],
 									"parameters": [
@@ -2524,7 +2524,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 74,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L74"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L74"
 								}
 							],
 							"signatures": [
@@ -2547,7 +2547,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 74,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L74"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L74"
 										}
 									],
 									"parameters": [
@@ -2601,7 +2601,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 86,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L86"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L86"
 								}
 							],
 							"signatures": [
@@ -2624,7 +2624,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 86,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L86"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L86"
 										}
 									],
 									"parameters": [
@@ -2678,7 +2678,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 207,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L207"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L207"
 								}
 							],
 							"signatures": [
@@ -2701,7 +2701,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 207,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L207"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L207"
 										}
 									],
 									"parameters": [
@@ -2755,7 +2755,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 195,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L195"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L195"
 								}
 							],
 							"signatures": [
@@ -2778,7 +2778,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 195,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L195"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L195"
 										}
 									],
 									"parameters": [
@@ -2832,7 +2832,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 232,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L232"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L232"
 								}
 							],
 							"signatures": [
@@ -2855,7 +2855,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 232,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L232"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L232"
 										}
 									],
 									"parameters": [
@@ -2909,7 +2909,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 99,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L99"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L99"
 								}
 							],
 							"signatures": [
@@ -2932,7 +2932,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 99,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L99"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L99"
 										}
 									],
 									"parameters": [
@@ -2986,7 +2986,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 111,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L111"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L111"
 								}
 							],
 							"signatures": [
@@ -3009,7 +3009,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 111,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L111"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L111"
 										}
 									],
 									"parameters": [
@@ -3063,7 +3063,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 135,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L135"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L135"
 								}
 							],
 							"signatures": [
@@ -3086,7 +3086,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 135,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L135"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L135"
 										}
 									],
 									"parameters": [
@@ -3140,7 +3140,7 @@
 									"fileName": "FXChannel.ts",
 									"line": 123,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L123"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L123"
 								}
 							],
 							"signatures": [
@@ -3163,7 +3163,7 @@
 											"fileName": "FXChannel.ts",
 											"line": 123,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L123"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L123"
 										}
 									],
 									"parameters": [
@@ -3252,7 +3252,7 @@
 							"fileName": "FXChannel.ts",
 							"line": 14,
 							"character": 6,
-							"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L14"
+							"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L14"
 						}
 					],
 					"extendedTypes": [
@@ -3282,7 +3282,7 @@
 					"fileName": "FXChannel.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/FXChannel.ts#L1"
+					"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/FXChannel.ts#L1"
 				}
 			]
 		},
@@ -3332,7 +3332,7 @@
 									"fileName": "RNBODevice.ts",
 									"line": 10,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/RNBODevice.ts#L10"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/RNBODevice.ts#L10"
 								}
 							],
 							"type": {
@@ -3361,9 +3361,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 101,
+									"line": 109,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L101"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L109"
 								}
 							],
 							"signatures": [
@@ -3384,9 +3384,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 101,
+											"line": 109,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L101"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L109"
 										}
 									],
 									"parameters": [
@@ -3438,9 +3438,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 137,
+									"line": 145,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L137"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L145"
 								}
 							],
 							"signatures": [
@@ -3461,9 +3461,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 137,
+											"line": 145,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L137"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L145"
 										}
 									],
 									"parameters": [
@@ -3515,9 +3515,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 63,
+									"line": 71,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L63"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L71"
 								}
 							],
 							"signatures": [
@@ -3538,9 +3538,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 63,
+											"line": 71,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L63"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L71"
 										}
 									],
 									"parameters": [
@@ -3592,9 +3592,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 77,
+									"line": 85,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L77"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L85"
 								}
 							],
 							"signatures": [
@@ -3615,9 +3615,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 77,
+											"line": 85,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L77"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L85"
 										}
 									],
 									"parameters": [
@@ -3669,9 +3669,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 113,
+									"line": 121,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L113"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L121"
 								}
 							],
 							"signatures": [
@@ -3692,9 +3692,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 113,
+											"line": 121,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L113"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L121"
 										}
 									],
 									"parameters": [
@@ -3746,9 +3746,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 149,
+									"line": 157,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L149"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L157"
 								}
 							],
 							"signatures": [
@@ -3769,9 +3769,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 149,
+											"line": 157,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L149"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L157"
 										}
 									],
 									"parameters": [
@@ -3823,9 +3823,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 89,
+									"line": 97,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L89"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L97"
 								}
 							],
 							"signatures": [
@@ -3846,9 +3846,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 89,
+											"line": 97,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L89"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L97"
 										}
 									],
 									"parameters": [
@@ -3900,9 +3900,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 125,
+									"line": 133,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L125"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L133"
 								}
 							],
 							"signatures": [
@@ -3923,9 +3923,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 125,
+											"line": 133,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L125"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L133"
 										}
 									],
 									"parameters": [
@@ -3977,9 +3977,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 95,
+									"line": 103,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L95"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L103"
 								}
 							],
 							"signatures": [
@@ -4000,9 +4000,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 95,
+											"line": 103,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L95"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L103"
 										}
 									],
 									"parameters": [
@@ -4054,9 +4054,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 131,
+									"line": 139,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L131"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L139"
 								}
 							],
 							"signatures": [
@@ -4077,9 +4077,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 131,
+											"line": 139,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L131"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L139"
 										}
 									],
 									"parameters": [
@@ -4131,9 +4131,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 57,
+									"line": 65,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L57"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L65"
 								}
 							],
 							"signatures": [
@@ -4154,9 +4154,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 57,
+											"line": 65,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L57"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L65"
 										}
 									],
 									"parameters": [
@@ -4208,9 +4208,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 69,
+									"line": 77,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L69"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L77"
 								}
 							],
 							"signatures": [
@@ -4231,9 +4231,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 69,
+											"line": 77,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L69"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L77"
 										}
 									],
 									"parameters": [
@@ -4285,9 +4285,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 107,
+									"line": 115,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L107"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L115"
 								}
 							],
 							"signatures": [
@@ -4308,9 +4308,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 107,
+											"line": 115,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L107"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L115"
 										}
 									],
 									"parameters": [
@@ -4362,9 +4362,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 143,
+									"line": 151,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L143"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L151"
 								}
 							],
 							"signatures": [
@@ -4385,9 +4385,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 143,
+											"line": 151,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L143"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L151"
 										}
 									],
 									"parameters": [
@@ -4439,9 +4439,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 83,
+									"line": 91,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L83"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L91"
 								}
 							],
 							"signatures": [
@@ -4462,9 +4462,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 83,
+											"line": 91,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L83"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L91"
 										}
 									],
 									"parameters": [
@@ -4516,9 +4516,9 @@
 							"sources": [
 								{
 									"fileName": "ReverbGen.ts",
-									"line": 119,
+									"line": 127,
 									"character": 4,
-									"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L119"
+									"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L127"
 								}
 							],
 							"signatures": [
@@ -4539,9 +4539,9 @@
 									"sources": [
 										{
 											"fileName": "ReverbGen.ts",
-											"line": 119,
+											"line": 127,
 											"character": 4,
-											"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L119"
+											"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L127"
 										}
 									],
 									"parameters": [
@@ -4617,9 +4617,9 @@
 					"sources": [
 						{
 							"fileName": "ReverbGen.ts",
-							"line": 14,
+							"line": 22,
 							"character": 6,
-							"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L14"
+							"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L22"
 						}
 					],
 					"extendedTypes": [
@@ -4649,7 +4649,7 @@
 					"fileName": "ReverbGen.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/cephasteom/ct-synths/blob/a649497a6e65f5fb736bbf9124f40ac17d58ed6b/rnbo/ReverbGen.ts#L1"
+					"url": "https://github.com/cephasteom/ct-synths/blob/b2644908bb15a0ad148f0b9b7348421736f86412/rnbo/ReverbGen.ts#L1"
 				}
 			]
 		}
@@ -4668,7 +4668,151 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# Satori\nA live coding language for unlimited pattern interference. Supercedes [Zen](https://github.com/cephasteom/zen).\n\n# Credits\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/). Many, many thanks."
+			"text": "# Satori\nA live coding language for unlimited pattern interference. It supersedes Zen, which was restricted to grid-based event triggering. Satori offers fully flexible timing, and allows parameters from any musical layer to control or transform those of any other. As with Zen, it also includes a simple API for designing, running, and sonifying quantum algorithms via its built-in simulator.\n\nThe codebase is modular by design. You can use Satori as a complete live coding environment—combining the core language, editor, console, help docs, and synthesis engine—or import individual modules into your own projects. See the docs below for different use cases. A fully functional version of Satori is hosted at: [satori.cephasteom.co.uk](https://satori.cephasteom.co.uk).\n\n## Local Development\nTo run this project locally, as a complete application:\n* clone this repo\n* run "
+		},
+		{
+			"kind": "code",
+			"text": "`nvm use`"
+		},
+		{
+			"kind": "text",
+			"text": " (node version manager) to change node to correct version\n* "
+		},
+		{
+			"kind": "code",
+			"text": "`npm i`"
+		},
+		{
+			"kind": "text",
+			"text": " to install dependencies\n* "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run dev`"
+		},
+		{
+			"kind": "text",
+			"text": " for hot file reloading\n* or "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run build`"
+		},
+		{
+			"kind": "text",
+			"text": " and "
+		},
+		{
+			"kind": "code",
+			"text": "`npm run preview`"
+		},
+		{
+			"kind": "text",
+			"text": " to use bundled package\n\n## To use Satori in your own applications\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { Scheduler } from './core/Scheduler';\n\n// Create a new scheduler instance and pass in handlers\nconst satori = new Satori(...);\n// evaluate some Satori code\nsatori.evaluate('...') \n\n// play / stop\nsatori.play()\n// satori.stop()\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nHandlers are functions that process events. Each event has an ID (source), parameters, a trigger time, and a flag indicating whether it is a mutation or a regular event.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ntype Event = {id: string, params: Record<string, any>, time: number, type: 'e' | 'm'};\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nYou can create custom handlers for Satori to connect to your system, or use Satori’s built-in ones.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init as initOto } from './oto';\nimport { handler as midiHandler } from './core/MIDI';\n\nconst otoHandler = initOto() // initialise the synth engine and get its handler\nconst satori = new Satori(\n    otoHandler, // Satori now triggers events in Oto\n    midiHandler // as well as MIDI\n);\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use standalone synth engine (Oto)\nYou can use the synth engine directly, without the need to write Satori code. Simply initialise Oto, then send your own events via the handler.\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './oto';\n\nconst otoHandler = init()\n\notoHandler({ id: 'custom', params: {...}, time: 3.5, type: 'e' })\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use standalone patterning language\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { Pattern, methods } from './core/Pattern'\n\nconst p = new Pattern()\nconsole.log(p.sine().query(0,1)) // query pattern between 0 and 1 cycles\n\nconst { saw } = methods // if you want to nest, get nested methods from methods object\nconst p2 = new Pattern()\nconsole.log(p2.coin().fast(8).ifelse(\n    saw(0,10),\n    saw(10,1)\n))\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## To use the standlaone code editor\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './editor'\n\ninit('#editor')\n\nwindow.addEventListener(\"evaluateCode\", (e) => console.log(e.detail.code));\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nWill load the editor in the element provided by the id. Default is "
+		},
+		{
+			"kind": "code",
+			"text": "`#editor`"
+		},
+		{
+			"kind": "text",
+			"text": ". Listen out for the "
+		},
+		{
+			"kind": "code",
+			"text": "`evaluateCode`"
+		},
+		{
+			"kind": "text",
+			"text": " event to handle the editor output.\n\n## To use the standalone console\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { init } from './console';\n\ninit('#console')\n\nconst channel = new BroadcastChannel('satori');\nchannel.postMessage({ type: 'info', message: 'a message' } );\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nInitialise the console, passing in the element in which it should render. Default is "
+		},
+		{
+			"kind": "code",
+			"text": "`#console`"
+		},
+		{
+			"kind": "text",
+			"text": ". Send messages to the console using the BroadcastChannel interface. Types are "
+		},
+		{
+			"kind": "code",
+			"text": "`info`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`success`"
+		},
+		{
+			"kind": "text",
+			"text": ", and "
+		},
+		{
+			"kind": "code",
+			"text": "`error`"
+		},
+		{
+			"kind": "text",
+			"text": ".\n\n## Acknowledgements\n* This series of blog posts by Froos helped me finally crack time: [garten.salat.dev](https://garten.salat.dev/idlecycles/).\n* Code editor built with: [Prism](https://github.com/jonpyt/prism-code-editor/?tab=readme-ov-file).\n* Mini-language built on: [PegJS](https://github.com/pegjs/pegjs).\n* Quantum simulator built with: [Quantum Circuit](https://www.npmjs.com/package/quantum-circuit)."
 		}
 	],
 	"symbolIdMap": {
