@@ -5,6 +5,12 @@ import { handler as midiHandler } from './core/MIDI';
 import { toggle, init as initDocs } from './docs';
 import { init as initEditor } from './editor';
 import { init as initConsole } from './console';
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+    });
+}
     
 initDocs();
 initEditor();
