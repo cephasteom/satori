@@ -5,9 +5,6 @@ import { handler as midiHandler } from './core/MIDI';
 import { toggle, init as initDocs } from './docs';
 import { init as initEditor } from './editor';
 import { init as initConsole } from './console';
-
-import './normalize.css'
-import './style.css'
     
 initDocs();
 initEditor();
