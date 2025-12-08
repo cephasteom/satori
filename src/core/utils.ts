@@ -1,6 +1,7 @@
 import { getTransport } from 'tone';
 import { scales } from './scales';
 import { WebMidi } from 'webmidi';
+import samples from '../docs/samples';
 
 const channel = new BroadcastChannel('sartori');
 
@@ -34,6 +35,11 @@ export function formatCCParams(params: Record<string, any>): Record<string, any>
         }), {});
 }
 
+let samplesMessage = '';
+channel.addEventListener('message', (e) => samplesMessage = e.data.type === 'samples' 
+    ? e.data.message 
+    : samplesMessage);
+
 // Utility functions accessible in user code
 export const utilities = {
     scales: () => {
@@ -57,5 +63,8 @@ export const utilities = {
     midi: () => {
         channel.postMessage({ type: 'success', message: 'MIDI outs ->\n' });
         channel.postMessage({ type: 'info', message: WebMidi.outputs.map(i => i.name).join(', ') } );
+    },
+    samples: () => {
+        channel.postMessage({ type: 'samples', message: samplesMessage } );
     }
 }

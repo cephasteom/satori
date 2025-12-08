@@ -1,9 +1,5 @@
 const sartori = new BroadcastChannel('sartori');
 
-// https://raw.githubusercontent.com/cephasteom/samples/main/samples.json
-// https://raw.githubusercontent.com/cephasteom/samples/main/samples.json
-// or https://raw.githubusercontent.com/tidalcycles/dirt-samples/main/strudel.json
-
 // get ?samples= URL parameter
 const urlParams = new URLSearchParams(window.location.search);
 const samplesParam = urlParams.get('samples');
@@ -32,7 +28,7 @@ const result = repos.map(url =>
             setTimeout(() => {
                 if(Object.keys(samples).length > 0) {
                     sartori.postMessage({ type: 'success', message: 'Sample banks ->\n' });
-                    sartori.postMessage({ type: 'info', message: Object.keys(samples).join(',\n') });
+                    sartori.postMessage({ type: 'samples', message: Object.keys(samples).join(',\n') });
                 } else {
                     sartori.postMessage({ type: 'warning', message: 'No sample banks loaded' });
                 }

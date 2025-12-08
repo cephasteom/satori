@@ -9,7 +9,7 @@ let messages: {type: string, message: string}[] = [
     {type: 'success', message: `© <a href="https://cephasteom.co.uk" target="_blank">Cephas Teom</a> ${new Date().getFullYear()}`},
     {type: 'info', message: '`ctrl + return` to play. `ctrl + .` to stop.'},
     {type: 'info', message: '`cmd + 1` console, `cmd + 2` docs.'},
-    {type: 'info', message: '`instruments()`, `effects()`, and `midi()` to list devices.'},
+    {type: 'info', message: '`samples()`, `instruments()`, `effects()`, and `midi()` for lists.'},
 ]
 
 function log(type: string, message: string) {
