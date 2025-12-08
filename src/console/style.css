@@ -30,7 +30,7 @@
     color: var(--theme-yellow);
 }
 .console__message--info {
-    color: var(--theme-mauve);
+    color: white;
 }
 .console__message--pattern-print {
     color: var(--theme-blue-light);

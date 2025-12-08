@@ -442,14 +442,24 @@ const interp = withValue((v, w, from, to) => v + (w - v) * ((from + to) / 2 % 1)
 const degrade = withValue((v, w) => Math.random() < v ? 0 : w);
 
 // base function for probability based Patterns
-const weightedCoin = (probability: number|Pattern<any> = 0.5) => 
-    P((from, to) => ([{from, to, value: Math.random() < unwrap(probability, from, to) ? 1 : 0}]));
+const weightedCoin = (
+    probability: number|Pattern<any> = 0.5,
+    ifPattern?: string|number|Pattern<any>, 
+    elsePattern?: string|number|Pattern<any>
+) => {
+    const pattern = P((from, to) => ([{from, to, value: Math.random() < unwrap(probability, from, to) ? 1 : 0}]));
+    return ifPattern && elsePattern
+        ? ifelse(ifPattern, elsePattern, pattern)
+        : pattern;
+} 
+
 
 /**
  * Return an equal distribution of 1s and 0s.
  * @example coin()
+ * @example coin('A', 'B') // returns 'A' or 'B' with equal probability
  */
-const coin = () => weightedCoin(0.5);
+const coin = (...args: any[]) => weightedCoin(0.5, ...args);
 
 /**
  * Alias for coin
@@ -457,16 +467,18 @@ const coin = () => weightedCoin(0.5);
 const sometimes = coin
 
 /**
- * Return mostly 0s, occasionally 1s
+ * Return mostly 0s, occasionally 1s. Optionally, provide if-else patterns.
  * @example rarely()
+ * @example rarely('A', 'B') // returns 'A' when condition is true, else 'B'
  */
-const rarely = () => weightedCoin(0.125)
+
+const rarely = (...args: any[]) => weightedCoin(0.125, ...args);
 
 /**
  * Return mostly 1s, occasionally 0s.
  * @example often()
  */
-const often = () => weightedCoin(0.75)
+const often = (...args: any[]) => weightedCoin(0.75, ...args);
 
 /**
  * Compare values. If both are true, return 1, else 0.
