@@ -444,12 +444,11 @@ const degrade = withValue((v, w) => Math.random() < v ? 0 : w);
 // base function for probability based Patterns
 const weightedCoin = (
     probability: number|Pattern<any> = 0.5,
-    ifPattern?: string|number|Pattern<any>, 
-    elsePattern?: string|number|Pattern<any>
+    ...args: (string|number|Pattern<any>)[]
 ) => {
     const pattern = P((from, to) => ([{from, to, value: Math.random() < unwrap(probability, from, to) ? 1 : 0}]));
-    return ifPattern && elsePattern
-        ? ifelse(ifPattern, elsePattern, pattern)
+    return args.length
+        ? ifelse(...args, pattern)
         : pattern;
 } 
 
@@ -458,6 +457,7 @@ const weightedCoin = (
  * Return an equal distribution of 1s and 0s.
  * @example coin()
  * @example coin('A', 'B') // returns 'A' or 'B' with equal probability
+ * @example (60).add(coin(5)) // adds either 0 or 5 to 60 with equal probability
  */
 const coin = (...args: any[]) => weightedCoin(0.5, ...args);
 
@@ -470,6 +470,7 @@ const sometimes = coin
  * Return mostly 0s, occasionally 1s. Optionally, provide if-else patterns.
  * @example rarely()
  * @example rarely('A', 'B') // returns 'A' when condition is true, else 'B'
+ * @example (60).add(rarely(5)) // adds 5 to 60 occasionally
  */
 
 const rarely = (...args: any[]) => weightedCoin(0.125, ...args);
@@ -477,6 +478,8 @@ const rarely = (...args: any[]) => weightedCoin(0.125, ...args);
 /**
  * Return mostly 1s, occasionally 0s.
  * @example often()
+ * @example often('A', 'B') // returns 'A' when condition is true, else 'B'
+ * @example (60).add(often(5)) // adds 5 to 60 most of the time
  */
 const often = (...args: any[]) => weightedCoin(0.75, ...args);
 
@@ -510,13 +513,16 @@ const xor = withValue((v, w) => v != w ? 1 : 0);
  * @example random().lt(0.3).ifelse('A', 'B') // returns 1 when random()<0.3, else 0
  */
 const ifelse = (
-    ifPattern: string|number|Pattern<any>, 
-    elsePattern: string|number|Pattern<any>,
-    pattern: string|number|Pattern<any>, 
-) => P((from, to) => wrap(unwrap(pattern, from, to) 
-        ? ifPattern 
+    ...args: (string|number|Pattern<any>)[] 
+) => {
+    const pattern = args.pop() as Pattern<any>;
+    const ifPattern = args[0] || wrap(1); // default to 1 if no thenPattern provided
+    const elsePattern = args[1] || wrap(0); // default to 0 if no elsePattern provided
+    return P((from, to) => wrap(unwrap(pattern, from, to) 
+        ? ifPattern
         : elsePattern
     ).query(from, to));
+}
 
 /**
  * Alias for ifelse.
