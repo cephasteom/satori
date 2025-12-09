@@ -455,9 +455,10 @@ const weightedCoin = (
 
 /**
  * Return an equal distribution of 1s and 0s.
- * @example coin()
+ * @example coin() // returns 0 or 1 with equal probability
  * @example coin('A', 'B') // returns 'A' or 'B' with equal probability
  * @example (60).add(coin(5)) // adds either 0 or 5 to 60 with equal probability
+ * @example (60).add((5).coin()) // same as above
  */
 const coin = (...args: any[]) => weightedCoin(0.5, ...args);
 
@@ -471,6 +472,7 @@ const sometimes = coin
  * @example rarely()
  * @example rarely('A', 'B') // returns 'A' when condition is true, else 'B'
  * @example (60).add(rarely(5)) // adds 5 to 60 occasionally
+ * @exaample (60).add((5).rarely()) // same as above
  */
 
 const rarely = (...args: any[]) => weightedCoin(0.125, ...args);
@@ -480,6 +482,7 @@ const rarely = (...args: any[]) => weightedCoin(0.125, ...args);
  * @example often()
  * @example often('A', 'B') // returns 'A' when condition is true, else 'B'
  * @example (60).add(often(5)) // adds 5 to 60 most of the time
+ * @example (60).add((5).often()) // same as above
  */
 const often = (...args: any[]) => weightedCoin(0.75, ...args);
 
@@ -507,10 +510,11 @@ const xor = withValue((v, w) => v != w ? 1 : 0);
 /**
  * If else control structure for patterns.
  * @param condition - condition pattern
- * @param thenPattern - pattern to return if condition is true
- * @param elsePattern - pattern to return if condition is false
- * @example ifelse(coin(), 'A', 'B') // returns 'A' when coin() is true, else 'B'
- * @example random().lt(0.3).ifelse('A', 'B') // returns 1 when random()<0.3, else 0
+ * @param thenPattern - pattern to return if condition is true. Default is 1.
+ * @param elsePattern - pattern to return if condition is false. Default is 0.
+ * @example coin().ifelse('A', 'B') // returns 'A' when coin() is true, else 'B'
+ * @example ifelse('A', 'B', coin()) // same as above
+
  */
 const ifelse = (
     ...args: (string|number|Pattern<any>)[] 
