@@ -206,10 +206,10 @@ export class Channel {
      * @param time 
      */
     play(params: any, time: number) {
-        const { inst, midi, level = 1 } = params;
+        const { inst, midi, level = 1, out = 0 } = params;
         
         // handle output routing
-        params.out && this.routeOutput(params.out);
+        this.routeOutput(out);
         
         // handle bus sends
         this._busses.forEach((_, i) => params[`bus${i}`] !== undefined
