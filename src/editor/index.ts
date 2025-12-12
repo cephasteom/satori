@@ -56,7 +56,18 @@ export const init = async (element: string = '#editor') => {
         if (event.metaKey && event.key === "o") {
             event.preventDefault();
             // @ts-ignore
-            const [handle] = await window.showOpenFilePicker(); // allowed
+            const [handle] = await window.showOpenFilePicker({
+                types: [
+                    {
+                        description: "JavaScript Files",
+                        accept: {
+                            "text/javascript": [".js"]
+                        }
+                    }
+                ],
+                excludeAcceptAllOption: true, // optional: hides "All files (*.*)"
+                multiple: false
+            });
             const file = await handle.getFile();
             const contents = await file.text();
             editor.setOptions({ value: contents })
