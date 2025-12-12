@@ -61,5 +61,29 @@ export const init = async (element: string = '#editor') => {
             const contents = await file.text();
             editor.setOptions({ value: contents })
         }
+
+        // Cmd+S to save, download a file with the current code
+        if (event.metaKey && event.key === "s") {
+            event.preventDefault();
+
+            const options = {
+                // todays date as YYYY-MM-DD.js
+                suggestedName: `satori-${new Date().toISOString().split('T')[0]}.js`,
+                types: [
+                    {
+                        description: "JavaScript File",
+                        accept: { "text/plain": [".js"] }
+                    }
+                ]
+            };
+
+            // @ts-ignore
+            const handle = await window.showSaveFilePicker(options);
+
+            const writable = await handle.createWritable();
+            await writable.write(editor.value);
+            await writable.close();
+        }
+
     });
 }
