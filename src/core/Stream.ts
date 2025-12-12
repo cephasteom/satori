@@ -37,6 +37,14 @@ export class Stream {
     }
 
     /**
+     * Alias for `set` method.
+     * @param params 
+     */
+    _(params: Record<string, any>) {
+        this.set(params);
+    }
+
+    /**
      * Format event and mutation haps for output.
      * @ignore - internal use only
      * @returns 

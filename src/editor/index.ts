@@ -32,6 +32,8 @@ export const init = (element: string = '#editor') => {
             language: 'typescript',
             lineNumbers: false,
             value: localStorage.getItem("satori.code") || preset,
+            // tab size 3
+            tabSize: 4,
         },
         matchBrackets(),
         defaultCommands(),

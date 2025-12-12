@@ -45,8 +45,10 @@ function handleEvent(event: Event, time: number) {
         }), {});
 
     // cut specified channels, or all if 'all' is specified
-    [formatted.cut || []].flat()
+    [formatted.cut !== undefined ? formatted.cut : []].flat()
         .flatMap(c => c === 'all' ? Object.keys(channels) : c)
+        // if integers, convert to strings - ie 0 becomes 's0'
+        .map(c => typeof c === 'number' ? `s${c}` : c)
         .forEach((id: string) => channels[id]?.cut(time));
     
     // initialize channel if it doesn't exist

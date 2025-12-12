@@ -206,7 +206,7 @@ export class Channel {
      * @param time 
      */
     play(params: any, time: number) {
-        const { inst, midi, level = 1, out = 0 } = params;
+        const { midi, level = 1, out = 0 } = params;
         
         // handle output routing
         this.routeOutput(out);
@@ -227,6 +227,9 @@ export class Channel {
 
         // exit if this is an FX channel
         if(['fx0', 'fx1', 'fx2', 'fx3'].includes(this.id)) return;
+
+        // if inst is integer, using instMap to get actual
+        const inst = typeof params.inst === 'number' ? Object.keys(instMap)[params.inst] : params.inst;
         
         // exit if no valid instrument specified
         const noInst = !Object.keys(instMap).includes(inst)
