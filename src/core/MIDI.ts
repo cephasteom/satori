@@ -5,7 +5,7 @@ declare type Event = {id: string, params: Record<string, any>, time: number, typ
 
 const satori = new BroadcastChannel('satori');
 
-WebMidi.enable().then(() => satori.postMessage({ type: 'success', message: 'MIDI enabled' }));
+WebMidi.enable().then(() => satori.postMessage({ type: 'info', message: 'MIDI enabled' }));
 
 // keep track of the devices and channels assigned to each stream
 // this is because we can't use Output.clear(). See https://bugs.chromium.org/p/chromium/issues/detail?id=471798.

@@ -15,7 +15,7 @@ export function init() {
 
 async function startAudio() {
     await start()
-    satori.postMessage({ type: 'success', message: 'Started audio' });
+    satori.postMessage({ type: 'info', message: 'Started audio' });
     window.removeEventListener('keydown', startAudio)
     window.removeEventListener('click', startAudio)
     window.removeEventListener('touchstart', startAudio)

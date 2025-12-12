@@ -35,3 +35,8 @@
 .console__message--pattern-print {
     color: var(--theme-blue-light);
 }
+
+.version {
+    font-size: 0.8rem;
+    /* color: var(--theme-blue-light); */
+}
