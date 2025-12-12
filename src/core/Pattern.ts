@@ -802,13 +802,13 @@ declare global {
 
 // add all methods to the string prototype so that we can do '1 2 3'.add(2) for example
 Object.entries(methods).forEach(([name, method]) => {
-    String.prototype[name] = function(...args: any[]) {
-        // @ts-ignore
-        return method(...args, mini(this.toString()));
-    }
     // @ts-ignore
     Number.prototype[name] = function(...args: any[]) {
         // @ts-ignore
         return method(...args, set(this.valueOf()));
+    }
+    String.prototype[name] = function(...args: any[]) {
+        // @ts-ignore
+        return method(...args, set(mini(this.toString())));
     }
 });
