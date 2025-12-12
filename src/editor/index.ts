@@ -22,7 +22,7 @@ import { preset } from "./preset";
 
 import './style.css'
 
-export const init = (element: string = '#editor') => {
+export const init = async (element: string = '#editor') => {
     /**
      * Initialize the code editor in an element with ID 'editor'
      */
@@ -32,7 +32,6 @@ export const init = (element: string = '#editor') => {
             language: 'typescript',
             lineNumbers: false,
             value: localStorage.getItem("satori.code") || preset,
-            // tab size 3
             tabSize: 4,
         },
         matchBrackets(),
@@ -50,6 +49,17 @@ export const init = (element: string = '#editor') => {
             e.preventDefault();
             window.dispatchEvent(new CustomEvent("evaluateCode", { detail: { code: editor.value } }));
             return false;
+        }
+    });
+
+    window.addEventListener('keydown', async (event) => {
+        if (event.metaKey && event.key === "o") {
+            event.preventDefault();
+            // @ts-ignore
+            const [handle] = await window.showOpenFilePicker(); // allowed
+            const file = await handle.getFile();
+            const contents = await file.text();
+            editor.setOptions({ value: contents })
         }
     });
 }
