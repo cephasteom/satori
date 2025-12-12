@@ -115,7 +115,7 @@ const withValue = (callback: (...args: any[]) => any) =>
             ...hap,
             value: callback(
                 // pass and unwrap all args except the last (which is the pattern itself)
-                ...args.slice(0, -1).map(v => unwrap(v, hap.from, hap.to)), 
+                ...args.slice(0, -1).map(v => unwrap(v, from, to)), 
                 hap.value, hap.from, hap.to
             )
         })))

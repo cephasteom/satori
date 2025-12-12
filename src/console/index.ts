@@ -1,7 +1,5 @@
-import './style.css'
-// import version from package.json
 import { version } from '../../package.json';
-console.log(`%cSatori v${version}`, 'color: #4CAF50; font-weight: bold;');
+import './style.css'
 
 const channel = new BroadcastChannel('satori');
 channel.addEventListener('message', (e) => log(e.data.type, e.data.message));
