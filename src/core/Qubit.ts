@@ -4,16 +4,39 @@ import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
 const circuit = new QuantumCircuit();
 
 export interface Qubit {
-    id: string;
+    _id: string;
     row: number;
     _offset: number;
+    _stack: Function[];
 }
 
+/**
+ * Qubit represents a single qubit in the quantum circuit.
+ * It provides methods to apply quantum gates to each wire.
+ * Implemented gates are based on the QuantumCircuit library. See https://www.npmjs.com/package/quantum-circuit.
+ * @example
+ * q0.h() // apply Hadamard gate to qubit 0
+ * q1.cx(0) // apply CNOT gate with target qubit 0
+
+ */
 export class Qubit {
     /** @hidden */
     constructor(row: number) {
         this.row = row;
-        this.id = `q${row}`;
+        this._id = `q${row}`;
+
+        Object.entries(circuit.basicGates).forEach(([key, gate]: [string, any]) => {
+            // add a method for each gate
+            // variable order of arguments
+            // @ts-ignore
+            this[key] = (arg1: number[] | number, arg2: number[] | number, arg3: number[] | number) => {
+                return this.configureGate(key, gate, arg1, arg2, arg3)
+            }
+        })
+
+        this.configureGate = this.configureGate.bind(this)
+        this._stack = []
+        this._offset = 0
     }
 
     /** @hidden */
@@ -58,6 +81,37 @@ export class Qubit {
             ? circuit.insertGate(key, column, [this.row, ...controlQubits], defaultOptions)
             : circuit.addGate(key, column, this.row, defaultOptions)
 
-        // todo: function to handle gate params at a particular position
+        // store a function to configure the gate later - expecting parameters to be dynamic
+        this._stack.push(() => {
+            if(!hasParams) return
+
+            const options = {
+                creg,
+                params: params.length
+                    ? params
+                        .filter((_, i) => i < gate.params.length)
+                        .reduce((obj, value, i) => ({
+                            ...obj,
+                            // TODO: handle patterns
+                            [gate.params[i]]: value * (gate.params[i] === 'theta' ? 1 : 2) * Math.PI
+                        }), {})
+                    : {theta: 0, phi: 0, lambda: 0},
+            }
+            
+            const {wires, col} = circuit.getGatePosById(id)
+
+            wires.forEach((wire: any) => {
+                const g = circuit.gates[wire][col] || {}
+                g.options = options
+            })
+
+        })
+        return this
+    }
+
+    build() {
+        this._stack.forEach(fn => fn())
+        this._stack = []
+        this._offset = 0
     }
 }
