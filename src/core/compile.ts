@@ -10,7 +10,6 @@ const global = new Stream('global');
 const streams = Array(16).fill(0).map((_, i) => new Stream('s' + i))
 const fxStreams = Array(4).fill(0).map((_, i) => new Stream('fx' + i))
 const qubits = Array(16).fill(0).map((_, i) => new Qubit(i));
-console.log(qubits)
 
 export const reset = () => [global, ...streams, ...fxStreams].forEach(stream => stream.__reset());
 

@@ -3,6 +3,12 @@ import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
 
 const circuit = new QuantumCircuit();
 
+const svgContainer = document.getElementById('circuit');
+if (svgContainer) {
+    const svg = circuit.exportSVG(true);
+    svgContainer.innerHTML = svg;
+}
+
 export interface Qubit {
     _id: string;
     row: number;
