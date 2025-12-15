@@ -136,8 +136,8 @@ main > section > div {
 }
 
 .qc-circuit .qc-gate-label {
-    transform: translate(1px,1px);
     fill: var(--color-white)!important;
+    text-transform: lowercase;
 }
 .qc-wire-label {
     transform: translate(1px,-4px);

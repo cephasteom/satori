@@ -115,11 +115,12 @@ const withValue = (callback: (...args: any[]) => any) =>
         const pattern = args[args.length - 1] as Pattern<any>;
         return P((from, to) => pattern.query(from, to).map((hap) => ({
             ...hap,
-            value: callback(
+            // handle numbers and arrays of numbers
+            value: [hap.value].flat().map(v => callback(
                 // pass and unwrap all args except the last (which is the pattern itself)
                 ...args.slice(0, -1).map(v => unwrap(v, from, to)), 
-                hap.value, hap.from, hap.to
-            )
+                v, hap.from, hap.to
+            ))
         })))
     }
 
@@ -215,6 +216,11 @@ const mod = withValue((amount, value) => value % amount);
  * @example random().round(0.25) // random values rounded to nearest 0.25
  */
 const step = withValue((step, value) => Math.round(value / step) * step);
+
+/**
+ * To fixed decimal places.
+ */
+const fixed = withValue((places, value) => parseFloat(Number(value).toFixed(places)));
 
 /**
  * Less than comparison. Returns 1 if value < threshold, else 0.
@@ -727,7 +733,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
 /**
  * Measure Qubit at index.
  * @param index - qubit index
- * @example qm(0) // measures qubit at index 0
+ * @example qm(0) // measures qubit 0
  */
 const qmeasure = (index: number|Pattern<number>) => P((from, to) => {
     runCircuit(from, to); // memoized circuit run. Only runs once per time range.
@@ -755,34 +761,65 @@ const qms = qmeasures
 /**
  * Probability of basis state at index.
  * @param index - basis state index
- * @example qprob(0) // probability of basis state at index 0
+ * @example qprob(0) // probability of basis state 0
  */
 const qprob = (index: number|Pattern<number>) => P((from, to) => {
-    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
     const length = circuit.numAmplitudes()
     const i = (unwrap(index, from, to) % length);
-    const value = Number(pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2))
+    const value = pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2);
     return [{ from, to, value }];
-});
+}).fixed(5);
 
 /** Alias for qprob.
  */
 const qpr = qprob
 
+/**
+ * Probabilities of all basis states. As an array.
+ * @example qprobs() // probabilities of all basis states
+ */
 const qprobs = () => P((from, to) => {
-    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
     const length = circuit.numAmplitudes()
-    const values = Array.from({ length }, (_, i) => {
-        return parseFloat(Number(pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2)).toFixed(5));
-    });
+    const values = Array.from({ length }, (_, i) => 
+        pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2));
     return [{ from, to, value: values }];
-});
+}).fixed(5);
 
 /** Alias for qprobs.
  */
 const qprs = qprobs
 
+/**
+ * Phase of basis state at index.
+ * @param index - basis state index
+ * @example qphase(0) // phase of basis state 0
+ * @returns 
+ */
+const qphase = (index: number|Pattern<number>) => P((from, to) => {
+    const states = circuit.stateAsArray()
+    const i = unwrap(index, from, to) % states.length
+    return [{ from, to, value: states[i].phase }];
+}).mtr(0, 1, -Math.PI, Math.PI)
+    .fixed(5);
 
+/** Alias for qphase.
+ */
+const qph = qphase
+
+/**
+ * Phases of all basis states. As an array.
+ * @example qphases() // phases of all basis states
+ */
+const qphases = () => P((from, to) => {
+    const phases = circuit.stateAsArray().map((s: any) => s.phase);
+    return [{ from, to, value: phases }];
+})
+    .mtr(0, 1, -Math.PI, Math.PI)
+    .fixed(5);
+
+/** Alias for qphases.
+ */
+const qphs = qphases
 
 export const methods = {
     t, c,
@@ -791,7 +828,7 @@ export const methods = {
     fast, slow,
     add, sub, mul, div, mod, step,
     saw, range, ramp, sine, cosine, tri, pulse, square, noise,
-    mtr, scale, clamp,
+    mtr, scale, clamp, fixed,
     stack, inversion,
     mini,
     interp, degrade, expand, toggle, cache, count,
@@ -804,7 +841,7 @@ export const methods = {
         [name]: operate(name)
     }), {}),
     print,
-    qm, qmeasure, qms, qmeasures, qpr, qprob, qprs, qprobs,
+    qm, qmeasure, qms, qmeasures, qpr, qprob, qprs, qprobs, qph, qphase, qphs, qphases
 };
 
 // declare a type for Pattern methods, for use in the Pattern interface
