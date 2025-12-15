@@ -1,6 +1,7 @@
 // @ts-ignore
 import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
 import { memoize } from './utils';
+import { unwrap } from './Pattern' 
 
 export const circuit = new QuantumCircuit();
 
@@ -54,14 +55,16 @@ export class Qubit {
     }
     
     /** @hidden */
-    calculateParams(gateParams: ('theta'|'phi'|'lambda')[], values: number[]): {[key: string]: number} {
+    calculateParams(
+        gateParams: ('theta'|'phi'|'lambda')[], 
+        values: number[], from: number = 0, to: number = 1): {[key: string]: number} {
         return values.length
             ? values
                 .filter((_, i) => i < gateParams.length)
                 .reduce((obj, value, i) => ({
                     ...obj,
                     // TODO: handle patterns
-                    [gateParams[i]]: value * (gateParams[i] === 'theta' ? 1 : 2) * Math.PI
+                    [gateParams[i]]: unwrap(value, from, to) * (gateParams[i] === 'theta' ? 1 : 2) * Math.PI
                 }), {})
             : {theta: 0, phi: 0, lambda: 0}
     }
@@ -109,12 +112,12 @@ export class Qubit {
             : circuit.addGate(key, column, this.row, options)
 
         // But be able to calculate the params later
-        this._stack.push(() => {
+        this._stack.push((from: number, to: number) => {
             if(!hasParams) return
 
             const options = {
                 creg,
-                params: this.calculateParams(gate.params, params)
+                params: this.calculateParams(gate.params, params, from, to)
             }
             
             const {wires, col} = circuit.getGatePosById(id)
@@ -128,8 +131,8 @@ export class Qubit {
         return this
     }
 
-    build() {
-        this._stack.forEach(fn => fn())
+    build(from?: number, to?: number) {
+        this._stack.forEach(fn => fn(from, to))
         this._stack = []
         this._offset = 0
     }

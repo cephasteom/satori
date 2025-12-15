@@ -52,10 +52,12 @@ export function evaluate(code: string) {
         // Store the last successfully evaluated code
         lastCode = code;
 
+        // run the circuit based on its current configuration
+        circuit.run();
+
         // render circuit in the UI
         renderCircuit();
-        // run the circuit based on its current configuration
-        circuit.run()
+        
     } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);
@@ -78,16 +80,19 @@ window.addEventListener("evaluateCode", (e) => {
  * @param to - The end time in cycles.
  * @returns An object containing global events and stream-specific events and mutations.
  */ 
-export const compile = (from: number, to: number) => ({
-    // at the global level, we are only interested in events (at least for now)
-    global: global.query(from, to).events,
-    // at the stream level, we want events and mutations
-    streams: [...streams, ...fxStreams].reduce((compiled, stream) => {
-        const { events, mutations } = stream.query(from, to);
-        return [
-            ...compiled,
-            ...events,
-            ...mutations
-        ]
-    }, [] as Event[]),
-})
+export const compile = (from: number, to: number) => {
+    qubits.forEach(qubit => qubit.build(from, to));
+    return {
+        // at the global level, we are only interested in events (at least for now)
+        global: global.query(from, to).events,
+        // at the stream level, we want events and mutations
+        streams: [...streams, ...fxStreams].reduce((compiled, stream) => {
+            const { events, mutations } = stream.query(from, to);
+            return [
+                ...compiled,
+                ...events,
+                ...mutations
+            ]
+        }, [] as Event[]),
+    }
+}

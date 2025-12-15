@@ -655,7 +655,7 @@ const operators = Object.getOwnPropertyNames(Math)
     .filter(prop => typeof (Math as any)[prop] === 'function');
 
 // Util: unwrap ensures we get a raw value
-function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
+export function unwrap<T>(value: Pattern<T>|any, from: number, to: number) {
     value = typeof value === "string" ? mini(value as string) : value;
     return value instanceof Pattern 
         ? value.query(from, to)[0].value 
