@@ -13,7 +13,7 @@ To run this project locally, as a complete application:
 
 ## To use Satori in your own applications
 ```js
-import { Scheduler } from './core/Scheduler';
+import { Satori } from './core/Satori';
 
 // Create a new scheduler instance and pass in handlers
 const satori = new Satori(...);
