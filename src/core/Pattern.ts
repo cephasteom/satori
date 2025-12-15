@@ -719,6 +719,7 @@ const expand = withValue((...args) => {
 /**
  * Print the current Pattern value for debugging.
  * @example seq('A', 'B', 'C').print() // prints the value of the pattern on each division of the cycle.
+ * @example seq('A', 'B', 'C').print('MyPattern') // prints the value of the pattern with an identifier.
  */
 const print = (...args: any[]) => P((from, to) => {
     const pattern = args[args.length - 1] as Pattern<any>;
