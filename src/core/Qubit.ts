@@ -133,8 +133,6 @@ export class Qubit {
 
     build(from?: number, to?: number) {
         this._stack.forEach(fn => fn(from, to))
-        this._stack = []
-        this._offset = 0
     }
 
     __reset() {

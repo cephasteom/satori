@@ -737,7 +737,7 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
  */
 const qmeasure = (index: number|Pattern<number>) => P((from, to) => {
     runCircuit(from, to); // memoized circuit run. Only runs once per time range.
-    return [{ from, to, value: circuit.measure(unwrap(index, from, to)) }];
+    return [{ from, to, value: circuit.measure(unwrap(index, from, to)) || 0 }];
 }); 
 
 /**
