@@ -767,7 +767,7 @@ const qprob = (index: number|Pattern<number>) => P((from, to) => {
 
 /** Alias for qprob.
  */
-const qp = qprob
+const qpr = qprob
 
 const qprobs = () => P((from, to) => {
     runCircuit(from, to); // memoized circuit run. Only runs once per time range.
@@ -780,7 +780,7 @@ const qprobs = () => P((from, to) => {
 
 /** Alias for qprobs.
  */
-const qps = qprobs
+const qprs = qprobs
 
 
 
@@ -804,7 +804,7 @@ export const methods = {
         [name]: operate(name)
     }), {}),
     print,
-    qm, qmeasure, qms, qmeasures, qp, qprob, qps, qprobs,
+    qm, qmeasure, qms, qmeasures, qpr, qprob, qprs, qprobs,
 };
 
 // declare a type for Pattern methods, for use in the Pattern interface
