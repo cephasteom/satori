@@ -1,5 +1,6 @@
 // @ts-ignore
 import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
+import { memoize } from './utils';
 
 export const circuit = new QuantumCircuit();
 
@@ -11,6 +12,10 @@ export const renderCircuit = () => {
     }
 };
 renderCircuit();
+
+export const runCircuit = memoize(() => {
+    circuit.run();
+});
 
 export interface Qubit {
     _id: string;
@@ -75,7 +80,6 @@ export class Qubit {
         const params = [(hasParams 
             ? hasConnections ? arg2 : arg1
             : [])].flat().filter(v => v!== undefined && v !== null)
-        console.log(params, gate.params)
 
         const offset = [(hasConnections
             ? hasParams ? arg3 : arg2

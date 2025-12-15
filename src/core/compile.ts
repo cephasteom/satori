@@ -52,7 +52,10 @@ export function evaluate(code: string) {
         // Store the last successfully evaluated code
         lastCode = code;
 
+        // render circuit in the UI
         renderCircuit();
+        // run the circuit based on its current configuration
+        circuit.run()
     } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);

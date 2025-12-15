@@ -4,6 +4,7 @@
  * These posts outline how TidalCycles was ported to Strudel. Invaluable reading.
  */
 import { parse, evalNode } from './mini';
+import { circuit, runCircuit } from './Qubit';
 import { cyclesPerSecond, transposeOctave } from './utils';
 import pkg from 'noisejs';
 // @ts-ignore
@@ -722,6 +723,34 @@ const print = (pattern: Pattern<any>) => P((from, to) => {
     });
 });
 
+/**
+ * Measure Qubit at index.
+ * @param index - qubit index
+ * @example qm(0) // measures qubit at index 0
+ */
+const qmeasure = (index: number|Pattern<number>) => P((from, to) => {
+    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
+    return [{ from, to, value: circuit.measure(unwrap(index, from, to)) }];
+}); 
+
+/**
+ * Alias for qmeasure.
+ */
+const qm = qmeasure
+
+/**
+ * Measure all Qubits. Returns an array of measured values.
+ * @example qmeasures() // measures all qubits
+ */
+const qmeasures = () => P((from, to) => {
+    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
+    return [{ from, to, value: circuit.measureAll() }];
+});
+
+/** Alias for qmeasures.
+ */
+const qms = qmeasures
+
 export const methods = {
     t, c,
     fn,
@@ -741,7 +770,8 @@ export const methods = {
         ...obj,
         [name]: operate(name)
     }), {}),
-    print
+    print,
+    qm, qmeasure, qms, qmeasures
 };
 
 // declare a type for Pattern methods, for use in the Pattern interface

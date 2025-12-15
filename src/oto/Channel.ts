@@ -234,7 +234,7 @@ export class Channel {
         // exit if no valid instrument specified
         const noInst = !Object.keys(instMap).includes(inst)
         // throw error if invalid instrument and we're not using MIDI
-        if(noInst && midi === undefined) satori.postMessage({ 
+        if(noInst && midi === undefined && inst !== undefined) satori.postMessage({ 
             type: 'error', 
             message: `Instrument type "${inst}" not recognised.` 
         });
