@@ -1,14 +1,17 @@
 // @ts-ignore
 import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
 
-const circuit = new QuantumCircuit();
+export const circuit = new QuantumCircuit();
 
-const svgContainer = document.getElementById('circuit');
-if (svgContainer) {
-    const svg = circuit.exportSVG(true);
-    svgContainer.innerHTML = svg;
-}
+const renderCircuit = () => {
+    const svgContainer = document.getElementById('circuit');
+    if (svgContainer) {
+        const svg = circuit.exportSVG(true);
+        svgContainer.innerHTML = svg;
+    }
+};
 
+renderCircuit();
 export interface Qubit {
     _id: string;
     row: number;
@@ -87,6 +90,8 @@ export class Qubit {
             ? circuit.insertGate(key, column, [this.row, ...controlQubits], defaultOptions)
             : circuit.addGate(key, column, this.row, defaultOptions)
 
+        renderCircuit();
+
         // store a function to configure the gate later - expecting parameters to be dynamic
         this._stack.push(() => {
             if(!hasParams) return
@@ -117,6 +122,11 @@ export class Qubit {
 
     build() {
         this._stack.forEach(fn => fn())
+        this._stack = []
+        this._offset = 0
+    }
+
+    __reset() {
         this._stack = []
         this._offset = 0
     }

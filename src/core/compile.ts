@@ -1,5 +1,5 @@
 import { Stream, type Event } from './Stream';
-import { Qubit } from './Qubit';
+import { Qubit, circuit } from './Qubit';
 import { methods } from './Pattern';
 import { utilities } from './utils';
 
@@ -11,7 +11,10 @@ const streams = Array(16).fill(0).map((_, i) => new Stream('s' + i))
 const fxStreams = Array(4).fill(0).map((_, i) => new Stream('fx' + i))
 const qubits = Array(16).fill(0).map((_, i) => new Qubit(i));
 
-export const reset = () => [global, ...streams, ...fxStreams].forEach(stream => stream.__reset());
+export const reset = () => {
+    [global, ...streams, ...fxStreams, ...qubits].forEach(c => c.__reset());
+    circuit.clear();
+}
 
 const channel = new BroadcastChannel('satori');
 
