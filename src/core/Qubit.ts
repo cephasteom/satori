@@ -3,15 +3,15 @@ import QuantumCircuit from 'quantum-circuit/dist/quantum-circuit.min.js';
 
 export const circuit = new QuantumCircuit();
 
-const renderCircuit = () => {
+export const renderCircuit = () => {
     const svgContainer = document.getElementById('circuit');
     if (svgContainer) {
         const svg = circuit.exportSVG(true);
         svgContainer.innerHTML = svg;
     }
 };
-
 renderCircuit();
+
 export interface Qubit {
     _id: string;
     row: number;
@@ -47,6 +47,19 @@ export class Qubit {
         this._stack = []
         this._offset = 0
     }
+    
+    /** @hidden */
+    calculateParams(gateParams: ('theta'|'phi'|'lambda')[], values: number[]): {[key: string]: number} {
+        return values.length
+            ? values
+                .filter((_, i) => i < gateParams.length)
+                .reduce((obj, value, i) => ({
+                    ...obj,
+                    // TODO: handle patterns
+                    [gateParams[i]]: value * (gateParams[i] === 'theta' ? 1 : 2) * Math.PI
+                }), {})
+            : {theta: 0, phi: 0, lambda: 0}
+    }
 
     /** @hidden */
     configureGate(key: string, gate: any, arg1?: number[] | number, arg2?: number[] | number, arg3?: number[] | number)
@@ -62,6 +75,7 @@ export class Qubit {
         const params = [(hasParams 
             ? hasConnections ? arg2 : arg1
             : [])].flat().filter(v => v!== undefined && v !== null)
+        console.log(params, gate.params)
 
         const offset = [(hasConnections
             ? hasParams ? arg3 : arg2
@@ -84,29 +98,19 @@ export class Qubit {
             bit: this.row
         } : {}
 
-        // intialise the gate without options
-        const defaultOptions = {creg, params: {theta: 0, phi: 0, lambda: 0}}
+        // intialise the gate with the current parameters
+        const options = {creg, params: this.calculateParams(gate.params, params)}
         const id = hasConnections
-            ? circuit.insertGate(key, column, [this.row, ...controlQubits], defaultOptions)
-            : circuit.addGate(key, column, this.row, defaultOptions)
+            ? circuit.insertGate(key, column, [this.row, ...controlQubits], options)
+            : circuit.addGate(key, column, this.row, options)
 
-        renderCircuit();
-
-        // store a function to configure the gate later - expecting parameters to be dynamic
+        // But be able to calculate the params later
         this._stack.push(() => {
             if(!hasParams) return
 
             const options = {
                 creg,
-                params: params.length
-                    ? params
-                        .filter((_, i) => i < gate.params.length)
-                        .reduce((obj, value, i) => ({
-                            ...obj,
-                            // TODO: handle patterns
-                            [gate.params[i]]: value * (gate.params[i] === 'theta' ? 1 : 2) * Math.PI
-                        }), {})
-                    : {theta: 0, phi: 0, lambda: 0},
+                params: this.calculateParams(gate.params, params)
             }
             
             const {wires, col} = circuit.getGatePosById(id)

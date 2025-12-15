@@ -72,6 +72,7 @@ main > section > div {
 
 .help__component {
     position: relative;
+    overflow-x: scroll;
 }
 
 .help__component input {
@@ -99,6 +100,9 @@ main > section > div {
     background-color: var(--theme-blue-dark);
 }
 
+.qc-circuit {
+    margin-top: -1rem;
+}
 .qc-circuit line {
 	stroke: var(--color-white)!important;
     stroke-width: 2px;
@@ -107,13 +111,11 @@ main > section > div {
 .qc-circuit text {
     font-size: .75rem;
     font-weight: bold;
-	/* font-size: var(--text-xs);
-    /* font-family: 'Lato Bold', sans-serif; */
 }
 
 .qc-circuit rect,
 .qc-circuit circle {
-    fill: var(--color-blue-medium)!important;
+    fill: var(--theme-blue-dark)!important;
 	stroke: white!important;
 }
 .qc-circuit text {

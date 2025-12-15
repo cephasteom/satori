@@ -1,5 +1,5 @@
 import { Stream, type Event } from './Stream';
-import { Qubit, circuit } from './Qubit';
+import { Qubit, circuit, renderCircuit } from './Qubit';
 import { methods } from './Pattern';
 import { utilities } from './utils';
 
@@ -51,6 +51,8 @@ export function evaluate(code: string) {
         new Function(...Object.keys(scope), `${code}`)(...Object.values(scope));
         // Store the last successfully evaluated code
         lastCode = code;
+
+        renderCircuit();
     } catch (e: any) {
         // if we have a last successfully evaluated code, re-evaluate it
         lastCode && evaluate(lastCode);
