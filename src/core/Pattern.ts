@@ -727,7 +727,7 @@ const print = (...args: any[]) => P((from, to) => {
     return pattern.query(from, to).map(hap => {
         setTimeout(() => satori.postMessage({ 
             type: 'pattern-print', 
-            message: `${from}: ${id ? `"${id}"` : ''} ${unwrap(hap.value, hap.from, hap.to)}`
+            message: `${parseFloat(from.toFixed(2))}: ${id ? `"${id}"` : ''} ${unwrap(hap.value, hap.from, hap.to)}`
         }), 120);
         return hap;
     });
