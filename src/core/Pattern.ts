@@ -1,3 +1,4 @@
+import { complex, round, pow, abs } from 'mathjs'
 /**
  * Pattern module - core building block of Satori.
  * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
@@ -751,6 +752,38 @@ const qmeasures = () => P((from, to) => {
  */
 const qms = qmeasures
 
+/**
+ * Probability of basis state at index.
+ * @param index - basis state index
+ * @example qprob(0) // probability of basis state at index 0
+ */
+const qprob = (index: number|Pattern<number>) => P((from, to) => {
+    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
+    const length = circuit.numAmplitudes()
+    const i = (unwrap(index, from, to) % length);
+    const value = Number(pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2))
+    return [{ from, to, value }];
+});
+
+/** Alias for qprob.
+ */
+const qp = qprob
+
+const qprobs = () => P((from, to) => {
+    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
+    const length = circuit.numAmplitudes()
+    const values = Array.from({ length }, (_, i) => {
+        return parseFloat(Number(pow(abs(round(circuit.state[i] || complex(0, 0), 14)), 2)).toFixed(5));
+    });
+    return [{ from, to, value: values }];
+});
+
+/** Alias for qprobs.
+ */
+const qps = qprobs
+
+
+
 export const methods = {
     t, c,
     fn,
@@ -771,7 +804,7 @@ export const methods = {
         [name]: operate(name)
     }), {}),
     print,
-    qm, qmeasure, qms, qmeasures
+    qm, qmeasure, qms, qmeasures, qp, qprob, qps, qprobs,
 };
 
 // declare a type for Pattern methods, for use in the Pattern interface

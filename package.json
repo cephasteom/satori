@@ -14,6 +14,7 @@
     "docs": "npm run docs:pattern && npm run docs:stream && npm run docs:instruments && npm run docs:fx"
   },
   "devDependencies": {
+    "@types/mathjs": "^9.4.1",
     "@types/noisejs": "^2.1.0",
     "@types/pegjs": "^0.10.6",
     "typedoc": "^0.28.14",
@@ -24,6 +25,7 @@
     "@rnbo/js": "^1.4.2",
     "highlight.js": "^11.11.1",
     "marked": "^17.0.1",
+    "mathjs": "^15.1.0",
     "noisejs": "^2.1.0",
     "pegjs": "^0.10.0",
     "prism-code-editor": "^4.1.0",
