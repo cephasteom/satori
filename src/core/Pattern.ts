@@ -720,12 +720,14 @@ const expand = withValue((...args) => {
  * Print the current Pattern value for debugging.
  * @example seq('A', 'B', 'C').print() // prints the value of the pattern on each division of the cycle.
  */
-const print = (pattern: Pattern<any>) => P((from, to) => {
+const print = (...args: any[]) => P((from, to) => {
+    const pattern = args[args.length - 1] as Pattern<any>;
+    const id = args.length > 1 && unwrap(args[0], from, to);
     return pattern.query(from, to).map(hap => {
-        satori.postMessage({ 
+        setTimeout(() => satori.postMessage({ 
             type: 'pattern-print', 
-            message: `Cycle ${from}: ${unwrap(hap.value, hap.from, hap.to)}`
-        });
+            message: `${from}: ${id ? `"${id}"` : ''} ${unwrap(hap.value, hap.from, hap.to)}`
+        }), 120);
         return hap;
     });
 });
