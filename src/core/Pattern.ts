@@ -6,7 +6,7 @@ import { complex, round, pow, abs } from 'mathjs'
  */
 import { parse, evalNode } from './mini';
 import { circuit, runCircuit } from './Qubit';
-import { cyclesPerSecond, transposeOctave } from './utils';
+import { cyclesPerSecond, transposeOctave, unwrapArray } from './utils';
 import pkg from 'noisejs';
 // @ts-ignore
 const { Noise } = pkg;
@@ -116,11 +116,11 @@ const withValue = (callback: (...args: any[]) => any) =>
         return P((from, to) => pattern.query(from, to).map((hap) => ({
             ...hap,
             // handle numbers and arrays of numbers
-            value: [hap.value].flat().map(v => callback(
+            value: unwrapArray([hap.value].flat().map(v => callback(
                 // pass and unwrap all args except the last (which is the pattern itself)
                 ...args.slice(0, -1).map(v => unwrap(v, from, to)), 
                 v, hap.from, hap.to
-            ))
+            )))
         })))
     }
 

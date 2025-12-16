@@ -34,6 +34,11 @@ export function formatCCParams(params: Record<string, any>): Record<string, any>
         }), {});
 }
 
+// a function which checks if a value is an array. If it is and is only has one item, return that item
+export function unwrapArray(value: any): any {
+    return Array.isArray(value) && value.length === 1 ? value[0] : value;
+}
+
 let samplesMessage = '';
 channel.addEventListener('message', (e) => samplesMessage = e.data.type === 'samples' 
     ? e.data.message 
