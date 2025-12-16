@@ -47,6 +47,10 @@ export function evaluate(code: string) {
     try {
         // Reset all streams before evaluating new code
         reset();
+
+        // fire resetCache event to clear any memoized functions
+        window.postMessage({ type: 'clearCache' }, '*');
+
         // Evaluate the user code within the defined scope
         new Function(...Object.keys(scope), `${code}`)(...Object.values(scope));
         // Store the last successfully evaluated code
