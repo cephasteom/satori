@@ -1,6 +1,5 @@
 import { triads } from './chords';
 import { modes } from './scales'
-import { memoize } from './utils';
 import peg from 'pegjs';
 
 // '1 1 1 1' => seq(1,1,1,1)
@@ -316,11 +315,10 @@ _ = [ \\t\\n\\r]*
 `;
 
 const parser = peg.generate(grammar);
-const memoizedParse = memoize((pattern: string, _: string): string|number|[][] => parser.parse(pattern))
 
 export const parse = (input: string) => {
     try {
-        return memoizedParse(input)
+        return parser.parse(input)
     } catch (e: any) {
         // if we can't parse it, just return the input as-is
         return input;

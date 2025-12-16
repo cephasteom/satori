@@ -739,7 +739,7 @@ const print = (...args: any[]) => P((from, to) => {
  * @example qm(0) // measures qubit 0
  */
 const qmeasure = (index: number|Pattern<number>) => P((from, to) => {
-    runCircuit(from, to); // memoized circuit run. Only runs once per time range.
+    runCircuit(Date.now()); // memoized circuit run. Only runs once per time range.
     return [{ from, to, value: circuit.measure(unwrap(index, from, to)) || 0 }];
 }); 
 
