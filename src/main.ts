@@ -7,8 +7,9 @@ import { toggle, init as initDocs } from './docs';
 import { init as initEditor } from './editor';
 import { init as initConsole } from './console';
 
-('serviceWorker' in navigator && import.meta.env.PROD) && window.addEventListener('load', () => 
-    navigator.serviceWorker.register('/service-worker.js'));
+// suppressed as breaking websocket
+// ('serviceWorker' in navigator && import.meta.env.PROD) && window.addEventListener('load', () => 
+//     navigator.serviceWorker.register('/service-worker.js'));
 
 // initialize UI components
 initDocs();

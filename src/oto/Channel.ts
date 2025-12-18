@@ -296,9 +296,9 @@ export class Channel {
     /** 
      * Cut all instruments on this channel
      */
-    cut(time: number) {
+    cut(time: number, release: number = 25) {
         Object.values(this._instruments)
-            .forEach(inst => inst.cut(time));
+            .forEach(inst => inst.cut(time, release));
     }
 }
 

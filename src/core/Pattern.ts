@@ -1,4 +1,4 @@
-import { complex, round, pow, abs } from 'mathjs'
+import { complex, round, pow, abs, arg } from 'mathjs'
 /**
  * Pattern module - core building block of Satori.
  * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
@@ -527,13 +527,16 @@ const xor = withValue((v, w) => v != w ? 1 : 0);
 const ifelse = (
     ...args: (string|number|Pattern<any>)[] 
 ) => {
-    const pattern = args.pop() as Pattern<any>;
-    const ifPattern = args[0] || wrap(1); // default to 1 if no thenPattern provided
-    const elsePattern = args[1] || wrap(0); // default to 0 if no elsePattern provided
-    return P((from, to) => wrap(unwrap(pattern, from, to) 
-        ? ifPattern
-        : elsePattern
-    ).query(from, to));
+    const pattern = args[args.length - 1] as Pattern<any>;
+    const ifPattern = args.length > 1 ? args[0] : wrap(1); // default to 1 if no thenPattern provided
+    const elsePattern = args.length > 2 ? args[1] : wrap(0); // default to 0 if no elsePattern provided
+
+    return P((from, to) => {
+        return wrap(unwrap(pattern, from, to) 
+            ? ifPattern
+            : elsePattern
+        ).query(from, to)
+    });
 }
 
 /**
@@ -698,6 +701,17 @@ const inversion = (...args: any[]) => {
 }
 
 /**
+ * Assuming a stack, take the element at the given index.
+ * @param index - index of the element to take
+ * @example 'Dmi'.at(2) // returns 'A'
+ */
+const at = (index: number|Pattern<number>, pattern: Pattern<any>) => {
+    return P((from, to) => pattern.query(from, to).filter((_, i, arr) => {
+        return i === (unwrap(index, from, to) % arr.length);
+    }));
+}
+
+/**
  * Expand the current value into a list of n values. An optional function can be provided to transform each value.
  * @param n - number of values to expand into
  * @param func - optional function to transform each value. Receives the current value and the index as arguments.
@@ -839,6 +853,7 @@ export const methods = {
     ifelse, ie, and, or, xor, not,
     cts, ctms, cps,
     lt, gt, eq, neq,
+    at,
     ...operators.reduce((obj, name) => ({
         ...obj,
         [name]: operate(name)

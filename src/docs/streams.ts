@@ -60,6 +60,9 @@ ${marked(`\`\`\`typescript
 s0.set({ cut: 0 )} // or use integer index
 \`\`\``)}
 ${marked(`\`\`\`typescript
+s0.set({ cut: s0 )} // or use stream itself
+\`\`\``)}
+${marked(`\`\`\`typescript
 s0.set({ cut: ['s0', 's1', 's2'] )} // cut self and other streams
 \`\`\``)}
 ${marked(`\`\`\`typescript

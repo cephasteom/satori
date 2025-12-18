@@ -35,7 +35,7 @@ export function handler(event: Event, time: number) {
  */
 function handleEvent(event: Event, time: number) {
     const { id, params } = event;
-    const { out = 0, strum = 0 } = params;
+    const { out = 0, strum = 0, cutr } = params;
     
     // remove the _ prefix from all param keys
     const formatted: Record<string, any> = Object.entries(params)
@@ -49,7 +49,9 @@ function handleEvent(event: Event, time: number) {
         .flatMap(c => c === 'all' ? Object.keys(channels) : c)
         // if integers, convert to strings - ie 0 becomes 's0'
         .map(c => typeof c === 'number' ? `s${c}` : c)
-        .forEach((id: string) => channels[id]?.cut(time));
+        // if c has a property called id, extract that
+        .map(c => typeof c === 'object' && c.id ? c.id : c)
+        .forEach((id: string) => channels[id]?.cut(time, cutr));
     
     // initialize channel if it doesn't exist
     channels[id] = channels[id] || new Channel(id, out);
