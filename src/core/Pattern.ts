@@ -414,6 +414,11 @@ const pulse = (min: number = 0, max: number = 1, duty: number = 0.5, q: number =
 const square = (min: number = 0, max: number = 1, q: number = 48) => pulse(min, max, 0.5, q);
 
 /**
+ * Alias for square
+ */
+const sq = square;
+
+/**
  * Noise waveform from min to max over one cycle.
  * @param min 
  * @param max 
@@ -702,14 +707,33 @@ const inversion = (...args: any[]) => {
 
 /**
  * Assuming a stack, take the element at the given index.
- * @param index - index of the element to take
- * @example 'Dmi'.at(2) // returns 'A'
+ * @param index - index of the element to take. 
+ * @example 'Dmi'.at(2) // returns A
+ * @example 'Dmi'.at([0,2]) // returns D and A
  */
-const at = (index: number|Pattern<number>, pattern: Pattern<any>) => {
-    return P((from, to) => pattern.query(from, to).filter((_, i, arr) => {
-        return i === (unwrap(index, from, to) % arr.length);
+const at = (...args: any[]) => P((from, to) => {
+    const pattern = args[args.length - 1] as Pattern<any>;
+    const indexes = args.slice(0, -1).map(a => unwrap(a, from, to)).flat(); // remove pattern
+    return pattern.query(from, to).filter((_, i, arr) => 
+        indexes.includes(i % arr.length));
+}); 
+
+/**
+ * Assuming an array, return 1 if includes the given value, else 0.
+ * @param value - value to check for
+ * @example 'C E G'.includes('E') // returns 1
+ * @example 'C E G'.includes('D') // returns 0
+ */
+const includes = (...args: any[]) => P((from, to) => {
+    const pattern = args[args.length - 1] as Pattern<any>;
+    const checkValues = args.slice(0, -1).map(a => unwrap(a, from, to)).flat(); // remove pattern
+    return pattern.query(from, to).map(hap => ({
+        ...hap,
+        value: checkValues.some(v => 
+            unwrapArray([hap.value].flat()).includes(v)
+        ) ? 1 : 0
     }));
-}
+});
 
 /**
  * Expand the current value into a list of n values. An optional function can be provided to transform each value.
@@ -844,7 +868,7 @@ export const methods = {
     cat, set, seq,
     fast, slow,
     add, sub, mul, div, mod, step,
-    saw, range, ramp, sine, cosine, tri, pulse, square, noise,
+    saw, range, ramp, sine, cosine, tri, pulse, square, sq, noise,
     mtr, scale, clamp, fixed,
     stack, inversion,
     mini,
@@ -853,7 +877,7 @@ export const methods = {
     ifelse, ie, and, or, xor, not,
     cts, ctms, cps,
     lt, gt, eq, neq,
-    at,
+    at, includes,
     ...operators.reduce((obj, name) => ({
         ...obj,
         [name]: operate(name)
