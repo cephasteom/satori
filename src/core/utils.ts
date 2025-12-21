@@ -35,7 +35,7 @@ export function formatCCParams(params: Record<string, any>): Record<string, any>
         .filter(([key, val]) => key.startsWith('cc') && val !== undefined)
         .reduce((obj, [key, val]) => ({
             ...obj,
-            [+key.replace('cc', '')]: Math.floor(val * 128)
+            [+key.replace('cc', '')]: Math.floor(val * 127)
         }), {});
 }
 

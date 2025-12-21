@@ -41,7 +41,7 @@ export function handler(event: Event, time: number) {
         duration: +dur,
         channels,
     }
-
+    console.log(Object.entries(formatCCParams(params)))
     // send CC params
     Object.entries(formatCCParams(params))
         .forEach(([cc, val]) => 
@@ -56,6 +56,10 @@ export function handler(event: Event, time: number) {
     // handle cut
     [cut || []].flat()
         .flatMap(c => c === 'all' ? Object.keys(streams) : c)
+        // if integers, convert to strings - ie 0 becomes 's0'
+        .map(c => typeof c === 'number' ? `s${c}` : c)
+        // if c has a property called id, extract that
+        .map(c => typeof c === 'object' && c.id ? c.id : c)
         // cut every note on the specified streams
         .forEach((id: string) => Array.from({ length: 128 }, (_, i) => i)
             .forEach(note => streams[id]?.device.stopNote(note, {
