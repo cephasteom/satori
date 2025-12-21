@@ -691,11 +691,11 @@ const mini = (value: string) => evalNode(parse(value), methods);
  * @example 'Cma#7'.invert(-1) // returns 'B C E G'
  */
 const inversion = (...args: any[]) => {
-    const pattern = wrap(args.pop() as Pattern<any>);
+    const pattern = args[args.length - 1] as Pattern<any>;
     return P((from, to) => pattern.query(from, to).map((hap, i, arr) => {
         const chordLength = arr.length;
         const note = hap.value
-        const inversion = Math.floor(unwrap(args[0] || 1, from, to))
+        const inversion = Math.floor(unwrap(args[0] || 0, from, to))
         const inverted = transposeOctave(
             +note, 
             Math.abs(inversion) % chordLength > i ? inversion > 0 ? 1 : -1 : 0
