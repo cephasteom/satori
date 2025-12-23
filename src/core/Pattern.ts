@@ -1,4 +1,4 @@
-import { complex, round, pow, abs, arg } from 'mathjs'
+import { complex, round, pow, abs } from 'mathjs'
 /**
  * Pattern module - core building block of Satori.
  * Credit: adapted from https://garten.salat.dev/idlecycles/, by Froos.
