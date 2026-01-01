@@ -94,4 +94,11 @@ s0.set({n: 'Clyd..?' }) // randomly choose from the scale - choose(60,62,64,66,6
 \`\`\`js
 s0.set({ n: 'Clyd%16..' }) // % specifies the length of the scale - seq(60,62,64,66,67,69,71,73,72,74,76,78,79,81,83,85)
 \`\`\`
+
+#### Escape mini-notation
+To escape mini-notation parsing, prefix the string with an exclamation mark \`!\`. This can be useful when you want to use characters that would normally be interpreted as mini-notation syntax.
+
+\`\`\`js
+s0.set({ midi: '!to Max 1' }) // sets e to the literal string '1*4', not seq(1,1,1,1)
+\`\`\`
 `

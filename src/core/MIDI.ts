@@ -41,7 +41,7 @@ export function handler(event: Event, time: number) {
         duration: +dur,
         channels,
     }
-    console.log(Object.entries(formatCCParams(params)))
+
     // send CC params
     Object.entries(formatCCParams(params))
         .forEach(([cc, val]) => 

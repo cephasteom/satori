@@ -317,6 +317,8 @@ _ = [ \\t\\n\\r]*
 const parser = peg.generate(grammar);
 
 export const parse = (input: string) => {
+    // ignore escaped inputs
+    if (input.startsWith('!')) return input.slice(1); 
     try {
         return parser.parse(input)
     } catch (e: any) {
