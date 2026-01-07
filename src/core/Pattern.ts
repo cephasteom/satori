@@ -564,13 +564,13 @@ const fallsOnFrom = (pattern: Pattern<any>) =>
     })));
 
 /**
- * Return a 1 every n cycles, else 0. Only returns 1 when event falls exactly on the cycle division.
+ * Return a 1 every n cycles, else 0.
  * @param n - interval
  * @example every(0.25) // returns 1 every quarter cycle. Equivalent to seq(1,1,1,1).
  * @example every(2) // returns 1 every 2 cycles. Equivalent to seq(1).slow(2).
  */
 // @ts-ignore
-const every = (n: number) => seq(1).slow(n).fallsOnFrom();
+const every = (n: number) => seq(1).slow(n);
 
 /**
  * Toggle 1s and 0s when the condition is met.
