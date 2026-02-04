@@ -1,5 +1,8 @@
 {
   "name": "@cephasteom/satori",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.2.0",
   "type": "module",
   "scripts": {
