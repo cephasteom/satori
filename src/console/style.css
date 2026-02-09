@@ -16,6 +16,7 @@
     height: 100%;
     overflow-y: scroll;
     border-radius: 2.5px;
+    line-height: 1.75;
 }
 
 .console__message {

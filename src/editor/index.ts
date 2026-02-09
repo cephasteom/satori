@@ -14,7 +14,7 @@ import 'prism-code-editor/languages/clike';
 import 'prism-code-editor/layout.css';
 import 'prism-code-editor/guides.css';
 import 'prism-code-editor/invisibles.css';
-import 'prism-code-editor/themes/night-owl.css';
+import 'prism-code-editor/themes/github-dark.css';
 import 'prism-code-editor/search.css';
 
 import { preset } from "./preset";
@@ -31,7 +31,7 @@ export const init = async (element: string = '#editor') => {
             language: 'typescript',
             lineNumbers: false,
             value: localStorage.getItem("satori.code") || preset,
-            tabSize: 4,
+            tabSize: 2,
         },
         matchBrackets(),
         defaultCommands(),

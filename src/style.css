@@ -24,7 +24,7 @@
     --border-radius: 12px;
     --app-opacity: .8;
     --font-1: 'NATS Regular', system-ui, sans-serif;
-    --font-2: 'Roboto Slab', serif;
+    --font-2: "IBM Plex Mono", monospace;
 }
 
 @font-face {
@@ -33,14 +33,6 @@
     font-weight: normal;
     src: url('/NATS-Regular.woff') format('woff');
 }
-
-
-/* .roboto-slab-<uniquifier> {
-  font-family: var(--font-2);
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 
 body {
     margin: 0;
@@ -53,7 +45,7 @@ body {
 
 h1, h2 {
     margin: 0;
-    font-family: 'NATS Regular', system-ui, sans-serif;
+    font-family: var(--font-1);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -98,7 +90,7 @@ header {
         color: var(--white);
 
         & span {
-            font-family: 'NATS Regular', system-ui, sans-serif;
+            font-family: var(--font-1);
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
@@ -114,11 +106,13 @@ header {
 
 .editor {
     padding: var(--spacer);
+    overflow: scroll;
 }
 
 .help,
 .editor {
     width: 100%;
+    
 }
 
 .help {
@@ -131,8 +125,8 @@ header {
 }
 
 main > section > div {
-    /* flex: 1; */
-    /* min-height: 0; */
+    flex: 1;
+    min-height: 0;
     height: 100%;
 }
 
@@ -142,7 +136,7 @@ main > section > div {
     border-radius: var(--border-radius);
     height: 100%;
     font-family: var(--font-2);
-    letter-spacing: .15rem;
+    font-size: 1rem;
 }
 
 .help__component input {
@@ -219,4 +213,6 @@ main > section > div {
 .prism-code-editor {
     font-family: var(--font-2)!important;
     letter-spacing: .15rem;
+
+    font-size: 1rem;
 }
