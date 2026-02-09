@@ -75,16 +75,30 @@ header {
     padding: var(--spacer);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
     
     & button {
-        font-family: 'NATS Regular', system-ui, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
         padding: 0;
         background: none;
         border: 0;
         color: var(--white);
+
+        & span {
+            font-family: 'NATS Regular', system-ui, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        & svg {
+            height: var(--spacer);
+            fill: #FFF;
+        }
+
+
     }
 }
 
@@ -119,7 +133,7 @@ main > section > div {
     height: 100%;
     font-family: 'NATS Regular', system-ui, sans-serif;
     font-size: 1.25rem;
-    letter-spacing: .1rem;
+    letter-spacing: .15rem;
 }
 
 .help__component input {
