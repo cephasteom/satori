@@ -1,6 +1,6 @@
 #docs {
-    background: var(--theme-blue-dark);
-    padding: 1rem;
+    background-color: var(--black-lighter);
+    padding: var(--spacer);
     overflow: hidden;
 }
 
@@ -40,7 +40,7 @@
 
 #docs code {
     max-width: 100%;
-    background: var(--theme-blue);
+    background: var(--grey-lighter);
     border-radius: 5px;
 }
 

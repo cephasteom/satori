@@ -12,7 +12,6 @@ import { defaultCommands, editHistory } from 'prism-code-editor/commands';
 import 'prism-code-editor/languages/clike';
 
 import 'prism-code-editor/layout.css';
-import 'prism-code-editor/scrollbar.css';
 import 'prism-code-editor/guides.css';
 import 'prism-code-editor/invisibles.css';
 import 'prism-code-editor/themes/night-owl.css';

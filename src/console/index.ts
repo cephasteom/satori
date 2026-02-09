@@ -37,7 +37,7 @@ function render(element: string = '#console') {
                         });
                         return { type: message.type, message: formattedMessage };
                     })
-                    .map(message => `<${message.type === 'title' ? 'h1' : 'p'} class="console__message console__message--${message.type}">${message.message}</${message.type === 'title' ? 'h1' : 'p'}>`).join('')
+                    .map(message => `<${message.type === 'title' ? 'h2' : 'p'} class="console__message console__message--${message.type}">${message.message}</${message.type === 'title' ? 'h1' : 'p'}>`).join('')
             }
         </div>
     `;

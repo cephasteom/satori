@@ -11,14 +11,28 @@
   </head>
   <body>
     <main>
-      <section>
-        <div id="editor"></div>
-      </section>
-      <section class="help">
-        <div id="console" class="help__component"></div>
-        <div id="docs" class="help__component"></div>
-        <div id="circuit" class="help__component"></div>
-      </section>
+      <header>
+        <h1>Satori</h1>
+      </header>
+
+      
+      <div class="app">
+        <nav class="sidebar">
+          <button>Console</button>
+          <button>Docs</button>
+          <button>Circuit</button>
+        </nav>
+
+        <section class="editor">
+          <div id="editor"></div>
+        </section>
+        
+        <section class="help">
+          <div id="console" class="help__component"></div>
+          <!-- <div id="docs" class="help__component"></div> -->
+          <!-- <div id="circuit" class="help__component"></div> -->
+        </section>
+      </div>
     </main>
 
     <script type="module" src="/src/main.ts"></script>
