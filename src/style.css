@@ -23,6 +23,8 @@
     --spacer: 1.5rem;
     --border-radius: 12px;
     --app-opacity: .8;
+    --font-1: 'NATS Regular', system-ui, sans-serif;
+    --font-2: 'Roboto Slab', serif;
 }
 
 @font-face {
@@ -32,9 +34,17 @@
     src: url('/NATS-Regular.woff') format('woff');
 }
 
+
+/* .roboto-slab-<uniquifier> {
+  font-family: var(--font-2);
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
+    font-family: var(--font-2);
     color: white;
     height: calc(100vh - 2rem);
     letter-spacing: 0.02em;
@@ -63,7 +73,7 @@ header {
 
 .app {
     display: flex;
-    background-color: var(--grey);
+    background-color: var(--grey-lighter);
     box-sizing: border-box;
     width: 100vw;
     overflow: hidden;
@@ -131,8 +141,7 @@ main > section > div {
     overflow-x: scroll;
     border-radius: var(--border-radius);
     height: 100%;
-    font-family: 'NATS Regular', system-ui, sans-serif;
-    font-size: 1.25rem;
+    font-family: var(--font-2);
     letter-spacing: .15rem;
 }
 
@@ -205,4 +214,9 @@ main > section > div {
 
 .qc-gate-params {
     display: none;
+}
+
+.prism-code-editor {
+    font-family: var(--font-2)!important;
+    letter-spacing: .15rem;
 }

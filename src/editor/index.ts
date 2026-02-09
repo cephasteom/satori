@@ -31,7 +31,7 @@ export const init = async (element: string = '#editor') => {
             language: 'typescript',
             lineNumbers: false,
             value: localStorage.getItem("satori.code") || preset,
-            tabSize: 2,
+            tabSize: 4,
         },
         matchBrackets(),
         defaultCommands(),
