@@ -25,8 +25,7 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
     docs && (docs.innerHTML = `
         <div>
             ${Object.keys(searchResults).length > 0
-                ? `<h2>Search Results</h2>
-                    ${Object.entries(searchResults).map(([section, items]) => `
+                ? `${Object.entries(searchResults).map(([section, items]) => `
                         <h3>${section.charAt(0).toUpperCase() + section.slice(1)}</h3>
                         <ul class="docs__list">
                             ${Object.entries(items).map(([name, info]) => `

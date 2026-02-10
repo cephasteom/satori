@@ -65,6 +65,7 @@
 
 #docs h3 { 
     color: var(--theme-3);
+    margin-top: 0;
 }
 
 #docs h4 { 
