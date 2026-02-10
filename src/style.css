@@ -34,6 +34,7 @@ body {
     letter-spacing: 0.15rem;
     line-height: 1.4;
     opacity: var(--app-opacity);
+    background-color: var(--black);
 }
 
 h1, h2 {
@@ -62,7 +63,7 @@ header {
     width: 100vw;
     overflow: hidden;
     height: calc(100vh - var(--header-height));
-
+    min-width: 1000px;
 }
 
 .sidebar {
@@ -99,7 +100,7 @@ header {
 .editor {
     padding: var(--spacer);
     overflow: scroll;
-    flex: 0 0 calc(50% - var(--spacer) * 2);
+    min-width: calc(50% - var(--spacer) * 2);
 }
 
 .help,
@@ -113,6 +114,7 @@ header {
     gap: var(--spacer);
     padding: var(--spacer) var(--spacer) var(--spacer) 0;
     height: calc(100vh - var(--header-height));
+    overflow: scroll;
     width: 100%;
 }
 
@@ -123,7 +125,16 @@ header {
     font-family: var(--font-2);
     font-size: 1rem;
     border: 2px solid;
-    border-color: var(--theme-1);
+    overflow-x: scroll;
+    &:nth-child(1) {
+        border-color: var(--theme-1);
+    }
+    &:nth-child(2) {
+        border-color: var(--theme-2);
+    }
+    &:nth-child(3) {
+        border-color: var(--theme-3);
+    }
 }
 
 .help__component input {
@@ -164,7 +175,7 @@ header {
 
 .qc-circuit rect,
 .qc-circuit circle {
-    fill: var(--theme-1)!important;
+    fill: var(--black-lighter)!important;
 	stroke: white!important;
 }
 .qc-circuit text {
