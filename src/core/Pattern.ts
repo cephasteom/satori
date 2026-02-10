@@ -943,6 +943,7 @@ declare global {
 }
 
 // add all methods to the string prototype so that we can do '1 2 3'.add(2) for example
+// this is wild thing to do as it will interfere with other JS code...
 Object.entries(methods).forEach(([name, method]) => {
     // @ts-ignore
     Number.prototype[name] = function(...args: any[]) {

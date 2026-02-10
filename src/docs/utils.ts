@@ -29,7 +29,7 @@ export function search(query: string): Record<string, Record<string, any>> {
     return Object.entries(searchable)
         .reduce((acc, [section, items]) => {
             const results = Object.entries(items)
-                .filter(([name]) => name.toLowerCase() === query) // TODO: improve search algorithm
+                .filter(([name]) => name.toLowerCase().startsWith(query))
                 .reduce((obj, [name, info]) => ({
                     ...obj,
                     [name]: info,
