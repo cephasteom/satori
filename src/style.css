@@ -60,6 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--spacer);
 
     & a {
         font-family: var(--font-1);

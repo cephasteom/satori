@@ -9,7 +9,7 @@ let messages: {type: string, message: string}[] = [
     {type: 'success', message: `v${version}`},
     {type: 'success', message: `© <a href="https://cephasteom.co.uk" target="_blank">Cephas Teom</a> ${new Date().getFullYear()}`},
     {type: 'info', message: `Please report any issues on <a href="https://github.com/cephasteom/satori/issues" target="_blank">GitHub</a>.`},
-    {type: 'info', message: '`ctrl+return` to play. `ctrl+.` to stop.'},
+    {type: 'info', message: '`ctrl+return`/`alt+return` to play. `ctrl+.`/`alt+.` to stop.'},
     {type: 'info', message: '`cmd+1` console, `cmd+2` docs, `cmd+3` circuit.'},
     {type: 'info', message: '`samples()`, `instruments()`, `effects()`, and `midi()` for lists.'},
 ]

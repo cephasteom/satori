@@ -44,7 +44,7 @@ export const init = async (element: string = '#editor') => {
     editor.textarea.addEventListener('keydown', (e) => {
         localStorage.setItem("satori.code", editor.value);
 
-        if (e.key === 'Enter' && e.ctrlKey) {
+        if (e.key === 'Enter' && (e.ctrlKey || e.altKey)) {
             e.preventDefault();
             window.dispatchEvent(new CustomEvent("evaluateCode", { detail: { code: editor.value } }));
             return false;

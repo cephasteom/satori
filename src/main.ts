@@ -54,6 +54,9 @@ window.addEventListener('keydown', (e) => {
     }
 
     // Play / Stop controls
-    if(e.ctrlKey && e.key === 'Enter') satori.play();
-    if(e.ctrlKey && e.code === 'Period') satori.stop();
+    if((e.altKey || e.ctrlKey) && e.key === 'Enter') satori.play();
+    if((e.altKey || e.ctrlKey) && e.code === 'Period') {
+        e.preventDefault();
+        satori.stop();
+    }
 });
