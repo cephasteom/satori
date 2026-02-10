@@ -20,7 +20,7 @@ initConsole();
 const satori = new Satori(initOto(), midiHandler);
 
 // Handle hide/show of help components
-const toggle = (id: string, displayStyle: string = 'block') => {
+const toggleComponent = (id: string, displayStyle: string = 'block') => {
     const el = document.getElementById(id);
     if(!el) return;
     el.style.display = el.style.display === 'none'
@@ -34,15 +34,20 @@ const toggle = (id: string, displayStyle: string = 'block') => {
         // @ts-ignore
         .map((c: Element) => c.style.display)
         .every(style => style === 'none')
-        ? 'none'
-        : 'flex';
+            ? 'none'
+            : 'flex';
+}
+
+const toggleButtonActive = (index: number) => {
+    const button = document.querySelectorAll('.sidebar button')[index];
+    if(button) button.classList.toggle('active');
 }
 
 const components = ['console', 'docs', 'circuit'];
 document.querySelectorAll('.sidebar button').forEach((button, index) => {
     button.addEventListener('click', () => {
-        toggle(components[index]);
-        button.classList.toggle('active');
+        toggleComponent(components[index]);
+        toggleButtonActive(index);
     });
 });
 
@@ -50,7 +55,9 @@ window.addEventListener('keydown', (e) => {
     // Toggle help components with meta key + number (1: console, 2: docs, 3: circuit)
     if(e.metaKey && parseInt(e.key) < components.length + 1) {
         e.preventDefault();
-        toggle(components[parseInt(e.key) - 1]);
+        const index = parseInt(e.key) - 1;
+        toggleComponent(components[index]);
+        toggleButtonActive(index);
     }
 
     // Play / Stop controls

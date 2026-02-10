@@ -101,6 +101,7 @@ header {
         background: none;
         border: 0;
         color: var(--white);
+        cursor: pointer;
 
         & span {
             font-family: var(--font-1);
