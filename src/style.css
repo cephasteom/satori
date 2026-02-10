@@ -11,10 +11,10 @@
     --grey: #282828;
     --grey-lighter: #363636; 
     --grey-light: #969696;
-    --header-height: 68.8px;
+    --header-height: 64.3px;
     --spacer: 1.5rem;
     --border-radius: 12px;
-    --app-opacity: .99;
+    --app-opacity: .8;
     --font-1: 'NATS Regular', system-ui, sans-serif;
     --font-2: "IBM Plex Mono", monospace;
 }
@@ -41,11 +41,12 @@ h1, h2 {
     margin: 0;
     font-family: var(--font-1);
     text-transform: uppercase;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.3rem;
 }
 
 a {
     color: inherit;
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
@@ -53,7 +54,11 @@ a {
 
 header {
     background-color: var(--black);
-    padding: calc(var(--spacer)/2) var(--spacer);
+    padding: var(--spacer);
+    height: var(--header-height);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .app {
@@ -68,7 +73,7 @@ header {
 
 .sidebar {
     background-color: var(--black-lighter);
-    padding: 2rem var(--spacer);
+    padding: 3rem var(--spacer);
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -147,8 +152,6 @@ header {
     outline: none;
     color: white;
     width: 100px;
-    border-top: 0;
-    border-right: 0;
     
 }
 .help__component input::placeholder {
@@ -213,4 +216,9 @@ header {
     letter-spacing: .15rem;
 
     font-size: 1rem;
+}
+
+*:focus {
+    outline: 1px dashed var(--theme-1);
+    outline-offset: 4px;
 }

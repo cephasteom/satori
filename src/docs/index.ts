@@ -99,6 +99,7 @@ const addSearch = () => {
     const searchInput = document.getElementById('search') as HTMLInputElement;
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
+        console.log('Searching for:', search(query));
         render(search(query));
         addButtonEvents();
     });

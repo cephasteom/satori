@@ -18,7 +18,7 @@
     background: transparent;
     border: none;
     padding: 0;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
 
@@ -47,7 +47,7 @@
     background: var(--grey-lighter);
     border-radius: 5px;
     width: calc(100% - 2rem);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .docs__list {
@@ -66,6 +66,7 @@
 #docs h3 { 
     color: var(--theme-3);
     margin-top: 0;
+    font-weight: 400;
 }
 
 #docs h4 { 
