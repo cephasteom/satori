@@ -1,18 +1,10 @@
 :root {
-    --theme-blue: #011627;
-    --theme-blue-dark: #0d1117;
-    --theme-blue-medium: #122d42;
-    --theme-blue-light: #179fff;
-    --theme-orange: #ff5874;
-    --theme-yellow: #ecc48d;
-    --theme-mauve: orchid;
-    --color-white: #ffffff;
-    --color-black: #000000;
     --theme-1: Aqua;
     --theme-2: #FFC300;
     --theme-3: #FF7383;
     --theme-4: #FF8419;
     --theme-5: #D42525;
+    --white: #ffffff;
     --black: #000000;
     --black-lighter: #0D0D0D;
     --grey-dark: #1E1C1C;
@@ -22,7 +14,7 @@
     --header-height: 68.8px;
     --spacer: 1.5rem;
     --border-radius: 12px;
-    --app-opacity: .8;
+    --app-opacity: .99;
     --font-1: 'NATS Regular', system-ui, sans-serif;
     --font-2: "IBM Plex Mono", monospace;
 }
@@ -39,20 +31,20 @@ body {
     font-family: var(--font-2);
     color: white;
     height: calc(100vh - 2rem);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.15rem;
     line-height: 1.4;
+    opacity: var(--app-opacity);
 }
 
 h1, h2 {
     margin: 0;
     font-family: var(--font-1);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25rem;
 }
 
 a {
-    color: var(--theme-yellow);
-    text-decoration: none;
+    color: inherit;
     &:hover {
         text-decoration: underline;
     }
@@ -65,25 +57,26 @@ header {
 
 .app {
     display: flex;
-    background-color: var(--grey-lighter);
+    background-color: var(--grey);
     box-sizing: border-box;
     width: 100vw;
     overflow: hidden;
     height: calc(100vh - var(--header-height));
+
 }
 
 .sidebar {
     background-color: var(--black-lighter);
-    padding: var(--spacer);
+    padding: 2rem var(--spacer);
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     
     & button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: .5rem;
         padding: 0;
         background: none;
         border: 0;
@@ -92,7 +85,6 @@ header {
         & span {
             font-family: var(--font-1);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
         }
 
         & svg {
@@ -107,12 +99,12 @@ header {
 .editor {
     padding: var(--spacer);
     overflow: scroll;
+    flex: 0 0 calc(50% - var(--spacer) * 2);
 }
 
 .help,
 .editor {
-    width: 100%;
-    
+    box-sizing: border-box; /* include padding/border in width */
 }
 
 .help {
@@ -121,22 +113,17 @@ header {
     gap: var(--spacer);
     padding: var(--spacer) var(--spacer) var(--spacer) 0;
     height: calc(100vh - var(--header-height));
-    box-sizing: border-box;
-}
-
-main > section > div {
-    flex: 1;
-    min-height: 0;
-    height: 100%;
+    width: 100%;
 }
 
 .help__component {
     position: relative;
-    overflow-x: scroll;
     border-radius: var(--border-radius);
     height: 100%;
     font-family: var(--font-2);
     font-size: 1rem;
+    border: 2px solid;
+    border-color: var(--theme-1);
 }
 
 .help__component input {
@@ -166,7 +153,7 @@ main > section > div {
     margin-top: -1rem;
 }
 .qc-circuit line {
-	stroke: var(--color-white)!important;
+	stroke: var(--white)!important;
     stroke-width: 2px;
 }
 
@@ -177,11 +164,11 @@ main > section > div {
 
 .qc-circuit rect,
 .qc-circuit circle {
-    fill: var(--theme-blue-dark)!important;
+    fill: var(--theme-1)!important;
 	stroke: white!important;
 }
 .qc-circuit text {
-    fill: var(--color-white);
+    fill: var(--white);
 	stroke: none!important;
 }
 
@@ -192,18 +179,18 @@ main > section > div {
 .qc-circuit ellipse, 
 .qc-circuit path {
     fill: transparent!important;
-	stroke: var(--color-white)!important;
+	stroke: var(--white)!important;
     stroke-width: 2px;
 	cursor: grab;
 }
 
 .qc-circuit .qc-gate-label {
-    fill: var(--color-white)!important;
+    fill: var(--white)!important;
     text-transform: lowercase;
 }
 .qc-wire-label {
     transform: translate(1px,-4px);
-    fill: var(--color-white)!important;
+    fill: var(--white)!important;
 }
 
 .qc-gate-params {

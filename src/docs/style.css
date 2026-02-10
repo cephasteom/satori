@@ -23,7 +23,7 @@
 }
 
 #docs .active > h3 {
-    color: var(--theme-yellow)!important;
+    color: var(--theme-2)!important;
 }
 
 #docs article {
@@ -42,6 +42,8 @@
     max-width: 100%;
     background: var(--grey-lighter);
     border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .docs__list {
@@ -54,13 +56,13 @@
 }
 
 #docs h2 { 
-    color: var(--theme-yellow);
+    color: var(--theme-2);
 }
 
 #docs h3 { 
-    color: var(--theme-orange);
+    color: var(--theme-4);
 }
 
 #docs h4 { 
-    color: var(--theme-mauve);
+    color: var(--theme-3);
 }

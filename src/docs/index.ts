@@ -42,7 +42,6 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                     `).join('')}
                 `
                 : `
-                    <h2>Docs</h2>
                     <button class="active"><h3>Quick Start</h3></button>
                     <button><h3>Stream</h3></button>
                     <button><h3>Pattern</h3></button>

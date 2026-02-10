@@ -5,7 +5,7 @@
 
 #console code {
     font-family: var(--font-2);
-    color: var(--theme-orange)
+    color: var(--theme-3)
 }
 
 .prism-code-editor {
@@ -24,11 +24,11 @@
 }
 
 .console__message--success {
-    color: var(--theme-yellow);
+    color: var(--theme-1);
 }
 .console__message--info {
     color: white;
 }
 .console__message--pattern-print {
-    color: var(--theme-blue-light);
+    color: var(--theme-1);
 }
