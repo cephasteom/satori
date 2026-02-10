@@ -2,6 +2,7 @@
     background-color: var(--black-lighter);
     padding: var(--spacer);
     overflow: hidden;
+    word-break: break-all;
 }
 
 #docs > div {
@@ -10,6 +11,9 @@
     border-radius: 2.5px;
 }
 
+#docs nav {
+    width: 80%;
+}
 #docs button {
     background: transparent;
     border: none;
@@ -23,7 +27,7 @@
 }
 
 #docs .active > h3 {
-    color: var(--theme-2)!important;
+    color: var(--theme-1)!important;
 }
 
 #docs article {
@@ -42,7 +46,7 @@
     max-width: 100%;
     background: var(--grey-lighter);
     border-radius: 5px;
-    width: 100%;
+    width: calc(100% - 2rem);
     overflow: hidden;
 }
 
@@ -60,9 +64,9 @@
 }
 
 #docs h3 { 
-    color: var(--theme-4);
+    color: var(--theme-3);
 }
 
 #docs h4 { 
-    color: var(--theme-3);
+    color: var(--theme-4);
 }

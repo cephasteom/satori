@@ -1,5 +1,5 @@
 export default `
-For a gentle introduction to quantum computing for music, see Chapter 1.1.3 of *[Zen and the Art of Praxis](https://researchportal.plymouth.ac.uk/en/studentTheses/zen-and-the-art-of-praxis/)*. Satori supports designing and sonifying quantum circuits using the [quantum-circuit](https://www.npmjs.com/package/quantum-circuit) package.
+For a gentle introduction to quantum computing for music, see Chapter 1.1.3 of [Zen and the Art of Praxis](https://researchportal.plymouth.ac.uk/en/studentTheses/zen-and-the-art-of-praxis/). Satori supports designing and sonifying quantum circuits using the [quantum-circuit](https://www.npmjs.com/package/quantum-circuit) package.
 
 Qubits are named \`q0\` to \`q15\`. Gates are chained onto each qubit, with arguments following the structure (connections, parameters, offset). Where a gate does not support certain arguments, they are omitted.
 

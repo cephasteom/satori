@@ -12,7 +12,7 @@ import { init as initConsole } from './console';
 //     navigator.serviceWorker.register('/service-worker.js'));
 
 // initialize UI components
-// initDocs();
+initDocs();
 initEditor();
 initConsole();
 

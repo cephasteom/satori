@@ -42,15 +42,17 @@ const render = (searchResults: Record<string, Record<string, any>> = {}) => {
                     `).join('')}
                 `
                 : `
-                    <button class="active"><h3>Quick Start</h3></button>
-                    <button><h3>Stream</h3></button>
-                    <button><h3>Pattern</h3></button>
-                    <button><h3>Mini</h3></button>
-                    <button><h3>Instruments</h3></button>
-                    <button><h3>Effects</h3></button>
-                    <button><h3>MIDI</h3></button>
-                    <button><h3>Samples</h3></button>
-                    <button><h3>Quantum</h3></button>
+                    <nav>
+                        <button class="active"><h3>Quick Start</h3></button>
+                        <button><h3>Stream</h3></button>
+                        <button><h3>Pattern</h3></button>
+                        <button><h3>Mini</h3></button>
+                        <button><h3>Instruments</h3></button>
+                        <button><h3>Effects</h3></button>
+                        <button><h3>MIDI</h3></button>
+                        <button><h3>Samples</h3></button>
+                        <button><h3>Quantum</h3></button>
+                    </nav>
 
                     ${Object.entries({
                         ['quick-start']: quickStart,
