@@ -44,7 +44,7 @@ function render(element: string = '#console') {
     `;
 
     const container = console.querySelector('.console__messages');
-    container && messages.length > 8 && (container.scrollTop = container.scrollHeight);
+    container && messages.length > 9 && (container.scrollTop = container.scrollHeight);
 }
 
 export const init = () => { render(); hasInitialized = true; }

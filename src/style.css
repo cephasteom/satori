@@ -59,6 +59,19 @@ header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    & a {
+        font-family: var(--font-1);
+        text-transform: uppercase;
+        margin-top: auto;
+        font-size: 1.25rem;
+    }
+
+    & nav {
+        display: flex;
+        gap: var(--spacer);
+    }
 }
 
 .app {
@@ -76,7 +89,7 @@ header {
     padding: 3rem var(--spacer);
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     
     & button {
         display: flex;
@@ -98,7 +111,25 @@ header {
             fill: #FFF;
         }
 
+        &::after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            transition: width 0.3s ease;
+            background-color: var(--black);
 
+        }
+        &:nth-child(1).active::after {
+            background-color: var(--theme-1);
+        }
+        &:nth-child(2).active::after {
+            background-color: var(--theme-2);
+        }
+        &:nth-child(3).active::after {
+            background-color: var(--theme-3);
+        }
     }
 }
 

@@ -104,24 +104,6 @@ const addSearch = () => {
     });
 };
 
-export const toggle = (id: string, displayStyle: string = 'block') => {
-    const el = document.getElementById(id);
-    if(!el) return;
-    el.style.display = el.style.display === 'none'
-        ? displayStyle
-        : 'none';
-
-    // When all help components are hidden, hide the parent container too
-    const help: HTMLElement | null = document.querySelector('.help');
-    if(!help) return;
-    help.style.display = Array.from(help?.children || [])
-        // @ts-ignore
-        .map((c: Element) => c.style.display)
-        .every(style => style === 'none')
-        ? 'none'
-        : 'flex';
-}
-
 export const init = () => {
     const docs = document.querySelector('#docs')
     // add inner div and input for search
